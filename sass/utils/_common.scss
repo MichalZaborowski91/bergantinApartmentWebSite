@@ -1,5 +1,5 @@
 body {
-  background-image: url("../../images/torraviejaMobile/torraviejaMobile_1x.jpg");
+  background-image: url("../../../bergantinApartmentWebSite/images/torraviejaMobile/torraviejaMobile_1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -9999;
@@ -8,11 +8,11 @@ body {
   height: 1250px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/torraviejaMobile/torraviejaMobile_2x.jpg");
+    background-image: url("../../../bergantinApartmentWebSite/images/torraviejaMobile/torraviejaMobile_2x.jpg");
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("../../images/torraviejaMobile/torraviejaMobile_3x.jpg");
+    background-image: url("../../../bergantinApartmentWebSite/images/torraviejaMobile/torraviejaMobile_3x.jpg");
   }
 }
 
