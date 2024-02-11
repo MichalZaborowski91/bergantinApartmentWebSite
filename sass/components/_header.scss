@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+
+  &__logo {
+    width: 150px;
+    height: auto;
+  }
+
+  &__mobileBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &--icon {
+      width: 30px;
+      height: 30px;
+      fill: #c9a845;
+    }
+  }
+
+  &__fbLink {
+    display: none;
+  }
+}
+
+.navigation {
+  display: none;
+  list-style: none;
+  padding-left: 0px;
+  gap: 30px;
+}
