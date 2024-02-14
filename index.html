@@ -18,6 +18,11 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <!--slider cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -133,7 +138,32 @@
           </button>
         </div>
       </section>
-      <div>HERE GALERY</div>
+      <section class="gallery">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./images/apartmentGallery/livingRoom.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/apartmentGallery/livingRoom3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/apartmentGallery/livingRoom7.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/apartmentGallery/mainBedroom.jpg" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
       <section class="aptEquipment container">
         <p class="aptEquipment__head">Apartment equipment</p>
         <p>
@@ -286,5 +316,8 @@
         </p>
       </section>
     </footer>
+    <!--swiper script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
