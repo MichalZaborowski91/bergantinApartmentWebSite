@@ -139,12 +139,16 @@
         </div>
       </section>
       <section class="gallery">
+        <!--Slider structure-->
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="./images/apartmentGallery/livingRoom.jpg" />
+              <img
+                src="./images/apartmentGallery/livingRoom.jpg"
+                alt="living room"
+                loading="lazy"
+              />
             </div>
             <div class="swiper-slide">
               <img src="./images/apartmentGallery/livingRoom3.jpg" />
@@ -156,13 +160,12 @@
               <img src="./images/apartmentGallery/mainBedroom.jpg" />
             </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
+          <!-- Navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
+        <button>Gallery</button>
       </section>
       <section class="aptEquipment container">
         <p class="aptEquipment__head">Apartment equipment</p>
@@ -254,7 +257,9 @@
             <li class="equipmentList__item">
               <div class="equipmentList__item__box">
                 <svg class="equipmentList__item__box--icon">
-                  <use href="./images/icons/symbol-defs.svg#icon-wifi"></use>
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-freeWifi"
+                  ></use>
                 </svg>
               </div>
               <p class="equipmentList__item__label">Free WiFi</p>
@@ -279,6 +284,64 @@
             </li>
           </ul>
         </div>
+      </section>
+      <section class="about container">
+        <img
+          class="about__image"
+          src="./images/apartmentGallery/apartment.jpg"
+        />
+        <p>
+          The apartment is located in a great location , right next to La Mata
+          beach. The apartment is located on the 1st floor of a low block. There
+          is a free parking space under the block . The apartment has air
+          conditioning in the central point and additional fans in the rooms.
+        </p>
+        <div class="about__box">
+          <ul class="equipmentList">
+            <li class="equipmentList__item">
+              <div class="equipmentList__item__box">
+                <svg class="equipmentList__item__box--icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-parking"></use>
+                </svg>
+              </div>
+              <p class="equipmentList__item__label">Parking</p>
+            </li>
+            <li class="equipmentList__item">
+              <div class="equipmentList__item__box">
+                <svg class="equipmentList__item__box--icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-lift"></use>
+                </svg>
+              </div>
+              <p class="equipmentList__item__label">Lift</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="location container">
+        <h3 class="location__head">Location</h3>
+        <p>
+          The perfect location right next to the beach and close to the center
+          is a great place to spend your holiday in sunny Spain, where the
+          weather is good most of the year.
+        </p>
+        <iframe
+          class="location__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50311.69668015352!2d-0.7187566527534884!3d37.98923871159058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63aa38720ffc79%3A0xd220b907f2229dc6!2sTorrevieja%2C%20Alicante%2C%20Spain!5e0!3m2!1sen!2sie!4v1708038594346!5m2!1sen!2sie"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form>
+          <!-- Select list -->
+          <label for="option">Distance to:</label>
+          <select id="option" onchange="showContent()">
+            <option value="1" selected>Beaches</option>
+            <option value="2">Food</option>
+          </select>
+        </form>
+        <!--Dynamic content-->
+        <div class="content"></div>
       </section>
     </main>
     <footer>
@@ -316,8 +379,10 @@
         </p>
       </section>
     </footer>
-    <!--swiper script-->
+    <!--Swiper script-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <!--Dynamic location form script-->
+    <script src="./js/location.js"></script>
   </body>
 </html>

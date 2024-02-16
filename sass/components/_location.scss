@@ -1,0 +1,28 @@
+.location {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &__head {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  &__map {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+}
+.content {
+  background-color: aliceblue;
+  border-radius: 25px;
+  border: 2px solid black;
+  margin-top: 10px;
+
+  &__list {
+    margin: 0;
+    padding-bottom: 15px;
+    margin-top: 15px;
+  }
+}

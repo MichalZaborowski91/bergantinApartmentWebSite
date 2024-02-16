@@ -1,0 +1,17 @@
+.about {
+  background-color: aliceblue;
+  width: 100%;
+  padding-bottom: 25px;
+  padding-top: 25px;
+
+  &__image {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  &__box {
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+  }
+}
