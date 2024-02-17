@@ -337,11 +337,28 @@
           <label for="option">Distance to:</label>
           <select id="option" onchange="showContent()">
             <option value="1" selected>Beaches</option>
-            <option value="2">Food</option>
+            <option value="2">Shops</option>
+            <option value="3">Restaurants</option>
+            <option value="4">City centers</option>
           </select>
         </form>
         <!--Dynamic content-->
         <div class="content"></div>
+      </section>
+      <section class="infoCity container">
+        <h2>About Torravieja</h2>
+        <img src="./images/Stock-1257x838.jpg" class="infoCity__torravieja" />
+        <p>
+          Torrevieja is a Mediterranean-seaside city and municipality on the
+          Costa Blanca, in the province of Alicante, Valencian Community, in
+          southeastern Spain. Torrevieja was originally a salt-mining and
+          fishing village, as it is located between the Mediterranean Sea and
+          two large pink salt lakes known as Las Salinas de Torrevieja.
+        </p>
+      </section>
+      <section>
+        <p>Weather here</p>
+        <div class="weather"></div>
       </section>
     </main>
     <footer>
@@ -384,5 +401,7 @@
     <script src="./js/swiper.js"></script>
     <!--Dynamic location form script-->
     <script src="./js/location.js"></script>
+    <!--Weather script-->
+    <script src="./js/weather.js"></script>
   </body>
 </html>
