@@ -14,7 +14,7 @@ function distanceTo() {
       content.innerHTML = `<ul class="location__distance--list"><li>There are <b>plenty</b> of restaurants around the apartment</li><li>Only <b>5 minutes</b> from the <b>promenade</b> where there are many different restaurants</li></ul>`;
       break;
     case "4":
-      content.innerHTML = `<ul class="location__distance--list"><li>Torravieja <b>1,1km</b></li><li>Elche <b>38km</b></li><li>Alicante <b>50km</b></li><li>Cartagena <b>58km</b></li><li>Murcia <b>70km</b></li><li>Benidorm <b>100km</b></li></ul>`;
+      content.innerHTML = `<ul class="location__distance--list"><li>Torrevieja <b>1,1km</b></li><li>Elche <b>38km</b></li><li>Alicante <b>50km</b></li><li>Cartagena <b>58km</b></li><li>Murcia <b>70km</b></li><li>Benidorm <b>100km</b></li></ul>`;
       break;
     default:
       content.innerHTML = "";
