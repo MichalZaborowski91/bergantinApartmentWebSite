@@ -1,0 +1,16 @@
+.travel {
+  background-color: aliceblue;
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    margin: 0 auto;
+
+    &--graphic {
+      width: 150px;
+      height: auto;
+    }
+  }
+}

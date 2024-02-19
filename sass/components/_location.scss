@@ -1,6 +1,6 @@
 .location {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   &__head {
     margin-top: 0;
@@ -13,16 +13,30 @@
     border-radius: 25px;
     margin-bottom: 20px;
   }
-}
-.content {
-  background-color: aliceblue;
-  border-radius: 25px;
-  border: 2px solid black;
-  margin-top: 10px;
 
-  &__list {
-    margin: 0;
-    padding-bottom: 15px;
-    margin-top: 15px;
+  &__form {
+    display: flex;
+    gap: 25px;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 450px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__distance {
+    background-color: aliceblue;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding-right: 40px;
+    max-width: 450px;
+
+    &--list {
+      margin: 0;
+      padding-bottom: 15px;
+      margin-top: 15px;
+    }
   }
 }

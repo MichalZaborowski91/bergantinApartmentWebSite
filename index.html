@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Bergantin Apartment Torravieja Spain</title>
+    <title>Bergantin Apartment Torrevieja Spain</title>
     <link
       rel="shortcut icon"
       href="./images/bergantinApartmentLogo/bergantinLogo3x.PNG"
@@ -61,7 +61,7 @@
       <section class="main container">
         <div class="main__headBox">
           <h1 class="main__headBox--head">
-            Bergantin Apartment Torravieja Spain
+            Bergantin Apartment Torrevieja Spain
           </h1>
           <p class="main__headBox--description">
             Relax in Spain! A modern apartment with 2 bedrooms, a bathroom, a
@@ -105,7 +105,9 @@
         </ul>
       </section>
       <section class="aptDescription container">
-        <p class="aptDescription__head">Bergantin Apartment Torravieja Spain</p>
+        <h2 class="aptDescription__head">
+          Bergantin Apartment Torrevieja Spain
+        </h2>
         <p class="aptDescription__description">
           A new apartment decorated in a glamorous style is waiting for you on
           the Spanish coast in Torrevieja, only 300m from the famous La Mata
@@ -130,12 +132,6 @@
               </svg>
             </button>
           </a>
-          <button class="aptDescription__boxBtn--button">
-            <span>Bookings</span>
-            <svg>
-              <use href="./images/icons/symbol-defs.svg#icon-calendar"></use>
-            </svg>
-          </button>
         </div>
       </section>
       <section class="gallery">
@@ -165,10 +161,17 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-        <button>Gallery</button>
+        <a href="gallery.html">
+          <button class="gallery__button">
+            <span>Gallery</span>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-images"></use>
+            </svg>
+          </button>
+        </a>
       </section>
       <section class="aptEquipment container">
-        <p class="aptEquipment__head">Apartment equipment</p>
+        <h3 class="aptEquipment__head">Apartment equipment</h3>
         <p>
           Waiting for you include: free Wi-Fi with high-speed Internet and TV .
           In addition, a fully equipped kitchen and bathroom, iron, ironing
@@ -332,10 +335,15 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <form>
+        <div class="equipmentList__item__box">
+          <svg class="equipmentList__item__box--icon">
+            <use href="./images/icons/symbol-defs.svg#icon-gps"></use>
+          </svg>
+        </div>
+        <form class="location__form">
           <!-- Select list -->
           <label for="option">Distance to:</label>
-          <select id="option" onchange="showContent()">
+          <select id="option" onchange="distanceTo()">
             <option value="1" selected>Beaches</option>
             <option value="2">Shops</option>
             <option value="3">Restaurants</option>
@@ -343,10 +351,28 @@
           </select>
         </form>
         <!--Dynamic content-->
-        <div class="content"></div>
+        <div class="location__distance"></div>
+      </section>
+      <section class="travel container">
+        <div class="travel__box">
+          <img
+            src="./images/airPlane/airPlane_1x.png"
+            class="travel__box--graphic"
+          />
+          <ul>
+            <li>Alicante airport <b>43,3km</b></li>
+            <li>Murcia international airport <b>64,5km</b></li>
+          </ul>
+        </div>
+        <div class="travel__box">
+          <img src="./images/bus/bus_1x.png" class="travel__box--graphic" />
+          <ul>
+            <li>Bus station Torrevieja <b>850m</b></li>
+          </ul>
+        </div>
       </section>
       <section class="infoCity container">
-        <h2>About Torravieja</h2>
+        <h2 class="infoCity__head">About Torrevieja</h2>
         <img src="./images/Stock-1257x838.jpg" class="infoCity__torravieja" />
         <p>
           Torrevieja is a Mediterranean-seaside city and municipality on the
