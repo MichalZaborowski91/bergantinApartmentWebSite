@@ -94,7 +94,13 @@
     height: 50px;
     border-radius: 5px;
     border-style: none;
-    background-color: #c9a845;
+    background: rgb(170, 131, 67);
+    background: linear-gradient(
+      90deg,
+      rgba(170, 131, 67, 1) 0%,
+      rgba(215, 207, 120, 1) 50%,
+      rgba(170, 131, 67, 1) 100%
+    );
     cursor: pointer;
     color: #2f303a;
     display: inline-flex;

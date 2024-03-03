@@ -14,6 +14,7 @@
       padding: 0px 50px 0px;
       text-shadow: 2px 2px 2px black;
       font-size: 36px;
+      font-weight: 600;
     }
 
     &--description {
@@ -39,20 +40,26 @@
     align-items: center;
     text-align: center;
     width: 70px;
-    color: white;
+    color: aliceblue;
     text-shadow: 2px 2px 2px black;
 
     &__background {
       width: 50px;
       height: 50px;
       border-radius: 5px;
-      background-color: #c9a845;
+      background: rgb(170, 131, 67);
+      background: linear-gradient(
+        90deg,
+        rgba(170, 131, 67, 1) 0%,
+        rgba(215, 207, 120, 1) 50%,
+        rgba(170, 131, 67, 1) 100%
+      );
       position: relative;
 
       &--icon {
         width: 40px;
         height: 40px;
-        fill: white;
+        fill: aliceblue;
         position: absolute;
         left: 50%;
         top: 50%;
