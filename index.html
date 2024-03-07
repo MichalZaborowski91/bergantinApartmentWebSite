@@ -67,15 +67,15 @@
           />
         </a>
         <a href="https://www.facebook.com" target="blank" class="header__fbLink"
-          >FACEBOOK</a
+          >Facebook</a
         >
         <nav>
           <ul class="navigation">
-            <li>START</li>
-            <li>GALERIA</li>
-            <li>LOKALIZACJA</li>
-            <li>ATRAKCJE</li>
-            <li>KONTAKT</li>
+            <li>Start</li>
+            <li>Gallery</li>
+            <li>Location</li>
+            <li>Atractions</li>
+            <li>Contact</li>
           </ul>
         </nav>
         <button class="header__mobileBtn">
@@ -559,11 +559,29 @@
         </p>
       </section>
     </footer>
+    <!--Mobile menu-->
+    <div class="mobileMenu">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <nav>
+          <ul class="mobileMenu__navigation">
+            <li>Start</li>
+            <li>Gallery</li>
+            <li>Location</li>
+            <li>Atractions</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <!-- Tutaj umieść zawartość Twojego okna modalnego -->
+      </div>
+    </div>
     <!--Swiper script-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <!--Dynamic location form script-->
     <script src="./js/location.js"></script>
+    <!--Mobile menu script-->
+    <script src="./js/mobileMenu.js"></script>
     <!--Weather script-->
     <script type="module" src="./js/fetchWeather.js"></script>
   </body>
