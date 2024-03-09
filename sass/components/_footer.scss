@@ -46,7 +46,6 @@
 
   &__facebook {
     color: aliceblue;
-    text-transform: uppercase;
     margin-top: 20px;
     text-decoration: none;
     display: flex;
@@ -82,9 +81,14 @@
 
 .availability {
   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__head {
     color: aliceblue;
+    font-size: 20px;
     margin: 0;
     text-align: center;
   }

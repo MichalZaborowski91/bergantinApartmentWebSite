@@ -542,7 +542,7 @@
           <a href="tel:+353877052949">+353877052949</a>
         </div>
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/profile.php?id=61555173212339"
           target="blank"
           class="footer__facebook"
         >
@@ -561,19 +561,57 @@
     </footer>
     <!--Mobile menu-->
     <div class="mobileMenu">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <nav>
-          <ul class="mobileMenu__navigation">
-            <li><a href="index.html">Start</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li>Location</li>
-            <li>Bookings</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-        <!-- Tutaj umieść zawartość Twojego okna modalnego -->
-      </div>
+      <svg class="mobileMenu__close">
+        <use href="./images/icons/symbol-defs.svg#icon-cancel"></use>
+      </svg>
+      <nav>
+        <ul class="mobileMenu__navigation">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="gallery.html">Location</a></li>
+          <li><a href="gallery.html">Bookings</a></li>
+          <li><a href="gallery.html">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="mobileContact">
+        <li>
+          <a href="tel:+353877052949">
+            <div class="mobileContact__background">
+              <svg class="mobileContact__background--icon">
+                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:bergantin@gmail.com">
+            <div class="mobileContact__background">
+              <svg class="mobileContact__background--icon">
+                <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://chatwith.io/s/bergantin-apartment">
+            <div class="mobileContact__background">
+              <svg class="mobileContact__background--icon">
+                <use href="./images/icons/symbol-defs.svg#icon-whatsapp"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a
+        href="https://www.facebook.com/profile.php?id=61555173212339"
+        target="blank"
+        class="mobileMenu__facebook"
+      >
+        <svg class="mobileMenu__facebook--icon">
+          <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+        </svg>
+        <span>Facebook</span>
+      </a>
     </div>
     <!--Swiper script-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

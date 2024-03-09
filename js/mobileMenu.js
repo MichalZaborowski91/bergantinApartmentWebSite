@@ -1,7 +1,7 @@
 "use strict";
 const mobileMenuBtn = document.querySelector(".header__mobileBtn");
 const modal = document.querySelector(".mobileMenu");
-const closeBtn = document.querySelector(".close");
+const closeBtn = document.querySelector(".mobileMenu__close");
 
 mobileMenuBtn.addEventListener("click", () => {
   modal.style.display = "block";
