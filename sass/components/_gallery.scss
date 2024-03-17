@@ -57,3 +57,27 @@
 .swiper-button-next {
   color: #2f303a !important;
 }
+
+.imagesGallery img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.imagesGallery {
+  padding-bottom: 20px;
+  width: 100%;
+  min-width: 350px;
+
+  &__header {
+    color: #2f303a;
+    text-align: center;
+    font-size: 26px;
+    border-bottom: solid 2px #2f303a;
+  }
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

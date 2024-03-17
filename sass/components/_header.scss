@@ -3,6 +3,12 @@
   align-items: center;
   justify-content: space-between;
   height: 150px;
+  width: 100%;
+  min-width: 350px;
+
+  &--bgColor {
+    background-color: #2f303a;
+  }
 
   &__logo {
     width: 100px;
