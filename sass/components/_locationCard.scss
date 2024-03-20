@@ -1,0 +1,92 @@
+.locationCard {
+  min-width: 350px;
+  width: 100%;
+  &__header {
+    color: #2f303a;
+    text-align: center;
+    font-size: 26px;
+    border-bottom: solid 2px #2f303a;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 380px;
+    margin: 0 auto;
+
+    &__address p {
+      font-style: normal;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  &__box svg {
+    width: 70px;
+    fill: #2f303a;
+  }
+}
+
+.apartment {
+  background-color: aliceblue;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  min-width: 350px;
+  margin-bottom: 25px;
+
+  &__image {
+    width: 100%;
+    border-radius: 25px;
+  }
+}
+.apartment p {
+  margin-bottom: 0;
+}
+
+.googleMaps {
+  width: 100%;
+  min-width: 300px;
+  height: auto;
+  border-radius: 25px;
+}
+
+.navigateTo {
+  min-width: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__button {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border-style: none;
+    background: rgb(170, 131, 67);
+    background: linear-gradient(
+      90deg,
+      rgba(170, 131, 67, 1) 0%,
+      rgba(215, 207, 120, 1) 50%,
+      rgba(170, 131, 67, 1) 100%
+    );
+    cursor: pointer;
+    color: #2f303a;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: #2f303a;
+    box-shadow: 5px 5px 8px #2f303a;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  &__button > span {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__button > svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+}

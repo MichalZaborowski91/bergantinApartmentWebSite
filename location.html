@@ -81,21 +81,32 @@
       </section>
     </header>
     <main>
-      <h2>Location</h2>
-      <address>
-        <p>Address:</p>
-        <p>C. Bergantin, 24,</p>
-        <p>03182 Torrevieja,</p>
-        <p>Alicante, Spain</p>
-      </address>
-
-      <a href="https://maps.app.goo.gl/7n5YuAVtPNskUUpU6" target="_blank"
-        ><button>Navigate to apartment</button></a
-      >
-
-      <section class="about container">
+      <section class="locationCard container">
+        <h2 class="locationCard__header">Location</h2>
+        <div class="locationCard__box">
+          <address class="locationCard__box__address">
+            <p>Address:</p>
+            <p>C. Bergantin, 24,</p>
+            <p>03182 Torrevieja,</p>
+            <p>Alicante, Spain</p>
+          </address>
+          <svg>
+            <use href="./images/icons/symbol-defs.svg#icon-location2"></use>
+          </svg>
+        </div>
+      </section>
+      <div class="navigateTo">
+        <a href="https://maps.app.goo.gl/7n5YuAVtPNskUUpU6" target="_blank"
+          ><button type="button" class="navigateTo__button">
+            <span>Navigate to apartment</span
+            ><svg>
+              <use href="./images/icons/symbol-defs.svg#icon-compass"></use>
+            </svg></button
+        ></a>
+      </div>
+      <section class="apartment container">
         <img
-          class="about__image"
+          class="apartment__image"
           src="./images/apartmentGallery/apartment.jpg"
         />
         <p>
@@ -105,19 +116,27 @@
           conditioning in the central point and additional fans in the rooms.
         </p>
       </section>
-      <iframe
-        class="location__map container"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.868875246692!2d-0.6670256999999998!3d37.98018929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63aa0891523265%3A0xb88011bc9077e914!2sResidencial%20Habaneras%2C%20C.%20Bergantin%2C%2024%2C%2003182%20Torrevieja%2C%20Alicante%2C%20Spain!5e0!3m2!1sen!2sie!4v1709422689097!5m2!1sen!2sie"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-      <a href="https://maps.app.goo.gl/7n5YuAVtPNskUUpU6" target="_blank"
-        ><button>Navigate to apartment</button></a
-      >
+      <section class="container">
+        <iframe
+          class="googleMaps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.868875246692!2d-0.6670256999999998!3d37.98018929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63aa0891523265%3A0xb88011bc9077e914!2sResidencial%20Habaneras%2C%20C.%20Bergantin%2C%2024%2C%2003182%20Torrevieja%2C%20Alicante%2C%20Spain!5e0!3m2!1sen!2sie!4v1709422689097!5m2!1sen!2sie"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <div class="navigateTo">
+        <a href="https://maps.app.goo.gl/7n5YuAVtPNskUUpU6" target="_blank"
+          ><button type="button" class="navigateTo__button">
+            <span>Navigate to apartment</span
+            ><svg>
+              <use href="./images/icons/symbol-defs.svg#icon-compass"></use>
+            </svg></button
+        ></a>
+      </div>
     </main>
     <footer>
       <section class="footer container">
@@ -182,8 +201,8 @@
           <li><a href="index.html">Start</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="location.html">Location</a></li>
-          <li><a href="gallery.html">Bookings</a></li>
-          <li><a href="gallery.html">Contact</a></li>
+          <li><a href="bookings.html">Bookings</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <ul class="mobileContact">
