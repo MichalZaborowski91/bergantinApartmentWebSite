@@ -39,6 +39,12 @@
     height: 20px;
     margin-left: 10px;
   }
+
+  &__button:focus,
+  &__button:hover {
+    background: rgba(215, 207, 120, 1) 50%;
+    border: 2px solid #2f303a;
+  }
 }
 
 //swiper style
