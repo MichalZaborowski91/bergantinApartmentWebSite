@@ -136,9 +136,7 @@
         </ul>
       </section>
       <section class="aptDescription container">
-        <h2 class="aptDescription__head">
-          Bergantin Apartment Torrevieja Spain
-        </h2>
+        <h2 class="aptDescription__head">Bergantin Apartment</h2>
         <p class="aptDescription__description">
           A cozy apartament with 2 bedrooms, living room, kitchen, bathroom and
           a great balcony. The apartament can accomodate up to 6 individuals.
@@ -220,7 +218,7 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-        <a href="gallery.html">
+        <a class="gallery__link" href="gallery.html">
           <button type="button" class="gallery__button">
             <span>Gallery</span>
             <svg>
@@ -359,7 +357,7 @@
           100m away from the apartament. A big playground is located right next
           to it.
         </p>
-        <div class="about__box">
+        <div>
           <ul class="equipmentList">
             <li class="equipmentList__item">
               <div class="equipmentList__item__box">
@@ -382,7 +380,7 @@
       </section>
       <section class="location container">
         <h3 class="location__head">Location</h3>
-        <p>
+        <p class="location__description">
           Perfectly located righ on the mainstreet and very close to the centre
           of Torrevieja. Most popular beaches and shops are a very short walking
           distance from the apartament.
@@ -524,7 +522,7 @@
         </a>
         <div class="availability">
           <p class="availability__head">Check availability</p>
-          <a href="gallery.html">
+          <a class="availability__link" href="gallery.html">
             <button type="button" class="availability__button">
               <span>Bookings</span>
               <svg>
@@ -564,18 +562,24 @@
     </footer>
     <!--Mobile menu-->
     <div class="mobileMenu">
+      <div class="slider-container">
+        <!-- Darkmode -->
+        <input type="checkbox" id="darkModeSlider" />
+        <label for="darkModeSlider"></label>
+      </div>
+
       <svg class="mobileMenu__close">
         <use href="./images/icons/symbol-defs.svg#icon-cancel"></use>
       </svg>
-      <nav>
-        <ul class="mobileMenu__navigation">
-          <li><a href="index.html">Start</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="location.html">Location</a></li>
-          <li><a href="bookings.html">Bookings</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+
+      <ul class="mobileMenu__navigation">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
       <ul class="mobileContact">
         <li>
           <a href="tel:+353877052949">
@@ -636,5 +640,7 @@
     <script src="./js/mobileMenu.js"></script>
     <!--Language-->
     <script src="./js/language.js"></script>
+    <!--Darkmode-->
+    <script src="./js/darkMode.js"></script>
   </body>
 </html>

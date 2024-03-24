@@ -5,7 +5,7 @@
   padding-top: 30px;
 
   &__head {
-    margin-top: 0;
+    margin: 0px 0px 20px;
     text-align: center;
   }
 
@@ -13,4 +13,8 @@
     width: 100%;
     border-radius: 25px;
   }
+}
+
+.infoCity > p {
+  margin: 20px 0px 0px;
 }

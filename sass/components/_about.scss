@@ -8,10 +8,16 @@
     width: 100%;
     border-radius: 25px;
   }
+}
 
-  &__box {
-    background-color: white;
-    border-radius: 25px;
-    border: 2px solid black;
-  }
+.about > p {
+  margin: 20px 0px 20px;
+}
+
+.about.darkTheme {
+  background-color: rgb(22, 22, 22);
+}
+
+.about.darkTheme p {
+  color: aliceblue;
 }

@@ -3,8 +3,12 @@
   padding-bottom: 30px;
 
   &__head {
-    margin-top: 0;
+    margin: 0;
     text-align: center;
+  }
+
+  &__description {
+    margin: 20px 0px 20px;
   }
 
   &__map {

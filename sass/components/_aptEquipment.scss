@@ -19,6 +19,11 @@
   }
 }
 
+.aptEquipment > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .equipmentList {
   list-style: none;
   padding-left: 0;
@@ -26,6 +31,7 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  margin: 0;
 
   &__item {
     max-width: 100px;
@@ -55,4 +61,25 @@
       padding-top: 10px;
     }
   }
+}
+
+.aptEquipment.darkTheme {
+  background-color: rgb(38, 38, 38);
+}
+
+.aptEquipment.darkTheme .aptEquipment__head {
+  color: aliceblue;
+}
+
+.aptEquipment.darkTheme p {
+  color: aliceblue;
+}
+
+.aptEquipment.darkTheme .aptEquipment__box {
+  background-color: rgb(22, 22, 22);
+  border-color: aliceblue;
+}
+
+.aptEquipment.darkTheme svg {
+  fill: aliceblue;
 }

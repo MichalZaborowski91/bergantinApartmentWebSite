@@ -36,5 +36,5 @@ function weatherWidget(data) {
       "url('../../../bergantinApartmentWebSite/images/weather/weatherDayBackground.jpg')";
   }
 
-  weather.innerHTML = `<div class="weather__box"><img class="weather__box--icon" src="./images/weather/${day}/${iconName}.png"/><p class="weather__box--text">${textDescription}</p></div><div class="weather__temp"><span>Current temp:</span> <span class="weather__temp--degrees">${currentTemperature} <sup>o</sup>C</span></div>`;
+  weather.innerHTML = `<h3 class="weather__header">Torrevieja</h3><div class="weather__box"><img class="weather__box--icon" src="./images/weather/${day}/${iconName}.png"/><p class="weather__box--text">${textDescription}</p></div><div class="weather__temp"><span>Current temp:</span> <span class="weather__temp--degrees">${currentTemperature} <sup>o</sup>C</span></div>`;
 }

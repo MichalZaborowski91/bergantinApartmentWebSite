@@ -7,6 +7,10 @@
   width: 100%;
   padding-bottom: 30px;
 
+  &__link {
+    margin-top: 20px;
+  }
+
   &__button {
     width: 150px;
     height: 50px;
@@ -25,7 +29,6 @@
     justify-content: center;
     align-items: center;
     fill: #2f303a;
-    margin-top: 20px;
     box-shadow: 5px 5px 8px #2f303a;
   }
 
@@ -75,6 +78,7 @@
   min-width: 350px;
 
   &__header {
+    line-height: 1.5;
     color: #2f303a;
     text-align: center;
     font-size: 26px;
@@ -86,4 +90,11 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+}
+
+.gallery.darkTheme {
+  background-color: rgb(22, 22, 22);
+}
+.gallery.darkTheme .gallery__button {
+  box-shadow: 5px 5px 8px rgb(22, 22, 22);
 }

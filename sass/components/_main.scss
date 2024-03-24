@@ -18,7 +18,7 @@
     }
 
     &--description {
-      color: white;
+      color: aliceblue;
       font-size: 26px;
       margin: 60px 0px;
       text-shadow: 2px 2px 2px #2f303a;
@@ -47,13 +47,6 @@
       width: 50px;
       height: 50px;
       border-radius: 5px;
-      background: rgb(170, 131, 67);
-      background: linear-gradient(
-        90deg,
-        rgba(170, 131, 67, 1) 0%,
-        rgba(215, 207, 120, 1) 50%,
-        rgba(170, 131, 67, 1) 100%
-      );
       position: relative;
 
       &--icon {
@@ -67,4 +60,16 @@
       }
     }
   }
+}
+
+.main.darkTheme p {
+  color: black;
+}
+
+.main.darkTheme .main__headBox {
+  border-bottom: 2px solid black;
+}
+
+.main.darkTheme svg {
+  fill: rgb(22, 22, 22);
 }

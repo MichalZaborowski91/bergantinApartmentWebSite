@@ -11,6 +11,16 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: relative;
+
+  &__header {
+    margin: 0;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 200;
+    position: absolute;
+    top: 5px;
+  }
 
   &__temp {
     color: white;
