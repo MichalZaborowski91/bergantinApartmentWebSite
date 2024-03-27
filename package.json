@@ -8,7 +8,5 @@
   },
   "author": "Michal Zaborowski",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^1.6.7"
-  }
+  "dependencies": {}
 }
