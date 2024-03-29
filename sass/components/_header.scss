@@ -6,7 +6,7 @@
   width: 100%;
   min-width: 350px;
 
-  &--bgColor {
+  &__bgColor {
     background-color: #2f303a;
   }
 
@@ -20,7 +20,7 @@
     border: none;
     cursor: pointer;
 
-    &--icon {
+    &__icon {
       width: 30px;
       height: 30px;
       fill: #c9a845;

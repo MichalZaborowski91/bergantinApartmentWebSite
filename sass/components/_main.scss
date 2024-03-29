@@ -1,11 +1,9 @@
 .main {
   display: flex;
   flex-direction: column;
-
   &__headBox {
     border-bottom: 2px solid white;
-
-    &--head {
+    &__head {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -16,8 +14,7 @@
       font-size: 36px;
       font-weight: 600;
     }
-
-    &--description {
+    &__description {
       color: aliceblue;
       font-size: 26px;
       margin: 60px 0px;
@@ -33,7 +30,6 @@
   padding-left: 0px;
   margin: 60px 0px 40px;
   gap: 15px;
-
   &__item {
     display: flex;
     flex-direction: column;
@@ -42,14 +38,12 @@
     width: 70px;
     color: aliceblue;
     text-shadow: 2px 2px 2px #2f303a;
-
     &__background {
       width: 50px;
       height: 50px;
       border-radius: 5px;
       position: relative;
-
-      &--icon {
+      &__icon {
         width: 40px;
         height: 40px;
         fill: aliceblue;
@@ -62,6 +56,7 @@
   }
 }
 
+//Dark mode
 .main.darkTheme p {
   color: black;
 }

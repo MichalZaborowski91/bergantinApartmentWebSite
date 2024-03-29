@@ -1,30 +1,25 @@
-.location {
+.locationIndex {
   padding-top: 30px;
   padding-bottom: 30px;
-
   &__head {
     margin: 0;
     text-align: center;
   }
-
   &__description {
     margin: 20px 0px 20px;
   }
-
   &__map {
     width: 100%;
     height: auto;
     border-radius: 25px;
     margin-bottom: 20px;
   }
-
-  &__box {
+  &__container {
     display: flex;
     gap: 25px;
     justify-content: space-around;
     max-width: 250px;
     margin: 0 auto;
-
     &__form {
       display: flex;
       flex-direction: column;
@@ -34,13 +29,11 @@
       padding-top: 10px;
       padding-bottom: 10px;
     }
-
     &__graphic {
       width: 80px;
       height: 80px;
       position: relative;
-
-      &--icon {
+      &__icon {
         width: 65px;
         height: 65px;
         fill: black;
@@ -59,11 +52,42 @@
     margin: 0 auto;
     padding-right: 40px;
     max-width: 450px;
-
-    &--list {
+    &__list {
       margin: 0;
       padding-bottom: 15px;
       margin-top: 15px;
     }
   }
+}
+
+//Dark mode
+.locationIndex.darkTheme {
+  background-color: rgb(32, 32, 32);
+}
+
+.locationIndex.darkTheme .locationIndex__head,
+.locationIndex.darkTheme .locationIndex__description {
+  color: aliceblue;
+}
+
+.locationIndex.darkTheme label {
+  color: aliceblue;
+}
+
+.locationIndex.darkTheme select {
+  background-color: rgb(32, 32, 32);
+  color: aliceblue;
+}
+
+.locationIndex.darkTheme .locationIndex__container__graphic__icon {
+  fill: aliceblue;
+}
+
+.locationIndex.darkTheme .locationIndex__distance {
+  background-color: rgb(22, 22, 22);
+  border-color: aliceblue;
+}
+
+.locationIndex.darkTheme .locationIndex__distance__list li {
+  color: aliceblue;
 }

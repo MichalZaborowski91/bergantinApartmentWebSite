@@ -1,17 +1,25 @@
 .travel {
   background-color: aliceblue;
   border-bottom: 30px solid white;
-
   &__box {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 350px;
     margin: 0 auto;
-
-    &--graphic {
+    &__graphic {
       width: 150px;
       height: auto;
     }
   }
+}
+
+//Dark mode
+.travel.darkTheme {
+  background-color: rgb(22, 22, 22);
+  border-bottom: 30px solid rgb(32, 32, 32);
+}
+
+.travel.darkTheme li {
+  color: aliceblue;
 }

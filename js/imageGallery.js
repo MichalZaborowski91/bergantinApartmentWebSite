@@ -2,6 +2,9 @@ const lightboxEnabled = document.querySelectorAll(".lightboxEnabled");
 const lightboxContainer = document.querySelector(".lightboxContainer");
 const lightboxImage = document.querySelector(".lightboxImage");
 const lightboxBtns = document.querySelectorAll(".lightboxBtn");
+const lightboxBtnCancel = document.querySelector(
+  ".lightboxContainer__iconCancel"
+);
 const lightboxBtnLeft = document.querySelector("#left");
 const lightboxBtnRight = document.querySelector("#right");
 const lightboxArray = Array.from(lightboxEnabled);
@@ -9,12 +12,14 @@ let activeImage = 0;
 
 const showLightbox = () => {
   lightboxContainer.classList.add("active");
+  document.body.style.overflow = "hidden";
   hideHeaders();
   setActiveImage(activeImage);
 };
 
 const hideLightbox = () => {
   lightboxContainer.classList.remove("active");
+  document.body.style.overflow = "";
   showHeaders();
 };
 
@@ -50,6 +55,12 @@ const removeBtnAnimation = () => {
   });
 };
 
+const handleEscapeKey = (e) => {
+  if (e.keyCode === 27) {
+    hideLightbox();
+  }
+};
+
 lightboxEnabled.forEach((image, index) => {
   image.addEventListener("click", (e) => {
     activeImage = index;
@@ -57,9 +68,11 @@ lightboxEnabled.forEach((image, index) => {
   });
 });
 
-lightboxContainer.addEventListener("click", () => {
+lightboxBtnCancel.addEventListener("click", () => {
   hideLightbox();
 });
+
+document.addEventListener("keydown", handleEscapeKey);
 
 lightboxBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {

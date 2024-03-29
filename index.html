@@ -82,7 +82,7 @@
           </ul>
         </nav>
         <button type="button" class="header__mobileBtn">
-          <svg class="header__mobileBtn--icon">
+          <svg class="header__mobileBtn__icon">
             <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
@@ -91,10 +91,10 @@
     <main>
       <section class="main container">
         <div class="main__headBox">
-          <h1 class="main__headBox--head">
+          <h1 class="main__headBox__head">
             Bergantin Apartment Torrevieja Spain
           </h1>
-          <p class="main__headBox--description">
+          <p class="main__headBox__description">
             Relax in Spain! A country with over 300 sunny days in a year. Fully
             equipped 2 bedroom apartament in a fantastic location is waiting for
             you! Book now!
@@ -103,7 +103,7 @@
         <ul class="infoList">
           <li class="infoList__item">
             <div class="infoList__item__background">
-              <svg class="infoList__item__background--icon">
+              <svg class="infoList__item__background__icon">
                 <use href="./images/icons/symbol-defs.svg#icon-people"></use>
               </svg>
             </div>
@@ -111,7 +111,7 @@
           </li>
           <li class="infoList__item">
             <div class="infoList__item__background">
-              <svg class="infoList__item__background--icon">
+              <svg class="infoList__item__background__icon">
                 <use href="./images/icons/symbol-defs.svg#icon-surface"></use>
               </svg>
             </div>
@@ -119,7 +119,7 @@
           </li>
           <li class="infoList__item">
             <div class="infoList__item__background">
-              <svg class="infoList__item__background--icon">
+              <svg class="infoList__item__background__icon">
                 <use href="./images/icons/symbol-defs.svg#icon-wifi"></use>
               </svg>
             </div>
@@ -127,7 +127,7 @@
           </li>
           <li class="infoList__item">
             <div class="infoList__item__background">
-              <svg class="infoList__item__background--icon">
+              <svg class="infoList__item__background__icon">
                 <use href="./images/icons/symbol-defs.svg#icon-beach"></use>
               </svg>
             </div>
@@ -144,7 +144,7 @@
           shower.
         </p>
       </section>
-      <section class="gallery">
+      <section class="galleryIndex">
         <!--Slider structure-->
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -218,8 +218,8 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-        <a class="gallery__link" href="gallery.html">
-          <button type="button" class="gallery__button">
+        <a class="galleryIndex__link" href="gallery.html">
+          <button type="button" class="galleryIndex__button">
             <span>Gallery</span>
             <svg>
               <use href="./images/icons/symbol-defs.svg#icon-images"></use>
@@ -235,112 +235,136 @@
           you need for you short and long term holiday.
         </p>
         <div class="aptEquipment__box">
-          <ul class="equipmentList">
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+          <ul class="aptEquipment__box__equipmentList">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use href="./images/icons/symbol-defs.svg#icon-cooker"></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Cooker</p>
+              <p>Cooker</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use
                     href="./images/icons/symbol-defs.svg#icon-microwave"
                   ></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Microwave</p>
+              <p>Microwave</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use href="./images/icons/symbol-defs.svg#icon-fridge"></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Fridge</p>
+              <p>Fridge</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use href="./images/icons/symbol-defs.svg#icon-kettle"></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Kettle</p>
+              <p>Kettle</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use
                     href="./images/icons/symbol-defs.svg#icon-washingMachine"
                   ></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Washing machine</p>
+              <p>Washing machine</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use href="./images/icons/symbol-defs.svg#icon-towel"></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Towels</p>
+              <p>Towels</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use href="./images/icons/symbol-defs.svg#icon-vacuum"></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Vacuum cleaner</p>
+              <p>Vacuum cleaner</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use href="./images/icons/symbol-defs.svg#icon-iron"></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Iron</p>
+              <p>Iron</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use
                     href="./images/icons/symbol-defs.svg#icon-hairDryer"
                   ></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Hair dryer</p>
+              <p>Hair dryer</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use
                     href="./images/icons/symbol-defs.svg#icon-freeWifi"
                   ></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Free WiFi</p>
+              <p>Free WiFi</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use
                     href="./images/icons/symbol-defs.svg#icon-airCondition"
                   ></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Air condition</p>
+              <p>Air condition</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
                   <use href="./images/icons/symbol-defs.svg#icon-tv"></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Tv</p>
+              <p>Tv</p>
             </li>
           </ul>
         </div>
@@ -358,35 +382,35 @@
           to it.
         </p>
         <div>
-          <ul class="equipmentList">
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+          <ul class="about__list">
+            <li class="about__list__item">
+              <div class="about__list__item__container">
+                <svg class="about__list__item__container__icon">
                   <use href="./images/icons/symbol-defs.svg#icon-parking"></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Parking</p>
+              <p>Parking</p>
             </li>
-            <li class="equipmentList__item">
-              <div class="equipmentList__item__box">
-                <svg class="equipmentList__item__box--icon">
+            <li class="about__list__item">
+              <div class="about__list__item__container">
+                <svg class="about__list__item__container__icon">
                   <use href="./images/icons/symbol-defs.svg#icon-lift"></use>
                 </svg>
               </div>
-              <p class="equipmentList__item__label">Lift</p>
+              <p>Lift</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="location container">
-        <h3 class="location__head">Location</h3>
-        <p class="location__description">
+      <section class="locationIndex container">
+        <h3 class="locationIndex__head">Location</h3>
+        <p class="locationIndex__description">
           Perfectly located righ on the mainstreet and very close to the centre
           of Torrevieja. Most popular beaches and shops are a very short walking
           distance from the apartament.
         </p>
         <iframe
-          class="location__map"
+          class="locationIndex__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.868875246692!2d-0.6670256999999998!3d37.98018929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63aa0891523265%3A0xb88011bc9077e914!2sResidencial%20Habaneras%2C%20C.%20Bergantin%2C%2024%2C%2003182%20Torrevieja%2C%20Alicante%2C%20Spain!5e0!3m2!1sen!2sie!4v1709422689097!5m2!1sen!2sie"
           width="600"
           height="450"
@@ -395,8 +419,8 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <div class="location__box">
-          <form class="location__box__form">
+        <div class="locationIndex__container">
+          <form class="locationIndex__container__form">
             <!-- Select list -->
             <label for="option">Distance to:</label>
             <select id="option" onchange="distanceTo()">
@@ -406,14 +430,14 @@
               <option value="4">City centers</option>
             </select>
           </form>
-          <div class="location__box__graphic">
-            <svg class="location__box__graphic--icon">
+          <div class="locationIndex__container__graphic">
+            <svg class="locationIndex__container__graphic__icon">
               <use href="./images/icons/symbol-defs.svg#icon-gps"></use>
             </svg>
           </div>
         </div>
         <!--Dynamic content-->
-        <div class="location__distance"></div>
+        <div class="locationIndex__distance"></div>
       </section>
       <section class="travel container">
         <div class="travel__box">
@@ -424,7 +448,7 @@
               ./images/graphic/airPlane/airPlane_3x.png 3x
             "
             alt="air plane graphic"
-            class="travel__box--graphic"
+            class="travel__box__graphic"
           />
           <ul>
             <li>Alicante airport <b>43,3km</b></li>
@@ -439,7 +463,7 @@
               ./images/graphic/bus/bus_3x.png 3x
             "
             alt="bus graphic"
-            class="travel__box--graphic"
+            class="travel__box__graphic"
           />
           <ul>
             <li>Bus station Torrevieja <b>850m</b></li>
@@ -455,7 +479,7 @@
             ./images/torreviejaView/torreviejaView_3x.jpg 3x
           "
           alt="torrevieja view"
-          class="infoCity__torravieja"
+          class="infoCity__image"
         />
         <p>
           Torrevieja is a Mediterranean-seaside city and municipality on the
@@ -466,14 +490,15 @@
           Las Salinas de Torrevieja.
         </p>
       </section>
-      <section class="container">
-        <div class="weather"></div>
+      <section class="weather container">
+        <h2 class="weather__head">Torrevieja now</h2>
+        <div class="weather__container"></div>
       </section>
-      <section class="callUs container">
-        <h2 class="callUs__head">Contact us</h2>
-        <div class="callUs__boxBtn">
+      <section class="contactIndex container">
+        <h2 class="contactIndex__head">Contact us</h2>
+        <div class="contactIndex__container">
           <a href="tel:+353877052949">
-            <button type="button" class="callUs__boxBtn--button">
+            <button type="button" class="contactIndex__container__button">
               <span>Call</span>
               <svg>
                 <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
@@ -481,7 +506,7 @@
             </button>
           </a>
           <a href="mailto:bergantin@gmail.com">
-            <button type="button" class="callUs__boxBtn--button">
+            <button type="button" class="contactIndex__container__button">
               <span>Email</span>
               <svg>
                 <use href="./images/icons/symbol-defs.svg#icon-email"></use>
@@ -489,7 +514,7 @@
             </button>
           </a>
           <a href="https://chatwith.io/s/bergantin-apartment">
-            <button type="button" class="callUs__boxBtn--button">
+            <button type="button" class="contactIndex__container__button">
               <span>WhatsApp</span>
               <svg>
                 <use href="./images/icons/symbol-defs.svg#icon-whatsapp"></use>
@@ -497,7 +522,7 @@
             </button>
           </a>
           <a href="https://chatwith.io/s/bergantin-apartment">
-            <button type="button" class="callUs__boxBtn--button">
+            <button type="button" class="contactIndex__container__button">
               <span>Messenger</span>
               <svg>
                 <use href="./images/icons/symbol-defs.svg#icon-messenger"></use>
@@ -564,7 +589,7 @@
     <div class="mobileMenu">
       <div class="slider-container">
         <!-- Darkmode -->
-        <input type="checkbox" id="darkModeSlider" />
+        <input type="checkbox" id="darkModeSlider" class="darkModeSlider" />
         <label for="darkModeSlider"></label>
       </div>
 

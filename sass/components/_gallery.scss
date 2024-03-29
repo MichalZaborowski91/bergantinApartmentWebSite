@@ -1,75 +1,8 @@
-.gallery {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-bottom: 30px;
-
-  &__link {
-    margin-top: 20px;
-  }
-
-  &__button {
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    border-style: none;
-    background: rgb(170, 131, 67);
-    background: linear-gradient(
-      90deg,
-      rgba(170, 131, 67, 1) 0%,
-      rgba(215, 207, 120, 1) 50%,
-      rgba(170, 131, 67, 1) 100%
-    );
-    cursor: pointer;
-    color: #2f303a;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    fill: #2f303a;
-    box-shadow: 5px 5px 8px #2f303a;
-  }
-
-  &__button > span {
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  &__button > svg {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-  }
-
-  &__button:focus,
-  &__button:hover {
-    background: rgba(215, 207, 120, 1) 50%;
-    border: 2px solid #2f303a;
-  }
-}
-
-//swiper style
-.swiper {
-  width: 90%;
-  height: fit-content;
-  margin: 0;
-  border-radius: 25px;
-}
-
-.swiper-slide img {
-  width: 100%;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: #2f303a !important;
-}
 .imagesGallery {
   min-width: 350px;
   width: 100%;
-
+  margin-bottom: 30px;
+  margin-top: 30px;
   &__header {
     text-align: center;
     border-bottom: 2px solid #2f303a;
@@ -81,21 +14,14 @@
   width: 100%;
   border-radius: 20px;
 }
-//Dark mode
-.gallery.darkTheme {
-  background-color: rgb(22, 22, 22);
-}
-.gallery.darkTheme .gallery__button {
-  box-shadow: 5px 5px 8px rgb(22, 22, 22);
-}
 
 //Lightbox css
-
 .lightboxEnabled {
   width: 100%;
   object-fit: cover;
   transition: all 250ms ease-in-out;
 }
+
 .lightboxEnabled:hover {
   opacity: 0.8;
   cursor: zoom-in;
@@ -111,11 +37,20 @@
   background-color: rgba(0, 0, 0, 0.9);
   display: grid;
   place-items: center;
-  padding: 1rem;
+  padding: 5px;
   z-index: 1000;
   opacity: 0;
   pointer-events: none;
   transition: all 250ms ease-in-out;
+  &__iconCancel {
+    width: 20px;
+    height: 20px;
+    fill: aliceblue;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
 }
 
 .lightboxContainer.active {
@@ -126,8 +61,8 @@
 .lightboxImageWrapper {
   display: grid;
   place-items: center;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 100vw;
+  max-height: 80vh;
   position: relative;
   box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.4);
 }
@@ -145,6 +80,7 @@
   border-radius: 5px;
   border: none;
 }
+
 .lightboxBtn svg {
   width: 20px;
   height: 20px;
@@ -186,6 +122,5 @@
 .lightboxImage {
   width: 100%;
   border-radius: 20px;
-  object-fit: fit;
-  cursor: zoom-out;
+  object-fit: fill;
 }

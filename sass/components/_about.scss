@@ -3,10 +3,38 @@
   width: 100%;
   padding-bottom: 30px;
   padding-top: 30px;
-
   &__image {
     width: 100%;
     border-radius: 25px;
+  }
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 0;
+    &__item {
+      max-width: 100px;
+      text-align: center;
+      flex-basis: calc((100% - 60px) / 3);
+      &__container {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        margin: 0 auto;
+        &__icon {
+          width: 65px;
+          height: 65px;
+          fill: black;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
   }
 }
 
@@ -14,10 +42,15 @@
   margin: 20px 0px 20px;
 }
 
+//Dark mode
 .about.darkTheme {
   background-color: rgb(22, 22, 22);
 }
 
 .about.darkTheme p {
   color: aliceblue;
+}
+
+.about.darkTheme .about__list__item__container__icon {
+  fill: aliceblue;
 }
