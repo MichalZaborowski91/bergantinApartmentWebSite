@@ -4,6 +4,7 @@
   "description": "bergantin apartment torrevieja spain holiday suite",
   "main": "index.js",
   "scripts": {
+    "start": "parcel src/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michal Zaborowski",

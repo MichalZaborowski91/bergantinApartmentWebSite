@@ -1,6 +1,7 @@
 "use strict";
 
 const darkModeSlider = document.querySelector(".darkModeSlider");
+
 const mobileMenu = document.querySelector(".mobileMenu");
 const aptDescription = document.querySelector(".aptDescription");
 const galleryIndex = document.querySelector(".galleryIndex");
@@ -18,7 +19,9 @@ if (localStorage.getItem("darkMode") === null) {
 }
 
 function checkDarkModeStatus() {
-  if (localStorage.getItem("darkMode") === "true") {
+  const darkModeEnabled = localStorage.getItem("darkMode") === "true";
+  darkModeSlider.checked = darkModeEnabled;
+  if (darkModeEnabled) {
     addDarkTheme();
     darkModeSlider.checked = true;
   } else {
@@ -26,14 +29,31 @@ function checkDarkModeStatus() {
     darkModeSlider.checked = false;
   }
 }
-
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   checkDarkModeStatus();
 });
 
 function addDarkTheme() {
   mobileMenu.classList.add("darkTheme");
-  aptDescription.classList.add("darkTheme");
+
+  if (currentPage === "index" && darkModeSlider.checked === true) {
+    aptDescription.classList.add("darkTheme");
+    galleryIndex.classList.add("darkTheme");
+    aptEquipment.classList.add("darkTheme");
+    about.classList.add("darkTheme");
+    main.classList.add("darkTheme");
+    sectionLocation.classList.add("darkTheme");
+    travel.classList.add("darkTheme");
+    infoCity.classList.add("darkTheme");
+    weather.classList.add("darkTheme");
+    contactIndex.classList.add("darkTheme");
+  }
+}
+
+function removeDarkTheme() {
+  mobileMenu.classList.remove("darkTheme");
+
+  /*aptDescription.classList.add("darkTheme");
   galleryIndex.classList.add("darkTheme");
   aptEquipment.classList.add("darkTheme");
   about.classList.add("darkTheme");
@@ -42,21 +62,7 @@ function addDarkTheme() {
   travel.classList.add("darkTheme");
   infoCity.classList.add("darkTheme");
   weather.classList.add("darkTheme");
-  contactIndex.classList.add("darkTheme");
-}
-
-function removeDarkTheme() {
-  mobileMenu.classList.remove("darkTheme");
-  aptDescription.classList.remove("darkTheme");
-  galleryIndex.classList.remove("darkTheme");
-  aptEquipment.classList.remove("darkTheme");
-  about.classList.remove("darkTheme");
-  main.classList.remove("darkTheme");
-  sectionLocation.classList.remove("darkTheme");
-  travel.classList.remove("darkTheme");
-  infoCity.classList.remove("darkTheme");
-  weather.classList.remove("darkTheme");
-  contactIndex.classList.remove("darkTheme");
+  contactIndex.classList.add("darkTheme");*/
 }
 
 function switchMode() {
@@ -65,7 +71,21 @@ function switchMode() {
   } else {
     removeDarkTheme();
   }
+
   localStorage.setItem("darkMode", darkModeSlider.checked);
 }
 
 darkModeSlider.addEventListener("change", switchMode);
+
+function getCurrentPage() {
+  const path = window.location.pathname;
+  if (path.includes("index.html")) {
+    return "index";
+  } else if (path.includes("gallery.html")) {
+    return "gallery";
+  } else {
+    return "unknown";
+  }
+}
+
+const currentPage = getCurrentPage();
