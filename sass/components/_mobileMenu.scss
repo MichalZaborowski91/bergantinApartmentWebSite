@@ -88,15 +88,16 @@
   }
 }
 
-.mobileMenu.darkTheme {
+//Dark mode
+.darkTheme .mobileMenu {
   background-color: rgb(22, 22, 22);
-  transition: 250ms ease-in-out;
 }
-.mobileMenu.darkTheme > .mobileMenu__close {
-  fill: aliceblue;
-  transition: 250ms ease-in-out;
-}
-.mobileMenu.darkTheme a {
+
+.darkTheme .mobileMenu__facebook,
+.darkTheme .mobileMenu__navigation a {
   color: aliceblue;
-  transition: 250ms ease-in-out;
+}
+
+.darkTheme .mobileMenu__close {
+  fill: aliceblue;
 }

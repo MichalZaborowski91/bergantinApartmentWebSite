@@ -50,11 +50,11 @@
   width: 90%;
   height: fit-content;
   margin: 0;
-  border-radius: 25px;
 }
 
 .swiper-slide img {
   width: 100%;
+  height: auto;
 }
 
 .swiper-button-prev,
@@ -63,10 +63,10 @@
 }
 
 //Dark mode
-.galleryIndex.darkTheme {
+.darkTheme .galleryIndex {
   background-color: rgb(22, 22, 22);
 }
 
-.galleryIndex.darkTheme .galleryIndex__button {
+.darkTheme .galleryIndex__button {
   box-shadow: 5px 5px 8px rgb(22, 22, 22);
 }

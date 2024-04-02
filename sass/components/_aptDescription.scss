@@ -17,10 +17,10 @@
 }
 
 //Dark mode
-.aptDescription.darkTheme {
+.darkTheme .aptDescription {
   background-color: rgb(22, 22, 22);
 }
-.aptDescription.darkTheme > .aptDescription__head,
-.aptDescription.darkTheme > .aptDescription__description {
+.darkTheme .aptDescription__head,
+.darkTheme .aptDescription__description {
   color: aliceblue;
 }

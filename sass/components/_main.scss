@@ -57,14 +57,15 @@
 }
 
 //Dark mode
-.main.darkTheme p {
+.darkTheme .main__headBox__description,
+.darkTheme .infoList__item p {
   color: black;
 }
 
-.main.darkTheme .main__headBox {
+.darkTheme .main__headBox {
   border-bottom: 2px solid black;
 }
 
-.main.darkTheme svg {
-  fill: rgb(22, 22, 22);
+.darkTheme .infoList__item__background__icon {
+  fill: black;
 }

@@ -15,11 +15,11 @@
 }
 
 //Dark mode
-.travel.darkTheme {
+.darkTheme .travel {
   background-color: rgb(22, 22, 22);
-  border-bottom: 30px solid rgb(32, 32, 32);
+  border-bottom: 0px;
 }
 
-.travel.darkTheme li {
+.darkTheme .travel li {
   color: aliceblue;
 }

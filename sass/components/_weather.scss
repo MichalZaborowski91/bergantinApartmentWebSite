@@ -11,7 +11,7 @@
     background-image: url("../../../bergantinApartmentWebSite/images/weather/weatherNightBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 25px;
+    border-radius: 4px;
     max-width: 350px;
     margin: 0 auto;
     display: flex;
@@ -48,10 +48,14 @@
 }
 
 //Dark mode
-.weather.darkTheme {
-  background-color: rgb(32, 32, 32);
+.darkTheme .weather {
+  background-color: rgb(22, 22, 22);
 }
 
-.weather.darkTheme .weather__head {
+.darkTheme .weather__head {
   color: aliceblue;
+}
+
+.darkTheme .weather__container {
+  border: 2px solid aliceblue;
 }

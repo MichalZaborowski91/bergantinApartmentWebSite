@@ -11,7 +11,7 @@
   &__map {
     width: 100%;
     height: auto;
-    border-radius: 25px;
+    border-radius: 4px;
     margin-bottom: 20px;
   }
   &__container {
@@ -47,7 +47,7 @@
 
   &__distance {
     background-color: aliceblue;
-    border-radius: 25px;
+    border-radius: 4px;
     border: 2px solid black;
     margin: 0 auto;
     padding-right: 40px;
@@ -61,33 +61,30 @@
 }
 
 //Dark mode
-.locationIndex.darkTheme {
-  background-color: rgb(32, 32, 32);
+.darkTheme .locationIndex {
+  background-color: rgb(22, 22, 22);
 }
 
-.locationIndex.darkTheme .locationIndex__head,
-.locationIndex.darkTheme .locationIndex__description {
+.darkTheme .locationIndex__head,
+.darkTheme .locationIndex__description {
   color: aliceblue;
 }
 
-.locationIndex.darkTheme label {
+.darkTheme label {
   color: aliceblue;
 }
 
-.locationIndex.darkTheme select {
-  background-color: rgb(32, 32, 32);
+.darkTheme select {
+  background-color: rgb(22, 22, 22);
   color: aliceblue;
 }
 
-.locationIndex.darkTheme .locationIndex__container__graphic__icon {
+.darkTheme .locationIndex__container__graphic__icon {
   fill: aliceblue;
 }
 
-.locationIndex.darkTheme .locationIndex__distance {
+.darkTheme .locationIndex__distance {
   background-color: rgb(22, 22, 22);
-  border-color: aliceblue;
-}
-
-.locationIndex.darkTheme .locationIndex__distance__list li {
   color: aliceblue;
+  border: 2px solid aliceblue;
 }

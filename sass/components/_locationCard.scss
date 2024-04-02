@@ -2,6 +2,8 @@
   min-width: 350px;
   width: 100%;
   &__header {
+    margin: 0;
+    padding-top: 30px;
     line-height: 1.5;
     color: #2f303a;
     text-align: center;
@@ -34,11 +36,10 @@
   padding-bottom: 30px;
   padding-top: 30px;
   min-width: 350px;
-  margin-bottom: 25px;
 
   &__image {
     width: 100%;
-    border-radius: 25px;
+    border-radius: 4px;
   }
 }
 .apartment p {
@@ -49,7 +50,8 @@
   width: 100%;
   min-width: 300px;
   height: auto;
-  border-radius: 25px;
+  border-radius: 4px;
+  padding-top: 25px;
 }
 
 .navigateTo {
@@ -92,4 +94,39 @@
     height: 20px;
     margin-left: 10px;
   }
+}
+
+//Dark mode
+.darkTheme .locationCard {
+  background-color: rgb(22, 22, 22);
+}
+
+.darkTheme .locationCard__header {
+  color: aliceblue;
+  border-bottom: solid 2px aliceblue;
+}
+
+.darkTheme .locationCard__box svg {
+  fill: aliceblue;
+}
+
+.darkTheme .navigateTo {
+  background-color: rgb(22, 22, 22);
+}
+
+.darkTheme .apartment {
+  background-color: rgb(22, 22, 22);
+}
+
+.darkTheme .googleMaps {
+  padding-top: 0px;
+}
+
+.darkTheme .googleMapsContainer {
+  background-color: rgb(22, 22, 22);
+  width: 100%;
+}
+
+.darkTheme .navigateTo__button {
+  box-shadow: 5px 5px 8px rgb(22, 22, 22);
 }
