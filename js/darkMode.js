@@ -1,6 +1,8 @@
 "use strict";
 
 const darkModeSlider = document.querySelector(".darkModeSlider");
+const sunIcon = document.querySelector(".toggleSlider__icon--sun");
+const moonIcon = document.querySelector(".toggleSlider__icon--moon");
 
 if (localStorage.getItem("darkMode") === null) {
   localStorage.setItem("darkMode", "false");
@@ -23,10 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function addDarkTheme() {
   document.body.classList.add("darkTheme");
+  moonIcon.classList.add("activateIcon");
+  sunIcon.classList.remove("activateIcon");
 }
 
 function removeDarkTheme() {
   document.body.classList.remove("darkTheme");
+  sunIcon.classList.add("activateIcon");
+  moonIcon.classList.remove("activateIcon");
 }
 
 function switchMode() {
