@@ -4,10 +4,14 @@
   padding-top: 30px;
   padding-bottom: 30px;
   &__head {
-    font-size: 40px;
+    font-size: 28px;
     text-align: center;
     font-weight: 500;
     margin: 0px;
+    border-bottom: 2px solid #2f303a;
+    line-height: 1.5;
+    color: #2f303a;
+    font-weight: 500;
   }
   &__description {
     font-size: 20px;
@@ -18,9 +22,12 @@
 
 //Dark mode
 .darkTheme .aptDescription {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(32, 32, 32);
 }
-.darkTheme .aptDescription__head,
+.darkTheme .aptDescription__head {
+  color: aliceblue;
+  border-bottom: 2px solid aliceblue;
+}
 .darkTheme .aptDescription__description {
   color: aliceblue;
 }

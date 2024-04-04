@@ -7,8 +7,9 @@
     line-height: 1.5;
     color: #2f303a;
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     border-bottom: solid 2px #2f303a;
+    font-weight: 500;
   }
 
   &__box {
@@ -45,13 +46,15 @@
 .apartment p {
   margin-bottom: 0;
 }
-
-.googleMaps {
-  width: 100%;
-  min-width: 300px;
-  height: auto;
-  border-radius: 4px;
-  padding-top: 25px;
+.googleMapsContainer {
+  min-width: 350px;
+  &__map {
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    border-radius: 4px;
+    padding-top: 25px;
+  }
 }
 
 .navigateTo {
@@ -96,14 +99,47 @@
   }
 }
 
+.parking {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: aliceblue;
+  min-width: 350px;
+  width: 100%;
+  &__head {
+    margin: 0;
+    line-height: 1.5;
+    color: #2f303a;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: solid 2px #2f303a;
+    font-weight: 500;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-top: 20px;
+    &__description {
+      margin: 0;
+      width: 120px;
+    }
+    &__icon {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
 //Dark mode
 .darkTheme .locationCard {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(32, 32, 32);
 }
 
 .darkTheme .locationCard__header {
   color: aliceblue;
-  border-bottom: solid 2px aliceblue;
+  border-bottom: 2px solid aliceblue;
 }
 
 .darkTheme .locationCard__box svg {
@@ -111,11 +147,13 @@
 }
 
 .darkTheme .navigateTo {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(32, 32, 32);
 }
 
 .darkTheme .apartment {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(32, 32, 32);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .darkTheme .googleMaps {
@@ -123,10 +161,25 @@
 }
 
 .darkTheme .googleMapsContainer {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(32, 32, 32);
   width: 100%;
 }
 
 .darkTheme .navigateTo__button {
-  box-shadow: 5px 5px 8px rgb(22, 22, 22);
+  box-shadow: 5px 5px 8px rgb(32, 32, 32);
+}
+
+.darkTheme .parking {
+  background-color: rgb(32, 32, 32);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.darkTheme .parking__head {
+  color: aliceblue;
+  border-bottom: 2px solid aliceblue;
+}
+
+.darkTheme .parking__box__icon {
+  fill: aliceblue;
 }

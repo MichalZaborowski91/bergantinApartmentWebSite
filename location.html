@@ -129,7 +129,7 @@
       </section>
       <section class="googleMapsContainer container">
         <iframe
-          class="googleMaps"
+          class="googleMapsContainer__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.868875246692!2d-0.6670256999999998!3d37.98018929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63aa0891523265%3A0xb88011bc9077e914!2sResidencial%20Habaneras%2C%20C.%20Bergantin%2C%2024%2C%2003182%20Torrevieja%2C%20Alicante%2C%20Spain!5e0!3m2!1sen!2sie!4v1709422689097!5m2!1sen!2sie"
           width="600"
           height="450"
@@ -146,6 +146,30 @@
           target="_blank"
           ><button type="button" class="navigateTo__button">
             <span>Navigate to apartment</span
+            ><svg>
+              <use href="./images/icons/symbol-defs.svg#icon-compass"></use>
+            </svg></button
+        ></a>
+      </div>
+      <section class="parking container">
+        <h2 class="parking__head">Private parking</h2>
+        <div class="parking__box">
+          <p class="parking__box__description">
+            Private underground parking available <b>150m</b> from the
+            apartament.
+          </p>
+          <svg class="parking__box__icon">
+            <use href="./images/icons/symbol-defs.svg#icon-parking"></use>
+          </svg>
+        </div>
+      </section>
+      <div class="navigateTo">
+        <a
+          class="navigateTo__link"
+          href="https://maps.app.goo.gl/7n5YuAVtPNskUUpU6"
+          target="_blank"
+          ><button type="button" class="navigateTo__button">
+            <span>Navigate to parking</span
             ><svg>
               <use href="./images/icons/symbol-defs.svg#icon-compass"></use>
             </svg></button
@@ -205,6 +229,12 @@
         </p>
       </section>
     </footer>
+    <!--Button up-->
+    <button class="btnUp">
+      <svg class="btnUp__icon">
+        <use href="./images/icons/symbol-defs.svg#icon-circleUp"></use>
+      </svg>
+    </button>
     <!--Mobile menu-->
     <div class="mobileMenu">
       <div class="toggleSlider">
@@ -286,5 +316,7 @@
     <script src="./js/language.js"></script>
     <!--Darkmode-->
     <script src="./js/darkMode.js"></script>
+    <!--Buttons-->
+    <script type="module" src="./js/buttons.js"></script>
   </body>
 </html>

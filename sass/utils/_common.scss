@@ -24,3 +24,24 @@ body {
   padding-left: 25px;
   padding-right: 25px;
 }
+
+.btnUp {
+  background: none;
+  border: none;
+  position: fixed;
+  right: 4px;
+  bottom: 4px;
+  cursor: pointer;
+  transition-duration: 250ms;
+  z-index: 9999999;
+  &:focus,
+  &:hover {
+    transition-duration: 250ms;
+    transform: scale(1.2);
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: rgba(170, 131, 67, 1);
+  }
+}

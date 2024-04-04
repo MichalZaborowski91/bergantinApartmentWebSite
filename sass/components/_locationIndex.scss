@@ -4,6 +4,11 @@
   &__head {
     margin: 0;
     text-align: center;
+    border-bottom: 2px solid #2f303a;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #2f303a;
+    font-weight: 500;
   }
   &__description {
     margin: 20px 0px 20px;
@@ -62,10 +67,16 @@
 
 //Dark mode
 .darkTheme .locationIndex {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(32, 32, 32);
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
-.darkTheme .locationIndex__head,
+.darkTheme .locationIndex__head {
+  border-bottom: 2px solid aliceblue;
+  color: aliceblue;
+}
+
 .darkTheme .locationIndex__description {
   color: aliceblue;
 }
@@ -75,7 +86,7 @@
 }
 
 .darkTheme select {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(32, 32, 32);
   color: aliceblue;
 }
 
@@ -84,7 +95,7 @@
 }
 
 .darkTheme .locationIndex__distance {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(32, 32, 32);
   color: aliceblue;
   border: 2px solid aliceblue;
 }

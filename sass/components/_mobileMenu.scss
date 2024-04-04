@@ -96,18 +96,18 @@
   top: 20px;
   &__icon {
     position: absolute;
-    width: 15px;
-    height: 15px;
-
+    width: 13px;
+    height: 13px;
+    fill: #2f303a;
     &--sun {
-      left: 6px;
-      top: 6px;
+      left: 7px;
+      top: 7px;
       display: none;
     }
 
     &--moon {
-      left: 77%;
-      top: 49%;
+      left: 47px;
+      top: 13px;
       transform: translate(-50%, -50%);
       display: none;
     }
@@ -169,7 +169,7 @@
 
 //Dark mode
 .darkTheme .mobileMenu {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(32, 32, 32);
 }
 
 .darkTheme .mobileMenu__facebook,
