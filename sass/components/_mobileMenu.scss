@@ -96,20 +96,21 @@
   top: 20px;
   &__icon {
     position: absolute;
-    width: 13px;
-    height: 13px;
+    width: 17px;
+    height: 17px;
     fill: #2f303a;
     &--sun {
-      left: 7px;
-      top: 7px;
+      left: 65px;
+      top: 5px;
       display: none;
     }
 
     &--moon {
-      left: 47px;
+      left: 73px;
       top: 13px;
       transform: translate(-50%, -50%);
       display: none;
+      fill: aliceblue;
     }
   }
 }

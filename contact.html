@@ -84,7 +84,96 @@
       </section>
     </header>
     <main>
-      <p>CONTACT IN PROGRESS</p>
+      <section class="contact container">
+        <h2 class="contact__head">Contact</h2>
+        <p>
+          Text us <b>any time</b> and we will get back to you as soon as
+          possible. 7 days a week, 24 hours a day. Preferred
+          <u>languages</u> while contacting: <b>english</b>, <b>polish</b>.
+        </p>
+      </section>
+      <section class="mainContactSection container">
+        <ul class="contactCard">
+          <li class="contactCard__box">
+            <div>
+              <h3 class="contactCard__box__head">Call us</h3>
+              <p class="contactCard__box__name">Aleksandra</p>
+
+              <a class="contactCard__box__number" href="tel:+353877052949"
+                >+353877052949</a
+              >
+
+              <p class="contactCard__box__name">Adam</p>
+              <a class="contactCard__box__number" href="tel:+353877052949"
+                >+353877052949</a
+              >
+            </div>
+            <div class="contactCard__iconBackground">
+              <svg class="contactCard__iconBackground__icon">
+                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="contactCard__box">
+            <div>
+              <h3 class="contactCard__box__head">Chat</h3>
+              <p class="contactCard__box__name">Aleksandra</p>
+
+              <a
+                class="contactCard__box__number"
+                href="https://chatwith.io/s/bergantin-apartment"
+                >WhatsApp</a
+              >
+              <a
+                class="contactCard__box__number"
+                href="https://chatwith.io/s/bergantin-apartment"
+                >Messenger</a
+              >
+
+              <p class="contactCard__box__name">Adam</p>
+              <a
+                class="contactCard__box__number"
+                href="https://chatwith.io/s/bergantin-apartment"
+                >WhatsApp</a
+              >
+              <a
+                class="contactCard__box__number"
+                href="https://chatwith.io/s/bergantin-apartment"
+                >Messenger</a
+              >
+            </div>
+            <div class="contactCard__iconBackground">
+              <svg class="contactCard__iconBackground__icon">
+                <use href="./images/icons/symbol-defs.svg#icon-bubble"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="contactCard__box">
+            <div>
+              <h3 class="contactCard__box__head">Email</h3>
+              <p class="contactCard__box__name">Ask a question</p>
+              <a
+                class="contactCard__box__number"
+                href="mailto:bergantin@gmail.com"
+                >bergantin@gmail.com</a
+              >
+              <p class="contactCard__box__name">
+                Email us any time and we will get back to you in 24 hours.
+              </p>
+            </div>
+            <div class="contactCard__iconBackground">
+              <svg class="contactCard__iconBackground__icon">
+                <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!--<section>
+        <a href="mailto:bergantin@gmail.com">bergantin@gmail.com</a>
+        <button>Messenger</button>
+        <button>WhatsApp</button>
+      </section>-->
     </main>
     <footer>
       <section class="footer container">
@@ -162,15 +251,15 @@
       <svg class="mobileMenu__close">
         <use href="./images/icons/symbol-defs.svg#icon-cancel"></use>
       </svg>
-      <nav>
-        <ul class="mobileMenu__navigation">
-          <li><a href="index.html">Start</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="location.html">Location</a></li>
-          <li><a href="bookings.html">Bookings</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+
+      <ul class="mobileMenu__navigation">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
       <ul class="mobileContact">
         <li>
           <a href="tel:+353877052949">
@@ -202,7 +291,7 @@
       </ul>
       <a
         href="https://www.facebook.com/profile.php?id=61555173212339"
-        target="blank"
+        target="_blank"
         class="mobileMenu__facebook"
       >
         <svg class="mobileMenu__facebook--icon">
@@ -224,5 +313,7 @@
     <script src="./js/mobileMenu.js"></script>
     <!--Buttons-->
     <script type="module" src="./js/buttons.js"></script>
+    <!--Darkmode-->
+    <script type="module" src="./js/darkMode.js"></script>
   </body>
 </html>
