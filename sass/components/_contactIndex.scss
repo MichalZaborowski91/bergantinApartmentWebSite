@@ -4,7 +4,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 10px solid white;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(170, 131, 67, 1);
+  border-top: 1px solid rgba(170, 131, 67, 1);
 
   &__head {
     margin: 0;
@@ -66,7 +68,6 @@
   }
 }
 
-//Dark mode
-.darkTheme .contactIndex {
-  border-bottom: 10px solid rgb(32, 32, 32);
+.darkTheme {
+  background-color: rgb(32, 32, 32);
 }
