@@ -46,6 +46,11 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header>
@@ -104,7 +109,7 @@
       </button>
 
       <!--Smoobu calendar example-->
-      <div id="smoobuCalendarIframe">
+      <!--<div id="smoobuCalendarIframe">
         <link
           rel="stylesheet"
           type="text/css"
@@ -122,6 +127,45 @@
           width="1000px"
           src="https://login.smoobu.com/en/cockpit/widget/show-calendar-iframe/1733690/97b6465d19430283579cb84a8403ccef1b217fb8ad7c096f95c1865300515c7d"
         ></iframe>
+      </div>-->
+      <div>
+        <h2>Formularz rezerwacji</h2>
+
+        <form id="reservationForm">
+          <label for="name">Name and surname</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">E-mail</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="arrivalDate">Arrival</label><br />
+          <input
+            type="text"
+            id="arrivalDate"
+            name="arrivalDate"
+            class="date"
+            required
+          /><br /><br />
+
+          <label for="departureDate">Departure</label><br />
+          <input
+            type="text"
+            id="departureDate"
+            name="departureDate"
+            class="date"
+            required
+          /><br /><br />
+
+          <label for="text">Message</label><br />
+          <textarea
+            id="text"
+            name="text"
+            placeholder="Your message..."
+          ></textarea
+          ><br /><br />
+
+          <button type="submit">Send an inquiry</button>
+        </form>
       </div>
     </main>
     <footer>
@@ -252,5 +296,10 @@
     <script src="./js/mobileMenu.js"></script>
     <!--Buttons-->
     <script type="module" src="./js/buttons.js"></script>
+    <!--Flat picker-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.js"></script>
+    <script type="module" src="./js/bookingsForm.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
