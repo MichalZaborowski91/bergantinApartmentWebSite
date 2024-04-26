@@ -44,5 +44,50 @@
 #smoobuCalendarIframe .smallDevices {
   width: 100%;
   display: block;
-  height: 750px;
+  height: 600px;
+}
+
+.bookingForm {
+  width: 100%;
+  margin-top: 15px;
+  &__head {
+    margin: 0;
+
+    line-height: 1.5;
+    color: #2f303a;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: solid 2px #2f303a;
+    font-weight: 500;
+  }
+  &__box {
+    border: 2px solid #2f303a;
+    border-radius: 4px;
+
+    padding: 20px;
+    max-width: 350px;
+    margin: 20px auto 0px;
+  }
+}
+
+#reservationForm input,
+#reservationForm textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+#reservationForm button {
+  border: 3px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 200px;
+  height: 50px;
+  font-weight: 500;
+  display: block;
+
+  margin: 20px auto;
 }

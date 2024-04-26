@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => {
         if (response.data === "OK") {
           console.log("Pomyślnie wysłano żądanie.");
+          formularz.reset();
+          alert("pomyslnie wyslano formularz");
         } else {
           // Obsługa innej odpowiedzi, która powinna być w formacie JSON
           try {
@@ -45,6 +47,5 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         }
       });
-    formularz.reset();
   });
 });
