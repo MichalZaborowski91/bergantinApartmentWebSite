@@ -31,6 +31,20 @@ document.addEventListener("DOMContentLoaded", function () {
         user_id: "bqIBDSZe6hPGWDbqv",
         template_params: emailParams,
       })
-      .then((response) => console.log(response.data));
+      .then((response) => {
+        if (response.data === "OK") {
+          console.log("Pomyślnie wysłano żądanie.");
+        } else {
+          // Obsługa innej odpowiedzi, która powinna być w formacie JSON
+          try {
+            const jsonData = JSON.parse(response.data);
+            console.log("Odpowiedź z serwera:", jsonData);
+            // Reszta kodu
+          } catch (error) {
+            console.error("Błąd parsowania danych JSON:", error);
+          }
+        }
+      });
+    formularz.reset();
   });
 });
