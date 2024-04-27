@@ -20,13 +20,30 @@
 
 .legend {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  &__box {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(255, 191, 191);
-    border-radius: 4px;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__box {
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+
+      &--notAvailable {
+        background-color: rgb(255, 191, 191);
+      }
+
+      &--available {
+        background-color: rgb(249, 249, 249);
+      }
+
+      &--current {
+        border: 2px solid rgb(45, 228, 229);
+      }
+    }
   }
 }
 .termsConditionsBtn {
@@ -44,7 +61,7 @@
 #smoobuCalendarIframe .smallDevices {
   width: 100%;
   display: block;
-  height: 600px;
+  height: 620px;
 }
 
 .bookingForm {
@@ -70,14 +87,38 @@
   }
 }
 
-#reservationForm input,
+.formItem input,
 #reservationForm textarea {
   width: 100%;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+#reservationForm input[type="text"],
+#reservationForm input[type="email"] {
+  padding-left: 40px;
+}
+
+.formItem {
+  position: relative;
+}
+.formIcon {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  width: 25px;
+  height: 25px;
+  fill: #2f303a;
+}
+
+.formItem input {
+  height: 40px;
 }
 
 textarea {
   resize: none;
   height: 80px;
+  padding: 5px;
 }
 
 #reservationForm button {
@@ -90,4 +131,21 @@ textarea {
   display: block;
 
   margin: 20px auto;
+}
+
+.bookingForm span {
+  color: red;
+}
+
+.termsAgreement {
+  display: flex;
+  &__input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  &__label {
+    font-size: 18px;
+    line-height: 1.2;
+  }
 }

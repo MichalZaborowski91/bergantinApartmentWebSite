@@ -95,14 +95,25 @@
 
         <li>
           Simply contact us through contact section or fill the form below the
-          calendar to make an enquiry.
+          calendar to make an inquiry.
         </li>
         <li>Wait for us to get back to you.</li>
       </ol>
       <h2 class="bookings__head">Book now!</h2>
       <div class="legend">
-        <div class="legend__box"></div>
-        <p class="legend__description">Dates in red are not available.</p>
+        <div class="legend__item">
+          <div class="legend__item__box legend__item__box--available"></div>
+          <p>Available dates.</p>
+        </div>
+        <div class="legend__item">
+          <div class="legend__item__box legend__item__box--notAvailable"></div>
+          <p>Dates in red are not available.</p>
+        </div>
+
+        <div class="legend__item">
+          <div class="legend__item__box legend__item__box--current"></div>
+          <p>Current date.</p>
+        </div>
       </div>
       <button type="button" class="termsConditionsBtn">
         Terms and Conditions
@@ -132,30 +143,55 @@
         <h2 class="bookingForm__head">Booking form</h2>
         <div class="bookingForm__box">
           <form id="reservationForm">
-            <label for="name">Name and surname</label><br />
-            <input type="text" id="name" name="name" required /><br /><br />
-
-            <label for="email">E-mail</label><br />
-            <input type="email" id="email" name="email" required /><br /><br />
-
-            <label for="arrivalDate">Arrival</label><br />
-            <input
-              type="text"
-              id="arrivalDate"
-              name="arrivalDate"
-              class="date"
-              required
-            /><br /><br />
-
-            <label for="departureDate">Departure</label><br />
-            <input
-              type="text"
-              id="departureDate"
-              name="departureDate"
-              class="date"
-              required
-            /><br /><br />
-
+            <div class="formItem">
+              <label for="name">Name and surname <span>*</span></label
+              ><br />
+              <input type="text" id="name" name="name" required /><br /><br />
+              <svg class="formIcon">
+                <use href="./images/icons/symbol-defs.svg#icon-user"></use>
+              </svg>
+            </div>
+            <div class="formItem">
+              <label for="email">E-mail <span>*</span></label
+              ><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              /><br /><br />
+              <svg class="formIcon">
+                <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+            <div class="formItem">
+              <label for="arrivalDate">Arrival <span>*</span></label
+              ><br />
+              <input
+                type="text"
+                id="arrivalDate"
+                name="arrivalDate"
+                class="date"
+                required
+              /><br /><br />
+              <svg class="formIcon">
+                <use href="./images/icons/symbol-defs.svg#icon-landing"></use>
+              </svg>
+            </div>
+            <div class="formItem">
+              <label for="departureDate">Departure <span>*</span></label
+              ><br />
+              <input
+                type="text"
+                id="departureDate"
+                name="departureDate"
+                class="date"
+                required
+              /><br /><br />
+              <svg class="formIcon">
+                <use href="./images/icons/symbol-defs.svg#icon-takingOff"></use>
+              </svg>
+            </div>
             <label for="text">Message</label><br />
             <textarea
               id="text"
@@ -163,10 +199,23 @@
               placeholder="Your message here..."
             ></textarea
             ><br /><br />
-
+            <div class="termsAgreement">
+              <input
+                type="checkbox"
+                id="termsAgreement"
+                class="termsAgreement__input"
+                required
+              />
+              <label for="termsAgreement" class="termsAgreement__label"
+                >I declare that I have read and accept
+                <a href="index.html">Data Protection Policy</a> <span>*</span>
+              </label>
+            </div>
             <button type="submit">Send an inquiry</button>
           </form>
         </div>
+        <p>Please <u>make sure</u> your email address <b>is correct</b>.</p>
+        <p><span>*</span> Required fields</p>
       </section>
     </main>
     <footer>
