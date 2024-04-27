@@ -95,8 +95,10 @@
 }
 
 #reservationForm input[type="text"],
+#reservationForm input[type="date"],
 #reservationForm input[type="email"] {
   padding-left: 40px;
+  background-color: white;
 }
 
 .formItem {
