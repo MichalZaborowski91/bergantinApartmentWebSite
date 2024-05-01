@@ -1,4 +1,8 @@
 "use strict";
+
+const closeBtn = document.querySelector(".formInfo__box__closeBtn");
+const formInfo = document.querySelector(".formInfo");
+
 document.addEventListener("DOMContentLoaded", function () {
   flatpickr(".date", {
     dateFormat: "d/m/Y",
@@ -6,6 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const formularz = document.getElementById("reservationForm");
+
+  //Form info after succes
+  const showFormInfo = () => {
+    formInfo.classList.add("active");
+    document.body.style.overflow = "hidden";
+  };
+
+  const hideFormInfo = () => {
+    formInfo.classList.remove("active");
+    document.body.style.overflow = "";
+  };
+
+  closeBtn.addEventListener("click", hideFormInfo);
 
   formularz.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form submission
@@ -33,9 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .then((response) => {
         if (response.data === "OK") {
-          console.log("Pomyślnie wysłano żądanie.");
           formularz.reset();
-          alert("pomyslnie wyslano formularz");
+          showFormInfo();
         } else {
           // Obsługa innej odpowiedzi, która powinna być w formacie JSON
           try {
