@@ -4,9 +4,40 @@ const closeBtn = document.querySelector(".formInfo__box__closeBtn");
 const formInfo = document.querySelector(".formInfo");
 
 document.addEventListener("DOMContentLoaded", function () {
-  flatpickr(".date", {
+  let arrivalDateInput, departureDateInput;
+
+  arrivalDateInput = flatpickr("#arrivalDate", {
     dateFormat: "d/m/Y",
     minDate: "today",
+    onChange: function (selectedDates, dateStr, instance) {
+      // Jeśli zmieniona została data w arrivals, zaktualizuj datę w departures
+      const selectedArrivalDate = selectedDates[0];
+      const selectedDepartureDate = departureDateInput.selectedDates[0];
+      if (
+        selectedDepartureDate &&
+        selectedDepartureDate < selectedArrivalDate
+      ) {
+        // Jeśli data w departures jest wcześniejsza, zaktualizuj datę departures
+
+        departureDateInput.clear();
+      }
+    },
+  });
+
+  departureDateInput = flatpickr("#departureDate", {
+    dateFormat: "d/m/Y",
+    minDate: "today",
+    onChange: function (selectedDates, dateStr, instance) {
+      // Jeśli zmieniona została data w departures, sprawdź czy jest wcześniejsza niż w arrivals
+      const selectedDepartureDate = selectedDates[0];
+      const selectedArrivalDate = arrivalDateInput.selectedDates[0];
+      if (selectedArrivalDate && selectedDepartureDate < selectedArrivalDate) {
+        // Jeśli data w departures jest wcześniejsza, zaktualizuj datę departures
+
+        alert("Invalid date, please choose date after arrival date.");
+        instance.clear();
+      }
+    },
   });
 
   const formularz = document.getElementById("reservationForm");
