@@ -198,3 +198,23 @@ textarea {
 .formInfo.active {
   visibility: visible;
 }
+
+//Dark mode
+.darkTheme .bookings {
+  background-color: rgb(32, 32, 32);
+}
+
+.darkTheme h2 {
+  color: aliceblue;
+  border-bottom: solid 2px aliceblue;
+}
+
+.darkTheme .bookingForm__box {
+  border: 2px solid aliceblue;
+}
+
+.darkTheme #reservationForm button,
+.darkTheme .termsConditionsBtn {
+  border: 3px solid aliceblue;
+  color: aliceblue;
+}
