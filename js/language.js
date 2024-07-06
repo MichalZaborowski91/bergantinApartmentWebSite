@@ -1,8 +1,16 @@
 "use strict";
 
-const polish = document.querySelector(".languagePolish");
+document.addEventListener("DOMContentLoaded", function () {
+  function changeLanguage(event) {
+    const selectedLanguageUrl = event.currentTarget.getAttribute("data-url");
+    window.location.href = selectedLanguageUrl;
+  }
 
-function changeLanguage() {
-  const selectedLanguage = document.getElementById("languageSelect").value;
-  window.location.href = selectedLanguage;
-}
+  // Select all elements with the class 'languageSelect'
+  const languageButtons = document.querySelectorAll(".languageSelect");
+
+  // Add event listener to each button
+  languageButtons.forEach((button) => {
+    button.addEventListener("click", changeLanguage);
+  });
+});
