@@ -58,6 +58,9 @@
     }
   }
 }
+.activeTab a {
+  color: #c9a845;
+}
 
 .mobileContact {
   list-style: none;
@@ -193,4 +196,8 @@
 
 .darkTheme .mobileMenu__close {
   fill: aliceblue;
+}
+
+.darkTheme .activeTab a {
+  color: #c9a845;
 }

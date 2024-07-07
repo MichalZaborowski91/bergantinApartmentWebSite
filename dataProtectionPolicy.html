@@ -221,15 +221,15 @@
       <svg class="mobileMenu__close">
         <use href="./images/icons/symbol-defs.svg#icon-cancel"></use>
       </svg>
-
-      <ul class="mobileMenu__navigation">
-        <li><a href="index.html">Start</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="location.html">Location</a></li>
-        <li><a href="bookings.html">Bookings</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-
+      <nav>
+        <ul class="mobileMenu__navigation">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li class="activeTab"><a href="bookings.html">Bookings</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
       <ul class="mobileContact">
         <li>
           <a href="tel:+353877052949">
@@ -274,7 +274,8 @@
           <li>
             <button
               class="languageSelect languageEnglish"
-              data-url="./index.html"
+              data-url="./bookings.html"
+              data-language="en"
             >
               <img
                 src="./images/languages/england 727x484.jpg"
@@ -286,7 +287,8 @@
           <li>
             <button
               class="languageSelect languagePolish"
-              data-url="./languages/pl/index_pl.html"
+              data-url="./languages/pl/bookings_pl.html"
+              data-language="pl"
             >
               <img
                 src="./images/languages/poland 727x484.jpg"
@@ -298,7 +300,8 @@
           <li>
             <button
               class="languageSelect languageGerman"
-              data-url="./languages/de/index_de.html"
+              data-url="./languages/de/bookings_de.html"
+              data-language="de"
             >
               <img
                 src="./images/languages/germany 727x484.jpg"
@@ -310,7 +313,8 @@
           <li>
             <button
               class="languageSelect languageSpanish"
-              data-url="./languages/es/index_es.html"
+              data-url="./languages/es/bookings_es.html"
+              data-language="es"
             >
               <img
                 src="./images/languages/spain 727x484.jpg"
@@ -322,7 +326,8 @@
           <li>
             <button
               class="languageSelect languageFrench"
-              data-url="./languages/fr/index_fr.html"
+              data-url="./languages/fr/bookings_fr.html"
+              data-language="fr"
             >
               <img
                 src="./images/languages/french 727x484.jpg"
