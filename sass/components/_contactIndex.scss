@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
 
   &__head {
     margin: 0;
@@ -63,6 +62,10 @@
 }
 
 //Dark mode
-.darkTheme {
+.darkTheme .contactIndex {
   background-color: var(--darkMode-color);
+}
+
+.darkTheme .contactIndex__head {
+  border-bottom: none;
 }
