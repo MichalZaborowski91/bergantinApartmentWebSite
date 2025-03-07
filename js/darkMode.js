@@ -8,7 +8,7 @@ if (localStorage.getItem("darkMode") === null) {
   localStorage.setItem("darkMode", "false");
 }
 
-function checkDarkModeStatus() {
+const checkDarkModeStatus = () => {
   const darkModeEnabled = localStorage.getItem("darkMode") === "true";
   darkModeSlider.checked = darkModeEnabled;
   if (darkModeEnabled) {
@@ -18,30 +18,28 @@ function checkDarkModeStatus() {
     removeDarkTheme();
     darkModeSlider.checked = false;
   }
-}
-document.addEventListener("DOMContentLoaded", () => {
-  checkDarkModeStatus();
-});
+};
+document.addEventListener("DOMContentLoaded", checkDarkModeStatus);
 
-function addDarkTheme() {
+const addDarkTheme = () => {
   document.body.classList.add("darkTheme");
   moonIcon.classList.add("activateIcon");
   sunIcon.classList.remove("activateIcon");
-}
+};
 
-function removeDarkTheme() {
+const removeDarkTheme = () => {
   document.body.classList.remove("darkTheme");
   sunIcon.classList.add("activateIcon");
   moonIcon.classList.remove("activateIcon");
-}
+};
 
-function switchMode() {
+const switchMode = () => {
   if (darkModeSlider.checked) {
     addDarkTheme();
   } else {
     removeDarkTheme();
   }
   localStorage.setItem("darkMode", darkModeSlider.checked);
-}
+};
 
 darkModeSlider.addEventListener("change", switchMode);

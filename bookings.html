@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Normalize-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -12,14 +13,14 @@
       referrerpolicy="no-referrer"
     />
     <title>Bookings</title>
-    <!--font-->
+    <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!--favicon-->
+    <!--Favicon-->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -45,19 +46,21 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <!--Style-->
     <link rel="stylesheet" href="./css/main.min.css" />
+    <!--Flatpickr-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header>
-      <section class="header header__bgColor container">
+      <div class="header header__bgColor container">
         <a href="index.html">
           <img
             class="header__logo"
+            src="./images/bergantinApartmentLogo/bergantinLogo_1x.png"
             srcset="
               ./images/bergantinApartmentLogo/bergantinLogo_1x.png 1x,
               ./images/bergantinApartmentLogo/bergantinLogo_2x.png 2x,
@@ -86,7 +89,7 @@
             <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
-      </section>
+      </div>
     </header>
     <main class="bookings container">
       <h2 class="bookings__head">How to book</h2>
@@ -118,7 +121,6 @@
       <button type="button" class="termsConditionsBtn">
         Terms and Conditions
       </button>
-
       <!--Smoobu calendar example-->
       <div id="smoobuCalendarIframe">
         <link
@@ -128,14 +130,14 @@
         />
         <iframe
           class="smallDevices"
-          height="540px"
-          width="280px"
+          height="540"
+          width="280"
           src="https://login.smoobu.com/en/cockpit/widget/show-calendar-iframe/1733690/97b6465d19430283579cb84a8403ccef1b217fb8ad7c096f95c1865300515c7d"
         ></iframe>
         <iframe
           class="bigDevices"
-          height="600px"
-          width="1000px"
+          height="600"
+          width="1000"
           src="https://login.smoobu.com/en/cockpit/widget/show-calendar-iframe/1733690/97b6465d19430283579cb84a8403ccef1b217fb8ad7c096f95c1865300515c7d"
         ></iframe>
       </div>
@@ -220,10 +222,11 @@
       </section>
     </main>
     <footer>
-      <section class="footer container">
+      <div class="footer container">
         <a href="index.html">
           <img
             class="footer__logo"
+            src="./images/bergantinApartmentLogo/bergantinLogo_1x.png"
             srcset="
               ./images/bergantinApartmentLogo/bergantinLogo_1x.png 1x,
               ./images/bergantinApartmentLogo/bergantinLogo_2x.png 2x,
@@ -234,13 +237,11 @@
         </a>
         <div class="availability">
           <p class="availability__head">Contact us</p>
-          <a class="availability__link" href="contact.html">
-            <button type="button" class="availability__button">
-              <span>Contact</span>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
-              </svg>
-            </button>
+          <a class="availability__button" href="contact.html">
+            <span>Contact</span>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+            </svg>
           </a>
         </div>
         <address class="footer__address">
@@ -270,7 +271,7 @@
             <use href="./images/icons/symbol-defs.svg#icon-heart"></use>
           </svg>
         </p>
-      </section>
+      </div>
     </footer>
     <!--Button up-->
     <button class="btnUp">
@@ -278,31 +279,30 @@
         <use href="./images/icons/symbol-defs.svg#icon-circleUp"></use>
       </svg>
     </button>
-    <!--Contact button-->
+    <!--Contact button widget-->
     <div>
       <button class="contactWidget">
         <svg class="contactWidget__icon">
           <use href="./images/icons/symbol-defs.svg#icon-chat"></use>
         </svg>
       </button>
-      <a href="mailto:bergantin@gmail.com">
-        <button class="widgetEmail">
-          <svg class="widgetEmail__icon">
-            <use href="./images/icons/symbol-defs.svg#icon-email"></use>
-          </svg></button
-      ></a>
-      <a href="https://chatwith.io/s/bergantin-apartment">
-        <button class="widgetWhatsapp">
-          <svg class="widgetWhatsapp__icon">
-            <use href="./images/icons/symbol-defs.svg#icon-whatsapp"></use>
-          </svg></button
-      ></a>
-      <a href="tel:+353877052949">
-        <button class="widgetPhone">
-          <svg class="widgetPhone__icon">
-            <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
-          </svg>
-        </button>
+      <a href="mailto:bergantin@gmail.com" class="widgetEmail">
+        <svg class="widgetEmail__icon">
+          <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+        </svg>
+      </a>
+      <a
+        href="https://chatwith.io/s/bergantin-apartment"
+        class="widgetWhatsapp"
+      >
+        <svg class="widgetWhatsapp__icon">
+          <use href="./images/icons/symbol-defs.svg#icon-whatsapp"></use>
+        </svg>
+      </a>
+      <a href="tel:+353877052949" class="widgetPhone">
+        <svg class="widgetPhone__icon">
+          <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+        </svg>
       </a>
     </div>
     <!--Mobile menu-->
@@ -375,65 +375,56 @@
           <li>
             <button
               class="languageSelect languageEnglish"
-              data-url="./bookings.html"
+              data-url="./index.html"
               data-language="en"
             >
               <img
-                src="./images/languages/england 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/england.jpg"
+                alt="Flag of the england"
+                width="30"
+                height="20"
               />
             </button>
           </li>
           <li>
             <button
               class="languageSelect languagePolish"
-              data-url="./languages/pl/bookings_pl.html"
+              data-url="./languages/pl/index_pl.html"
               data-language="pl"
             >
               <img
-                src="./images/languages/poland 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/poland.jpg"
+                alt="Flag of the poland"
+                width="30"
+                height="20"
               />
             </button>
           </li>
           <li>
             <button
               class="languageSelect languageGerman"
-              data-url="./languages/de/bookings_de.html"
+              data-url="./languages/de/index_de.html"
               data-language="de"
             >
               <img
-                src="./images/languages/germany 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/germany.jpg"
+                alt="Flag of the germany"
+                width="30"
+                height="20"
               />
             </button>
           </li>
           <li>
             <button
               class="languageSelect languageSpanish"
-              data-url="./languages/es/bookings_es.html"
+              data-url="./languages/es/index_es.html"
               data-language="es"
             >
               <img
-                src="./images/languages/spain 727x484.jpg"
-                width="30px"
-                height="20px"
-              />
-            </button>
-          </li>
-          <li>
-            <button
-              class="languageSelect languageFrench"
-              data-url="./languages/fr/bookings_fr.html"
-              data-language="fr"
-            >
-              <img
-                src="./images/languages/french 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/spain.jpg"
+                alt="Flag of the spain"
+                width="30"
+                height="20"
               />
             </button>
           </li>
@@ -448,20 +439,24 @@
         <button class="formInfo__box__closeBtn" type="button">Close</button>
       </div>
     </div>
+    <!--SCRIPTS-->
     <!--Mobile menu script-->
     <script src="./js/mobileMenu.js"></script>
     <!--Buttons-->
-    <script type="module" src="./js/buttons.js"></script>
-    <!--Flat picker-->
+    <script src="./js/buttons.js"></script>
+    <!--Flatpickr-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.js"></script>
-    <script type="module" src="./js/bookingsForm.js"></script>
+    <!--Bookings-->
+    <script src="./js/bookingsForm.js"></script>
+    <!--EmailJS-->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!--Darkmode-->
-    <script type="module" src="./js/darkMode.js"></script>
+    <script src="./js/darkMode.js"></script>
     <!--Contact widget-->
-    <script type="module" src="./js/contactWidget.js"></script>
+    <script src="./js/contactWidget.js"></script>
     <!--Language-->
-    <script type="module" src="./js/language.js"></script>
+    <script src="./js/language.js"></script>
+    <!--Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>

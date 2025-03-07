@@ -1,15 +1,15 @@
 .infoCity {
-  background-color: aliceblue;
+  background-color: var(--accent-color);
   width: 100%;
   padding-bottom: 30px;
   padding-top: 30px;
   &__head {
     margin: 0px 0px 20px;
     text-align: center;
-    border-bottom: 2px solid #2f303a;
+    border-bottom: 2px solid var(--primary-color);
     font-size: 24px;
     line-height: 1.5;
-    color: #2f303a;
+    color: var(--primary-color);
     font-weight: 500;
   }
   &__image {
@@ -20,20 +20,21 @@
 
 .infoCity > p {
   margin: 20px 0px 0px;
+  text-align: justify;
 }
 
 //Dark mode
 .darkTheme .infoCity {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
 .darkTheme .infoCity__head {
-  color: aliceblue;
-  border-bottom: 2px solid aliceblue;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .darkTheme p {
-  color: aliceblue;
+  color: var(--accent-color);
 }

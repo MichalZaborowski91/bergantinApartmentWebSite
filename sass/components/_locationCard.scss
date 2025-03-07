@@ -5,10 +5,10 @@
     margin: 0;
     padding-top: 30px;
     line-height: 1.5;
-    color: #2f303a;
+    color: var(--primary-color);
     text-align: center;
     font-size: 24px;
-    border-bottom: solid 2px #2f303a;
+    border-bottom: solid 2px var(--primary-color);
     font-weight: 500;
   }
 
@@ -27,12 +27,12 @@
   }
   &__box svg {
     width: 70px;
-    fill: #2f303a;
+    fill: var(--primary-color);
   }
 }
 
 .apartment {
-  background-color: aliceblue;
+  background-color: var(--accent-color);
   width: 100%;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -45,6 +45,7 @@
 }
 .apartment p {
   margin-bottom: 0;
+  text-align: justify;
 }
 .googleMapsContainer {
   min-width: 350px;
@@ -63,29 +64,21 @@
   display: flex;
   justify-content: center;
 
-  &__link {
-    margin: 20px 0px 30px;
-  }
-
   &__button {
     width: 300px;
     height: 50px;
     border-radius: 5px;
     border-style: none;
-    background: rgb(170, 131, 67);
-    background: linear-gradient(
-      90deg,
-      rgba(170, 131, 67, 1) 0%,
-      rgba(215, 207, 120, 1) 50%,
-      rgba(170, 131, 67, 1) 100%
-    );
+    background: var(--buttons-theme);
     cursor: pointer;
-    color: #2f303a;
+    color: var(--primary-color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    fill: #2f303a;
-    box-shadow: 5px 5px 8px #2f303a;
+    fill: var(--primary-color);
+    box-shadow: 5px 5px 8px var(--primary-color);
+    margin: 20px 0px 30px;
+    text-decoration: none;
   }
   &__button > span {
     font-size: 18px;
@@ -102,16 +95,16 @@
 .parking {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: aliceblue;
+  background-color: var(--accent-color);
   min-width: 350px;
   width: 100%;
   &__head {
     margin: 0;
     line-height: 1.5;
-    color: #2f303a;
+    color: var(--primary-color);
     text-align: center;
     font-size: 24px;
-    border-bottom: solid 2px #2f303a;
+    border-bottom: solid 2px var(--primary-color);
     font-weight: 500;
   }
   &__box {
@@ -134,24 +127,24 @@
 
 //Dark mode
 .darkTheme .locationCard {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
 }
 
 .darkTheme .locationCard__header {
-  color: aliceblue;
-  border-bottom: 2px solid aliceblue;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .darkTheme .locationCard__box svg {
-  fill: aliceblue;
+  fill: var(--accent-color);
 }
 
 .darkTheme .navigateTo {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
 }
 
 .darkTheme .apartment {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -161,25 +154,25 @@
 }
 
 .darkTheme .googleMapsContainer {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
   width: 100%;
 }
 
 .darkTheme .navigateTo__button {
-  box-shadow: 5px 5px 8px rgb(32, 32, 32);
+  box-shadow: 5px 5px 8px var(--darkMode-color);
 }
 
 .darkTheme .parking {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .darkTheme .parking__head {
-  color: aliceblue;
-  border-bottom: 2px solid aliceblue;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .darkTheme .parking__box__icon {
-  fill: aliceblue;
+  fill: var(--accent-color);
 }

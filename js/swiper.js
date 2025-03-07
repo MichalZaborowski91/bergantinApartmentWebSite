@@ -1,5 +1,6 @@
 "use strict";
 
+//Swiper library logic
 const swiper = new Swiper(".swiper", {
   loop: true,
   navigation: {

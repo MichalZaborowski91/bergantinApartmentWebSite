@@ -2,31 +2,35 @@
 
 const btnUp = document.querySelector(".btnUp");
 btnUp.style.display = "none";
-window.onscroll = function () {
+window.onscroll = () => {
   scrollFunction();
 };
 
-function scrollFunction() {
+const scrollFunction = () => {
   if (document.documentElement.scrollTop > 880) {
     btnUp.style.display = "block";
   } else {
     btnUp.style.display = "none";
   }
   btnUp.addEventListener("click", scrollToTop);
-}
+};
 
-function scrollToTop() {
+const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
-}
+};
 
-//Footer heart beat
+//Heart beat in footer
 const heartIcon = document.getElementById("heartIcon");
-const initialScale = 1;
-const firstBeat = 1.1;
-const secondBeat = 1.3;
-const transition = "transform 200ms ease-in-out";
+
+const heartTransform = {
+  initialScale: 1,
+  firstBeat: 1.1,
+  secondBeat: 1.3,
+  transition: "transform 200ms ease-in-out",
+};
 
 const heartbeat = () => {
+  const { initialScale, firstBeat, secondBeat, transition } = heartTransform;
   heartIcon.style.transform = `scale(${firstBeat})`;
   heartIcon.style.transition = transition;
 

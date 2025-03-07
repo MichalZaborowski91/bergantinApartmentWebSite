@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     pl: "/bergantinApartmentWebSite/languages/pl/index_pl.html",
     de: "/bergantinApartmentWebSite/languages/de/index_de.html",
     es: "/bergantinApartmentWebSite/languages/es/index_es.html",
-    fr: "/bergantinApartmentWebSite/languages/fr/index_fr.html",
   };
 
   // If selectedLanguage is set and session is not checked

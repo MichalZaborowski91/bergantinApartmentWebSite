@@ -1,6 +1,6 @@
 .travel {
-  background-color: aliceblue;
-  border-bottom: 30px solid white;
+  background-color: var(--accent-color);
+  border-bottom: 30px solid var(--white-steady);
   &__box {
     display: flex;
     justify-content: center;
@@ -16,10 +16,10 @@
 
 //Dark mode
 .darkTheme .travel {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
   border-bottom: 0px;
 }
 
 .darkTheme .travel li {
-  color: aliceblue;
+  color: var(--accent-color);
 }

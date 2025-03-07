@@ -1,33 +1,25 @@
 .galleryIndex {
-  background-color: aliceblue;
+  background-color: var(--accent-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding-bottom: 30px;
-  &__link {
-    margin-top: 20px;
-  }
   &__button {
     width: 150px;
     height: 50px;
+    margin-top: 20px;
     border-radius: 5px;
     border-style: none;
-    background: rgb(170, 131, 67);
-    background: linear-gradient(
-      90deg,
-      rgba(170, 131, 67, 1) 0%,
-      rgba(215, 207, 120, 1) 50%,
-      rgba(170, 131, 67, 1) 100%
-    );
+    background: var(--buttons-theme);
     cursor: pointer;
-    color: #2f303a;
+    color: var(--primary-color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    fill: #2f303a;
-    box-shadow: 5px 5px 8px #2f303a;
+    fill: var(--primary-color);
+    box-shadow: 5px 5px 8px var(--primary-color);
   }
   &__button > span {
     font-size: 18px;
@@ -41,7 +33,7 @@
   &__button:focus,
   &__button:hover {
     background: rgba(215, 207, 120, 1) 50%;
-    border: 2px solid #2f303a;
+    border: 2px solid var(--primary-color);
   }
 }
 
@@ -59,14 +51,14 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #2f303a !important;
+  color: var(--primary-color) !important;
 }
 
 //Dark mode
 .darkTheme .galleryIndex {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
 }
 
 .darkTheme .galleryIndex__button {
-  box-shadow: 5px 5px 8px rgb(32, 32, 32);
+  box-shadow: 5px 5px 8px var(--darkMode-color);
 }

@@ -6,10 +6,10 @@
     margin: 0;
     padding-top: 30px;
     line-height: 1.5;
-    color: #2f303a;
+    color: var(--primary-color);
     text-align: center;
     font-size: 24px;
-    border-bottom: solid 2px #2f303a;
+    border-bottom: solid 2px var(--primary-color);
     font-weight: 500;
   }
 
@@ -17,7 +17,7 @@
     margin: 0;
     padding-top: 20px;
     line-height: 1.5;
-    color: #2f303a;
+    color: var(--primary-color);
     font-size: 20px;
     font-weight: 600;
   }
@@ -25,12 +25,12 @@
 
 //Dark mode
 .darkTheme .policy__mainHead {
-  color: aliceblue;
-  border-bottom: solid 2px aliceblue;
+  color: var(--accent-color);
+  border-bottom: solid 2px var(--accent-color);
 }
 
 .darkTheme .policy__secondaryHead,
 .darkTheme p,
 .darkTheme li {
-  color: aliceblue;
+  color: var(--accent-color);
 }

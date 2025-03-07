@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Normalize-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -12,14 +13,14 @@
       referrerpolicy="no-referrer"
     />
     <title>Contact</title>
-    <!--font-->
+    <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!--favicon-->
+    <!--Favicon-->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -45,14 +46,16 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <!--Style-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
-      <section class="header header__bgColor container">
+      <div class="header header__bgColor container">
         <a href="index.html">
           <img
             class="header__logo"
+            src=" ./images/bergantinApartmentLogo/bergantinLogo_1x.png"
             srcset="
               ./images/bergantinApartmentLogo/bergantinLogo_1x.png 1x,
               ./images/bergantinApartmentLogo/bergantinLogo_2x.png 2x,
@@ -81,7 +84,7 @@
             <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
-      </section>
+      </div>
     </header>
     <main>
       <section class="contact container">
@@ -92,18 +95,13 @@
           <u>languages</u> while contacting: <b>english</b>, <b>polish</b>.
         </p>
       </section>
-      <section class="mainContactSection container">
+      <div class="mainContactSection container">
         <ul class="contactCard">
           <li class="contactCard__box">
             <div>
               <h3 class="contactCard__box__head">Call us</h3>
               <p class="contactCard__box__name">Aleksandra</p>
 
-              <a class="contactCard__box__number" href="tel:+353877052949"
-                >+353877052949</a
-              >
-
-              <p class="contactCard__box__name">Adam</p>
               <a class="contactCard__box__number" href="tel:+353877052949"
                 >+353877052949</a
               >
@@ -119,18 +117,6 @@
               <h3 class="contactCard__box__head">Chat</h3>
               <p class="contactCard__box__name">Aleksandra</p>
 
-              <a
-                class="contactCard__box__number"
-                href="https://chatwith.io/s/bergantin-apartment"
-                >WhatsApp</a
-              >
-              <a
-                class="contactCard__box__number"
-                href="https://chatwith.io/s/bergantin-apartment"
-                >Messenger</a
-              >
-
-              <p class="contactCard__box__name">Adam</p>
               <a
                 class="contactCard__box__number"
                 href="https://chatwith.io/s/bergantin-apartment"
@@ -157,9 +143,6 @@
                 href="mailto:bergantin@gmail.com"
                 >bergantin@gmail.com</a
               >
-              <p class="contactCard__box__name">
-                Email us any time and we will get back to you in 24 hours.
-              </p>
             </div>
             <div class="contactCard__iconBackground">
               <svg class="contactCard__iconBackground__icon">
@@ -168,18 +151,14 @@
             </div>
           </li>
         </ul>
-      </section>
-      <!--<section>
-        <a href="mailto:bergantin@gmail.com">bergantin@gmail.com</a>
-        <button>Messenger</button>
-        <button>WhatsApp</button>
-      </section>-->
+      </div>
     </main>
     <footer>
-      <section class="footer container">
+      <div class="footer container">
         <a href="index.html">
           <img
             class="footer__logo"
+            src="./images/bergantinApartmentLogo/bergantinLogo_1x.png"
             srcset="
               ./images/bergantinApartmentLogo/bergantinLogo_1x.png 1x,
               ./images/bergantinApartmentLogo/bergantinLogo_2x.png 2x,
@@ -190,13 +169,11 @@
         </a>
         <div class="availability">
           <p class="availability__head">Check availability</p>
-          <a class="availability__link" href="bookings.html">
-            <button type="button" class="availability__button">
-              <span>Bookings</span>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-calendar"></use>
-              </svg>
-            </button>
+          <a class="availability__button" href="bookings.html">
+            <span>Bookings</span>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-calendar"></use>
+            </svg>
           </a>
         </div>
         <address class="footer__address">
@@ -226,9 +203,9 @@
             <use href="./images/icons/symbol-defs.svg#icon-heart"></use>
           </svg>
         </p>
-      </section>
+      </div>
     </footer>
-    <!--Button up-->
+    <!--Button up widget-->
     <button class="btnUp">
       <svg class="btnUp__icon">
         <use href="./images/icons/symbol-defs.svg#icon-circleUp"></use>
@@ -237,7 +214,7 @@
     <!--Mobile menu-->
     <div class="mobileMenu">
       <div class="toggleSlider">
-        <!-- Darkmode -->
+        <!--Darkmode slider-->
         <input type="checkbox" id="darkModeSlider" class="darkModeSlider" />
         <label for="darkModeSlider" class="slider">
           <svg class="toggleSlider__icon toggleSlider__icon--sun">
@@ -304,78 +281,70 @@
           <li>
             <button
               class="languageSelect languageEnglish"
-              data-url="./contact.html"
+              data-url="./index.html"
               data-language="en"
             >
               <img
-                src="./images/languages/england 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/england.jpg"
+                alt="Flag of the england"
+                width="30"
+                height="20"
               />
             </button>
           </li>
           <li>
             <button
               class="languageSelect languagePolish"
-              data-url="./languages/pl/contact_pl.html"
+              data-url="./languages/pl/index_pl.html"
               data-language="pl"
             >
               <img
-                src="./images/languages/poland 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/poland.jpg"
+                alt="Flag of the poland"
+                width="30"
+                height="20"
               />
             </button>
           </li>
           <li>
             <button
               class="languageSelect languageGerman"
-              data-url="./languages/de/contact_de.html"
+              data-url="./languages/de/index_de.html"
               data-language="de"
             >
               <img
-                src="./images/languages/germany 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/germany.jpg"
+                alt="Flag of the germany"
+                width="30"
+                height="20"
               />
             </button>
           </li>
           <li>
             <button
               class="languageSelect languageSpanish"
-              data-url="./languages/es/contact_es.html"
+              data-url="./languages/es/index_es.html"
               data-language="es"
             >
               <img
-                src="./images/languages/spain 727x484.jpg"
-                width="30px"
-                height="20px"
-              />
-            </button>
-          </li>
-          <li>
-            <button
-              class="languageSelect languageFrench"
-              data-url="./languages/fr/contact_fr.html"
-              data-language="fr"
-            >
-              <img
-                src="./images/languages/french 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/spain.jpg"
+                alt="Flag of the spain"
+                width="30"
+                height="20"
               />
             </button>
           </li>
         </ul>
       </div>
     </div>
+    <!--SCRIPTS-->
     <!--Mobile menu script-->
     <script src="./js/mobileMenu.js"></script>
     <!--Buttons-->
-    <script type="module" src="./js/buttons.js"></script>
+    <script src="./js/buttons.js"></script>
     <!--Darkmode-->
-    <script type="module" src="./js/darkMode.js"></script>
+    <script src="./js/darkMode.js"></script>
     <!--Language-->
-    <script type="module" src="./js/language.js"></script>
+    <script src="./js/language.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 .about {
-  background-color: aliceblue;
+  background-color: var(--accent-color);
   width: 100%;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -27,7 +27,7 @@
         &__icon {
           width: 65px;
           height: 65px;
-          fill: black;
+          fill: var(--black-steady);
           position: absolute;
           left: 50%;
           top: 50%;
@@ -40,17 +40,18 @@
 
 .about > p {
   margin: 20px 0px 20px;
+  text-align: justify;
 }
 
 //Dark mode
 .darkTheme .about {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
 }
 
 .darkTheme .about__list__item__container__icon {
-  fill: aliceblue;
+  fill: var(--accent-color);
 }
 
 .darkTheme .about p {
-  color: aliceblue;
+  color: var(--accent-color);
 }

@@ -1,23 +1,33 @@
 .mobileMenu {
   position: fixed;
   top: 0;
-  left: 0;
-  background-color: white;
-  width: 100%;
+  right: 0;
+  background-color: var(--white-steady);
+  width: 80%;
   height: 100%;
   z-index: 999999999;
-  display: none;
   overflow-y: scroll;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border: 2px solid var(--secondary-color);
+  opacity: 0;
+  visibility: hidden;
   transition: 250ms ease-in-out;
 
+  @media (min-height: 700px) {
+    height: 85%;
+  }
+  @media (min-height: 850px) {
+    height: 80%;
+  }
+
   &__close {
-    fill: #2f303a;
+    fill: var(--primary-color);
     width: 20px;
     height: 20px;
     position: fixed;
     right: 20px;
     top: 20px;
-    transition: 250ms ease-in-out;
   }
 
   &__navigation {
@@ -25,22 +35,22 @@
     flex-direction: column;
     list-style: none;
     padding-right: 40px;
-    margin-top: 90px;
+    margin-top: 80px;
   }
 
   &__navigation a {
     text-decoration: none;
-    color: #2f303a;
+    color: var(--primary-color);
     font-size: 25px;
     transition: 250ms ease-in-out;
   }
 
   &__navigation > li {
     margin-bottom: 25px;
-    border-bottom: 2px solid aliceblue;
+    border-bottom: 2px solid var(--accent-color);
   }
   &__facebook {
-    color: #2f303a;
+    color: var(--primary-color);
     margin-top: 30px;
     text-decoration: none;
     display: flex;
@@ -54,12 +64,20 @@
     &--icon {
       width: 25px;
       height: 25px;
-      fill: #316ff6;
+      fill: var(--facebook-color);
     }
   }
 }
+
+.activeMenu {
+  opacity: 1;
+  visibility: visible;
+  transition: 250ms ease-in-out;
+}
+
 .activeTab a {
-  color: #c9a845;
+  color: var(--secondary-color);
+  text-shadow: 1px 2px 2px var(--primary-color);
 }
 
 .mobileContact {
@@ -69,18 +87,17 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 40px;
 
   &__background {
-    background-color: aliceblue;
+    background-color: var(--accent-color);
     border-radius: 4px;
     width: 60px;
     height: 60px;
     position: relative;
-    border: 2px solid #2f303a;
 
     &--icon {
-      fill: #2f303a;
+      fill: var(--primary-color);
       width: 30px;
       height: 30px;
       position: absolute;
@@ -106,33 +123,39 @@
 
 .toggleSlider {
   position: relative;
-  width: 61px;
-  height: 27px;
+  width: 55px;
+  height: 20px;
   left: 20px;
   top: 20px;
   &__icon {
     position: absolute;
     width: 17px;
     height: 17px;
-    fill: #2f303a;
+
     &--sun {
-      left: 65px;
-      top: 5px;
-      display: none;
+      left: 60px;
+      top: 2px;
+      opacity: 0;
+      visibility: hidden;
+      transition: 250ms ease-in-out;
     }
 
     &--moon {
-      left: 73px;
-      top: 13px;
+      left: 68px;
+      top: 10px;
       transform: translate(-50%, -50%);
-      display: none;
-      fill: aliceblue;
+      opacity: 0;
+      visibility: hidden;
+      transition: 250ms ease-in-out;
+      fill: var(--accent-color);
     }
   }
 }
 
 .activateIcon {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: 250ms ease-in-out;
 }
 
 .darkModeSlider {
@@ -150,17 +173,17 @@
   border-radius: 50px;
   transition: 0.4s;
   box-shadow: inset 0px 6px 8px 3px #0000001a;
-  width: 61px;
-  height: 27px;
+  width: 55px;
+  height: 20px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 21px;
-  width: 21.35px;
+  height: 15.35px;
+  width: 15.35px;
   left: 3px;
-  bottom: 3px;
+  bottom: 2.5px;
   background-image: linear-gradient(
     rgba(255, 255, 255, 1),
     rgba(232, 234, 234, 1)
@@ -171,13 +194,7 @@
 }
 
 .darkModeSlider:checked + .slider {
-  background: rgb(170, 131, 67);
-  background: linear-gradient(
-    90deg,
-    rgba(170, 131, 67, 1) 0%,
-    rgba(215, 207, 120, 1) 50%,
-    rgba(170, 131, 67, 1) 100%
-  );
+  background: var(--buttons-theme);
 }
 
 .darkModeSlider:checked + .slider:before {
@@ -186,18 +203,18 @@
 
 //Dark mode
 .darkTheme .mobileMenu {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
 }
 
 .darkTheme .mobileMenu__facebook,
 .darkTheme .mobileMenu__navigation a {
-  color: aliceblue;
+  color: var(--accent-color);
 }
 
 .darkTheme .mobileMenu__close {
-  fill: aliceblue;
+  fill: var(--accent-color);
 }
 
 .darkTheme .activeTab a {
-  color: #c9a845;
+  color: var(--secondary-color);
 }

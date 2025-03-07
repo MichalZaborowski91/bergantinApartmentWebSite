@@ -1,3 +1,5 @@
+"use strict";
+
 const lightboxEnabled = document.querySelectorAll(".lightboxEnabled");
 const lightboxContainer = document.querySelector(".lightboxContainer");
 const lightboxImage = document.querySelector(".lightboxImage");
@@ -8,6 +10,8 @@ const lightboxBtnCancel = document.querySelector(
 const lightboxBtnLeft = document.querySelector("#left");
 const lightboxBtnRight = document.querySelector("#right");
 const lightboxArray = Array.from(lightboxEnabled);
+const galleryHeaders = document.querySelectorAll(".imagesGallery__header");
+
 let activeImage = 0;
 
 const showLightbox = () => {
@@ -23,14 +27,16 @@ const hideLightbox = () => {
   showHeaders();
 };
 
+lightboxBtnCancel.addEventListener("click", hideLightbox);
+
 const hideHeaders = () => {
-  document.querySelectorAll(".imagesGallery__header").forEach((header) => {
+  galleryHeaders.forEach((header) => {
     header.style.display = "none";
   });
 };
 
 const showHeaders = () => {
-  document.querySelectorAll(".imagesGallery__header").forEach((header) => {
+  galleryHeaders.forEach((header) => {
     header.style.display = "block";
   });
 };
@@ -61,6 +67,8 @@ const handleEscapeKey = (e) => {
   }
 };
 
+document.addEventListener("keydown", handleEscapeKey);
+
 lightboxEnabled.forEach((image, index) => {
   image.addEventListener("click", (e) => {
     activeImage = index;
@@ -68,23 +76,18 @@ lightboxEnabled.forEach((image, index) => {
   });
 });
 
-lightboxBtnCancel.addEventListener("click", () => {
-  hideLightbox();
-});
-
-document.addEventListener("keydown", handleEscapeKey);
-
 lightboxBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.stopPropagation();
     if (!btn.classList.contains("inactive")) {
       activeImage += btn.id === "left" ? -1 : 1;
       setActiveImage(activeImage);
-      removeBtnAnimation();
     }
+    removeBtnAnimation();
   });
 });
 
+//Keybord arrows
 window.addEventListener("keydown", (e) => {
   if (!lightboxContainer.classList.contains("active")) return;
   if (e.key === "ArrowLeft") {

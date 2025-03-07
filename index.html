@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Normalize-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -12,14 +13,14 @@
       referrerpolicy="no-referrer"
     />
     <title>Bergantin Apartment Torrevieja Spain</title>
-    <!--font-->
+    <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!--favicon-->
+    <!--Favicon-->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -45,20 +46,21 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <!--Style-->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!--slider cdn-->
+    <!--Slider cdn-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body class="index">
     <header>
-      <section class="header container">
+      <div class="header container">
         <a href="index.html">
           <img
             class="header__logo"
+            src="./images/bergantinApartmentLogo/bergantinLogo_1x.png"
             srcset="
               ./images/bergantinApartmentLogo/bergantinLogo_1x.png 1x,
               ./images/bergantinApartmentLogo/bergantinLogo_2x.png 2x,
@@ -87,7 +89,7 @@
             <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
-      </section>
+      </div>
     </header>
     <main>
       <section class="main container">
@@ -145,11 +147,11 @@
           shower.
         </p>
       </section>
-      <section class="galleryIndex">
+      <div class="galleryIndex">
         <!--Slider structure-->
         <div class="swiper">
           <div class="swiper-wrapper">
-            <!-- Slides -->
+            <!--Slides-->
             <div class="swiper-slide">
               <img
                 src="./images/apartmentGallery/livingRoom.jpg"
@@ -214,20 +216,21 @@
               />
             </div>
           </div>
-
-          <!-- Navigation buttons -->
+          <!--Navigation buttons-->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-        <a class="galleryIndex__link" href="gallery.html">
-          <button type="button" class="galleryIndex__button">
-            <span>Gallery</span>
-            <svg>
-              <use href="./images/icons/symbol-defs.svg#icon-images"></use>
-            </svg>
-          </button>
-        </a>
-      </section>
+        <button
+          type="button"
+          class="galleryIndex__button"
+          onclick="location.href='gallery.html';"
+        >
+          <span>Gallery</span>
+          <svg>
+            <use href="./images/icons/symbol-defs.svg#icon-images"></use>
+          </svg>
+        </button>
+      </div>
       <section class="aptEquipment container">
         <h2 class="aptEquipment__head">Apartment equipment</h2>
         <p>
@@ -370,7 +373,7 @@
           </ul>
         </div>
       </section>
-      <section class="about container">
+      <div class="about container">
         <img
           class="about__image"
           src="./images/apartmentGallery/apartment.jpg"
@@ -402,7 +405,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
       <section class="locationIndex container">
         <h2 class="locationIndex__head">Location</h2>
         <p class="locationIndex__description">
@@ -410,6 +413,7 @@
           of Torrevieja. Most popular beaches and shops are a very short walking
           distance from the apartament.
         </p>
+        <!--Google location map-->
         <iframe
           class="locationIndex__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.868875246692!2d-0.6670256999999998!3d37.98018929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63aa0891523265%3A0xb88011bc9077e914!2sResidencial%20Habaneras%2C%20C.%20Bergantin%2C%2024%2C%2003182%20Torrevieja%2C%20Alicante%2C%20Spain!5e0!3m2!1sen!2sie!4v1709422689097!5m2!1sen!2sie"
@@ -422,7 +426,7 @@
         ></iframe>
         <div class="locationIndex__container">
           <form class="locationIndex__container__form">
-            <!-- Select list -->
+            <!--Select list-->
             <label for="option">Distance to:</label>
             <select id="option" onchange="distanceTo()">
               <option value="1" selected>Beaches</option>
@@ -441,9 +445,10 @@
         <!--Dynamic content-->
         <div class="locationIndex__distance"></div>
       </section>
-      <section class="travel container">
+      <div class="travel container">
         <div class="travel__box">
           <img
+            src="./images/graphic/airPlane/airPlane_1x.png"
             srcset="
               ./images/graphic/airPlane/airPlane_1x.png 1x,
               ./images/graphic/airPlane/airPlane_2x.png 2x,
@@ -459,6 +464,7 @@
         </div>
         <div class="travel__box">
           <img
+            src="./images/graphic/bus/bus_1x.png"
             srcset="
               ./images/graphic/bus/bus_1x.png 1x,
               ./images/graphic/bus/bus_2x.png 2x,
@@ -471,10 +477,11 @@
             <li>Bus station Torrevieja <b>850m</b></li>
           </ul>
         </div>
-      </section>
+      </div>
       <section class="infoCity container">
         <h2 class="infoCity__head">About Torrevieja</h2>
         <img
+          src="./images/torreviejaView/torreviejaView_1x.jpg"
           srcset="
             ./images/torreviejaView/torreviejaView_1x.jpg 1x,
             ./images/torreviejaView/torreviejaView_2x.jpg 2x,
@@ -492,6 +499,7 @@
           Las Salinas de Torrevieja.
         </p>
       </section>
+      <!--Weather widget-->
       <section class="weather container">
         <h2 class="weather__head">Torrevieja now</h2>
         <div class="weather__container"></div>
@@ -499,46 +507,48 @@
       <section class="contactIndex container">
         <h2 class="contactIndex__head">Contact us</h2>
         <div class="contactIndex__container">
-          <a href="tel:+353877052949">
-            <button type="button" class="contactIndex__container__button">
-              <span>Call</span>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
-              </svg>
-            </button>
+          <a href="tel:+353877052949" class="contactIndex__container__button">
+            <span>Call</span>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+            </svg>
           </a>
-          <a href="mailto:bergantin@gmail.com">
-            <button type="button" class="contactIndex__container__button">
-              <span>Email</span>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-email"></use>
-              </svg>
-            </button>
+          <a
+            href="mailto:bergantin@gmail.com"
+            class="contactIndex__container__button"
+          >
+            <span>Email</span>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+            </svg>
           </a>
-          <a href="https://chatwith.io/s/bergantin-apartment">
-            <button type="button" class="contactIndex__container__button">
-              <span>WhatsApp</span>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-whatsapp"></use>
-              </svg>
-            </button>
+          <a
+            href="https://chatwith.io/s/bergantin-apartment"
+            class="contactIndex__container__button"
+          >
+            <span>WhatsApp</span>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-whatsapp"></use>
+            </svg>
           </a>
-          <a href="https://chatwith.io/s/bergantin-apartment">
-            <button type="button" class="contactIndex__container__button">
-              <span>Messenger</span>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-messenger"></use>
-              </svg>
-            </button>
+          <a
+            href="https://chatwith.io/s/bergantin-apartment"
+            class="contactIndex__container__button"
+          >
+            <span>Messenger</span>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-messenger"></use>
+            </svg>
           </a>
         </div>
       </section>
     </main>
     <footer>
-      <section class="footer container">
+      <div class="footer container">
         <a href="index.html">
           <img
             class="footer__logo"
+            src="./images/bergantinApartmentLogo/bergantinLogo_1x.png"
             srcset="
               ./images/bergantinApartmentLogo/bergantinLogo_1x.png 1x,
               ./images/bergantinApartmentLogo/bergantinLogo_2x.png 2x,
@@ -549,13 +559,11 @@
         </a>
         <div class="availability">
           <p class="availability__head">Check availability</p>
-          <a class="availability__link" href="bookings.html">
-            <button type="button" class="availability__button">
-              <span>Bookings</span>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-calendar"></use>
-              </svg>
-            </button>
+          <a class="availability__button" href="bookings.html">
+            <span>Bookings</span>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-calendar"></use>
+            </svg>
           </a>
         </div>
         <address class="footer__address">
@@ -585,9 +593,9 @@
             <use href="./images/icons/symbol-defs.svg#icon-heart"></use>
           </svg>
         </p>
-      </section>
+      </div>
     </footer>
-    <!--Button up-->
+    <!--Button up widget-->
     <button class="btnUp">
       <svg class="btnUp__icon">
         <use href="./images/icons/symbol-defs.svg#icon-circleUp"></use>
@@ -596,7 +604,7 @@
     <!--Mobile menu-->
     <div class="mobileMenu">
       <div class="toggleSlider">
-        <!-- Darkmode -->
+        <!--Darkmode slider-->
         <input type="checkbox" id="darkModeSlider" class="darkModeSlider" />
         <label for="darkModeSlider" class="slider">
           <svg class="toggleSlider__icon toggleSlider__icon--sun">
@@ -669,9 +677,10 @@
               data-language="en"
             >
               <img
-                src="./images/languages/england 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/england.jpg"
+                alt="Flag of the england"
+                width="30"
+                height="20"
               />
             </button>
           </li>
@@ -682,9 +691,10 @@
               data-language="pl"
             >
               <img
-                src="./images/languages/poland 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/poland.jpg"
+                alt="Flag of the poland"
+                width="30"
+                height="20"
               />
             </button>
           </li>
@@ -695,9 +705,10 @@
               data-language="de"
             >
               <img
-                src="./images/languages/germany 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/germany.jpg"
+                alt="Flag of the germany"
+                width="30"
+                height="20"
               />
             </button>
           </li>
@@ -708,43 +719,31 @@
               data-language="es"
             >
               <img
-                src="./images/languages/spain 727x484.jpg"
-                width="30px"
-                height="20px"
-              />
-            </button>
-          </li>
-          <li>
-            <button
-              class="languageSelect languageFrench"
-              data-url="./languages/fr/index_fr.html"
-              data-language="fr"
-            >
-              <img
-                src="./images/languages/french 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/spain.jpg"
+                alt="Flag of the spain"
+                width="30"
+                height="20"
               />
             </button>
           </li>
         </ul>
       </div>
     </div>
+    <!--SCRIPTS-->
     <!--Swiper script-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <!--Dynamic location form script-->
     <script src="./js/location.js"></script>
     <!--Weather script-->
-    <script type="module" src="./js/fetchWeather.js"></script>
+    <script src="./js/fetchWeather.js"></script>
     <!--Mobile menu script-->
-    <script type="module" src="./js/mobileMenu.js"></script>
+    <script src="./js/mobileMenu.js"></script>
     <!--Language-->
-    <script type="module" src="./js/language.js"></script>
+    <script src="./js/language.js"></script>
     <!--Darkmode-->
-    <script type="module" src="./js/darkMode.js"></script>
+    <script src="./js/darkMode.js"></script>
     <!--Buttons-->
-    <script type="module" src="./js/buttons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/buttons.js"></script>
   </body>
 </html>

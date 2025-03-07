@@ -1,3 +1,7 @@
+body {
+  font-family: "poppins", sans-serif;
+}
+
 body.index {
   background-image: url("../../../bergantinApartmentWebSite/images/torraviejaMobile/torraviejaMobile_1x.jpg");
   background-repeat: no-repeat;
@@ -6,18 +10,12 @@ body.index {
   min-width: 350px;
   width: 100%;
   height: 1250px;
-
   @media (min-resolution: 2dppx) {
     background-image: url("../../../bergantinApartmentWebSite/images/torraviejaMobile/torraviejaMobile_2x.jpg");
   }
-
   @media (min-resolution: 3dppx) {
     background-image: url("../../../bergantinApartmentWebSite/images/torraviejaMobile/torraviejaMobile_3x.jpg");
   }
-}
-
-body {
-  font-family: "poppins", sans-serif;
 }
 
 .container {
@@ -25,6 +23,7 @@ body {
   padding-right: 25px;
 }
 
+//Button that brings page to top
 .btnUp {
   background: none;
   border: none;
@@ -46,6 +45,7 @@ body {
   }
 }
 
+//Shortcut button with contacts
 .contactWidget {
   background: none;
   border: none;
@@ -54,7 +54,6 @@ body {
   bottom: 4px;
   cursor: pointer;
   transition-duration: 250ms;
-
   &:focus,
   &:hover {
     transition-duration: 250ms;
@@ -76,7 +75,6 @@ body {
   position: fixed;
   left: 4px;
   cursor: pointer;
-
   z-index: 9999999;
   &:focus,
   &:hover {
@@ -89,14 +87,17 @@ body {
     fill: rgba(170, 131, 67, 1);
   }
 }
+
 .widgetEmail {
   bottom: 4px;
 }
+
 .activateWidgetEmail {
   visibility: visible;
   bottom: 40px;
   transition: visibility 0s 250ms, bottom 250ms;
 }
+
 .deactivateWidgetEmail {
   visibility: hidden;
   bottom: 40px;
@@ -106,11 +107,13 @@ body {
 .widgetWhatsapp {
   bottom: 40px;
 }
+
 .activateWidgetWhatsapp {
   visibility: visible;
   bottom: 75px;
   transition: visibility 0s 250ms, bottom 250ms;
 }
+
 .deactivateWidgetWhatsapp {
   visibility: hidden;
   bottom: 75px;
@@ -120,11 +123,13 @@ body {
 .widgetPhone {
   bottom: 75px;
 }
+
 .activateWidgetPhone {
   visibility: visible;
   bottom: 110px;
   transition: visibility 0s 250ms, bottom 250ms;
 }
+
 .deactivateWidgetPhone {
   visibility: hidden;
   bottom: 110px;

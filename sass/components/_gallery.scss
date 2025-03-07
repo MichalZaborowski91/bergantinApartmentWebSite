@@ -5,8 +5,8 @@
   padding-top: 30px;
   &__header {
     text-align: center;
-    border-bottom: 2px solid #2f303a;
-    color: #2f303a;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
     line-height: 1.5;
     font-weight: 500;
   }
@@ -46,7 +46,7 @@
   &__iconCancel {
     width: 20px;
     height: 20px;
-    fill: aliceblue;
+    fill: var(--accent-color);
     position: absolute;
     top: 20px;
     right: 20px;
@@ -72,7 +72,7 @@
   background-color: rgba(240, 248, 255, 0.8);
   place-items: center;
   padding: 0.8rem;
-  fill: #2f303a;
+  fill: var(--primary-color);
   cursor: pointer;
   transition: all 250ms ease-in-out;
   position: absolute;
@@ -128,10 +128,10 @@
 
 //Dark mode
 .darkTheme .imagesGallery {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
 }
 
 .darkTheme .imagesGallery__header {
-  color: aliceblue;
-  border-bottom: 2px solid aliceblue;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }

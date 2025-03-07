@@ -1,5 +1,5 @@
 .aptDescription {
-  background-color: aliceblue;
+  background-color: var(--accent-color);
   height: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -8,26 +8,27 @@
     text-align: center;
     font-weight: 500;
     margin: 0px;
-    border-bottom: 2px solid #2f303a;
+    border-bottom: 2px solid var(--primary-color);
     line-height: 1.5;
-    color: #2f303a;
+    color: var(--primary-color);
     font-weight: 500;
   }
   &__description {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 0;
+    text-align: justify;
   }
 }
 
 //Dark mode
 .darkTheme .aptDescription {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--darkMode-color);
 }
 .darkTheme .aptDescription__head {
-  color: aliceblue;
-  border-bottom: 2px solid aliceblue;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 .darkTheme .aptDescription__description {
-  color: aliceblue;
+  color: var(--accent-color);
 }

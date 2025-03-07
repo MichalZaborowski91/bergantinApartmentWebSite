@@ -1,5 +1,5 @@
 .footer {
-  background-color: #2f303a;
+  background-color: var(--primary-color);
   width: 100%;
   min-width: 350px;
   height: 100%;
@@ -24,7 +24,7 @@
   }
 
   &__address > p {
-    color: aliceblue;
+    color: var(--accent-color);
     font-style: normal;
     margin-top: 0;
     margin-bottom: 0px;
@@ -36,18 +36,18 @@
     margin-top: 20px;
   }
   &__contact > p {
-    color: aliceblue;
+    color: var(--accent-color);
     text-align: center;
     margin: 0 0 10px;
   }
   &__contact > a {
-    color: aliceblue;
+    color: var(--accent-color);
     text-align: center;
     text-decoration: none;
   }
 
   &__facebook {
-    color: aliceblue;
+    color: var(--accent-color);
     margin-top: 20px;
     text-decoration: none;
     display: flex;
@@ -59,11 +59,11 @@
     &--icon {
       width: 20px;
       height: 20px;
-      fill: #316ff6;
+      fill: var(--facebook-color);
     }
   }
   &__terms {
-    color: aliceblue;
+    color: var(--accent-color);
     width: 350px;
     text-align: center;
     display: flex;
@@ -76,7 +76,7 @@
       width: 10px;
       height: 10px;
       margin-left: 5px;
-      fill: aliceblue;
+      fill: var(--accent-color);
     }
   }
 }
@@ -89,7 +89,7 @@
   align-items: center;
 
   &__head {
-    color: aliceblue;
+    color: var(--accent-color);
     font-size: 20px;
     margin: 0;
     text-align: center;
@@ -97,28 +97,21 @@
     font-size: 24px;
     line-height: 1.5;
   }
-  &__link {
-    margin-top: 20px;
-  }
-
   &__button {
     width: 150px;
     height: 50px;
     border-radius: 5px;
     border-style: none;
     background: rgb(170, 131, 67);
-    background: linear-gradient(
-      90deg,
-      rgba(170, 131, 67, 1) 0%,
-      rgba(215, 207, 120, 1) 50%,
-      rgba(170, 131, 67, 1) 100%
-    );
+    background: var(--buttons-theme);
     cursor: pointer;
-    color: #2f303a;
+    color: var(--primary-color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    fill: #2f303a;
+    fill: var(--primary-color);
+    margin-top: 20px;
+    text-decoration: none;
   }
   &__button:hover,
   &--button:focus {

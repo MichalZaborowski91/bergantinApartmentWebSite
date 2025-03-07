@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Normalize-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -12,14 +13,14 @@
       referrerpolicy="no-referrer"
     />
     <title>Location</title>
-    <!--font-->
+    <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!--favicon-->
+    <!--Favicon-->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -45,14 +46,16 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <!--Style-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
-      <section class="header header__bgColor container">
+      <div class="header header__bgColor container">
         <a href="index.html">
           <img
             class="header__logo"
+            src="./images/bergantinApartmentLogo/bergantinLogo_1x.png"
             srcset="
               ./images/bergantinApartmentLogo/bergantinLogo_1x.png 1x,
               ./images/bergantinApartmentLogo/bergantinLogo_2x.png 2x,
@@ -81,7 +84,7 @@
             <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
-      </section>
+      </div>
     </header>
     <main>
       <section class="locationCard container">
@@ -100,19 +103,20 @@
       </section>
       <div class="navigateTo">
         <a
-          class="navigateTo__link"
+          class="navigateTo__button"
           href="https://maps.app.goo.gl/7n5YuAVtPNskUUpU6"
           target="_blank"
-          ><button type="button" class="navigateTo__button">
-            <span>Navigate to apartment</span
-            ><svg>
-              <use href="./images/icons/symbol-defs.svg#icon-compass"></use>
-            </svg></button
-        ></a>
+        >
+          <span>Navigate to apartment</span
+          ><svg>
+            <use href="./images/icons/symbol-defs.svg#icon-compass"></use>
+          </svg>
+        </a>
       </div>
-      <section class="apartment container">
+      <div class="apartment container">
         <img
           class="apartment__image"
+          src="./images/spainMap/spain_1x.jpg"
           srcset="
             ./images/spainMap/spain_1x.jpg 1x,
             ./images/spainMap/spain_2x.jpg 2x,
@@ -126,8 +130,8 @@
           are very high and winters are warm enough to enjoy walks along the
           coast.
         </p>
-      </section>
-      <section class="googleMapsContainer container">
+      </div>
+      <div class="googleMapsContainer container">
         <iframe
           class="googleMapsContainer__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.868875246692!2d-0.6670256999999998!3d37.98018929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63aa0891523265%3A0xb88011bc9077e914!2sResidencial%20Habaneras%2C%20C.%20Bergantin%2C%2024%2C%2003182%20Torrevieja%2C%20Alicante%2C%20Spain!5e0!3m2!1sen!2sie!4v1709422689097!5m2!1sen!2sie"
@@ -138,18 +142,18 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-      </section>
+      </div>
       <div class="navigateTo">
         <a
-          class="navigateTo__link"
+          class="navigateTo__button"
           href="https://maps.app.goo.gl/7n5YuAVtPNskUUpU6"
           target="_blank"
-          ><button type="button" class="navigateTo__button">
-            <span>Navigate to apartment</span
-            ><svg>
-              <use href="./images/icons/symbol-defs.svg#icon-compass"></use>
-            </svg></button
-        ></a>
+        >
+          <span>Navigate to apartment</span
+          ><svg>
+            <use href="./images/icons/symbol-defs.svg#icon-compass"></use>
+          </svg>
+        </a>
       </div>
       <section class="parking container">
         <h2 class="parking__head">Private parking</h2>
@@ -165,22 +169,23 @@
       </section>
       <div class="navigateTo">
         <a
-          class="navigateTo__link"
+          class="navigateTo__button"
           href="https://maps.app.goo.gl/evxraLXMMDz3mYg38"
           target="_blank"
-          ><button type="button" class="navigateTo__button">
-            <span>Navigate to parking</span
-            ><svg>
-              <use href="./images/icons/symbol-defs.svg#icon-compass"></use>
-            </svg></button
-        ></a>
+        >
+          <span>Navigate to parking</span
+          ><svg>
+            <use href="./images/icons/symbol-defs.svg#icon-compass"></use>
+          </svg>
+        </a>
       </div>
     </main>
     <footer>
-      <section class="footer container">
+      <div class="footer container">
         <a href="index.html">
           <img
             class="footer__logo"
+            src="./images/bergantinApartmentLogo/bergantinLogo_1x.png"
             srcset="
               ./images/bergantinApartmentLogo/bergantinLogo_1x.png 1x,
               ./images/bergantinApartmentLogo/bergantinLogo_2x.png 2x,
@@ -191,13 +196,11 @@
         </a>
         <div class="availability">
           <p class="availability__head">Check availability</p>
-          <a class="availability__link" href="bookings.html">
-            <button type="button" class="availability__button">
-              <span>Bookings</span>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-calendar"></use>
-              </svg>
-            </button>
+          <a class="availability__button" href="bookings.html">
+            <span>Bookings</span>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-calendar"></use>
+            </svg>
           </a>
         </div>
         <address class="footer__address">
@@ -227,45 +230,44 @@
             <use href="./images/icons/symbol-defs.svg#icon-heart"></use>
           </svg>
         </p>
-      </section>
+      </div>
     </footer>
-    <!--Button up-->
+    <!--Button up widget-->
     <button class="btnUp">
       <svg class="btnUp__icon">
         <use href="./images/icons/symbol-defs.svg#icon-circleUp"></use>
       </svg>
     </button>
-    <!--Contact button-->
+    <!--Contact button widget-->
     <div>
       <button class="contactWidget">
         <svg class="contactWidget__icon">
           <use href="./images/icons/symbol-defs.svg#icon-chat"></use>
         </svg>
       </button>
-      <a href="mailto:bergantin@gmail.com">
-        <button class="widgetEmail">
-          <svg class="widgetEmail__icon">
-            <use href="./images/icons/symbol-defs.svg#icon-email"></use>
-          </svg></button
-      ></a>
-      <a href="https://chatwith.io/s/bergantin-apartment">
-        <button class="widgetWhatsapp">
-          <svg class="widgetWhatsapp__icon">
-            <use href="./images/icons/symbol-defs.svg#icon-whatsapp"></use>
-          </svg></button
-      ></a>
-      <a href="tel:+353877052949">
-        <button class="widgetPhone">
-          <svg class="widgetPhone__icon">
-            <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
-          </svg>
-        </button>
+      <a href="mailto:bergantin@gmail.com" class="widgetEmail">
+        <svg class="widgetEmail__icon">
+          <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+        </svg>
+      </a>
+      <a
+        href="https://chatwith.io/s/bergantin-apartment"
+        class="widgetWhatsapp"
+      >
+        <svg class="widgetWhatsapp__icon">
+          <use href="./images/icons/symbol-defs.svg#icon-whatsapp"></use>
+        </svg>
+      </a>
+      <a href="tel:+353877052949" class="widgetPhone">
+        <svg class="widgetPhone__icon">
+          <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+        </svg>
       </a>
     </div>
     <!--Mobile menu-->
     <div class="mobileMenu">
       <div class="toggleSlider">
-        <!-- Darkmode -->
+        <!-- Darkmode slider-->
         <input type="checkbox" id="darkModeSlider" class="darkModeSlider" />
         <label for="darkModeSlider" class="slider">
           <svg class="toggleSlider__icon toggleSlider__icon--sun">
@@ -332,71 +334,63 @@
           <li>
             <button
               class="languageSelect languageEnglish"
-              data-url="./location.html"
+              data-url="./index.html"
               data-language="en"
             >
               <img
-                src="./images/languages/england 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/england.jpg"
+                alt="Flag of the england"
+                width="30"
+                height="20"
               />
             </button>
           </li>
           <li>
             <button
               class="languageSelect languagePolish"
-              data-url="./languages/pl/location_pl.html"
+              data-url="./languages/pl/index_pl.html"
               data-language="pl"
             >
               <img
-                src="./images/languages/poland 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/poland.jpg"
+                alt="Flag of the poland"
+                width="30"
+                height="20"
               />
             </button>
           </li>
           <li>
             <button
               class="languageSelect languageGerman"
-              data-url="./languages/de/location_de.html"
+              data-url="./languages/de/index_de.html"
               data-language="de"
             >
               <img
-                src="./images/languages/germany 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/germany.jpg"
+                alt="Flag of the germany"
+                width="30"
+                height="20"
               />
             </button>
           </li>
           <li>
             <button
               class="languageSelect languageSpanish"
-              data-url="./languages/es/location_es.html"
+              data-url="./languages/es/index_es.html"
               data-language="es"
             >
               <img
-                src="./images/languages/spain 727x484.jpg"
-                width="30px"
-                height="20px"
-              />
-            </button>
-          </li>
-          <li>
-            <button
-              class="languageSelect languageFrench"
-              data-url="./languages/fr/location_fr.html"
-              data-language="fr"
-            >
-              <img
-                src="./images/languages/french 727x484.jpg"
-                width="30px"
-                height="20px"
+                src="./images/languages/spain.jpg"
+                alt="Flag of the spain"
+                width="30"
+                height="20"
               />
             </button>
           </li>
         </ul>
       </div>
     </div>
+    <!--SCRIPTS-->
     <!--Mobile menu script-->
     <script src="./js/mobileMenu.js"></script>
     <!--Language-->
@@ -404,8 +398,8 @@
     <!--Darkmode-->
     <script src="./js/darkMode.js"></script>
     <!--Buttons-->
-    <script type="module" src="./js/buttons.js"></script>
+    <script src="./js/buttons.js"></script>
     <!--Contact widget-->
-    <script type="module" src="./js/contactWidget.js"></script>
+    <script src="./js/contactWidget.js"></script>
   </body>
 </html>
