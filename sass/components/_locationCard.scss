@@ -125,6 +125,16 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .googleMapsContainer {
+    &__map {
+      display: block;
+      max-width: 580px;
+      justify-self: center;
+    }
+  }
+}
+
 //Dark mode
 .darkTheme .locationCard {
   background-color: var(--darkMode-color);

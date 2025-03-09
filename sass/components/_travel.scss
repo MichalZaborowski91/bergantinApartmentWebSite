@@ -1,12 +1,15 @@
 .travel {
   background-color: var(--accent-color);
   border-bottom: 30px solid var(--white-steady);
+  transition: var(--transition-main);
+
   &__box {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 350px;
     margin: 0 auto;
+
     &__graphic {
       width: 150px;
       height: auto;
@@ -18,8 +21,10 @@
 .darkTheme .travel {
   background-color: var(--darkMode-color);
   border-bottom: 0px;
+  transition: var(--transition-main);
 }
 
 .darkTheme .travel li {
   color: var(--accent-color);
+  transition: var(--transition-main);
 }

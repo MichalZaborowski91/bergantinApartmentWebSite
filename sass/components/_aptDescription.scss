@@ -3,6 +3,8 @@
   height: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  transition: var(--transition-main);
+
   &__head {
     font-size: 28px;
     text-align: center;
@@ -12,6 +14,7 @@
     line-height: 1.5;
     color: var(--primary-color);
     font-weight: 500;
+    transition: var(--transition-main);
   }
   &__description {
     font-size: 20px;
@@ -24,11 +27,14 @@
 //Dark mode
 .darkTheme .aptDescription {
   background-color: var(--darkMode-color);
+  transition: var(--transition-main);
 }
 .darkTheme .aptDescription__head {
   color: var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
+  transition: var(--transition-main);
 }
 .darkTheme .aptDescription__description {
   color: var(--accent-color);
+  transition: var(--transition-main);
 }
