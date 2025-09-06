@@ -103,7 +103,6 @@
     height: 50px;
     border-radius: 5px;
     border-style: none;
-    background: rgb(170, 131, 67);
     background: var(--buttons-theme);
     cursor: pointer;
     color: var(--primary-color);
@@ -116,6 +115,7 @@
   }
   &__button:hover,
   &--button:focus {
+    background: rgba(215, 207, 120, 1) 50%;
     box-shadow: 5px 5px 8px rgb(48, 46, 46);
     color: rgb(48, 46, 46);
     fill: rgb(48, 46, 46);

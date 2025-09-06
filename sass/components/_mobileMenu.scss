@@ -22,6 +22,7 @@
     right: 20px;
     top: 20px;
     transition: var(--transition-main);
+    cursor: pointer;
   }
 
   &__navigation {
@@ -116,6 +117,7 @@
 .languageSelect {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .toggleSlider {

@@ -99,21 +99,30 @@
       }
     }
   }
+  .darkTheme .main__headBox__description {
+    border-bottom: none !important;
+  }
 }
 
 //Dark mode
-.darkTheme .main__headBox__description,
-.darkTheme .infoList__item p {
-  color: var(--black-steady);
-  transition: var(--transition-main);
+
+@media (max-width: 767px) {
+  .darkTheme .main__headBox__description,
+  .darkTheme .infoList__item p {
+    color: var(--black-steady);
+    transition: var(--transition-main);
+  }
+
+  .darkTheme .infoList__item__background__icon {
+    fill: var(--black-steady);
+    transition: var(--transition-main);
+  }
+}
+
+.darkTheme .main__headBox__description {
+  border-bottom: 2px solid var(--black-steady);
 }
 
 .darkTheme .main__headBox {
-  border-bottom: 2px solid var(--black-steady);
-  transition: var(--transition-main);
-}
-
-.darkTheme .infoList__item__background__icon {
-  fill: var(--black-steady);
   transition: var(--transition-main);
 }

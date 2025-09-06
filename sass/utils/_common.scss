@@ -42,6 +42,10 @@ body.index {
     width: 30px;
     height: 30px;
     fill: rgba(170, 131, 67, 1);
+    &:focus,
+    &:hover {
+      fill: rgba(215, 207, 120, 1);
+    }
   }
 }
 
@@ -63,6 +67,10 @@ body.index {
     width: 30px;
     height: 30px;
     fill: rgba(170, 131, 67, 1);
+    &:focus,
+    &:hover {
+      fill: rgba(215, 207, 120, 1);
+    }
   }
 }
 
@@ -74,17 +82,22 @@ body.index {
   border: none;
   position: fixed;
   left: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
   cursor: pointer;
   z-index: 9999999;
   &:focus,
   &:hover {
-    transition-duration: 250ms;
     transform: scale(1.2);
   }
   &__icon {
     width: 30px;
     height: 30px;
     fill: rgba(170, 131, 67, 1);
+    &:focus,
+    &:hover {
+      fill: rgba(215, 207, 120, 1);
+    }
   }
 }
 

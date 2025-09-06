@@ -25,6 +25,10 @@
       width: 30px;
       height: 30px;
       fill: var(--secondary-color);
+      &:focus,
+      &:hover {
+        fill: rgba(215, 207, 120, 1);
+      }
     }
   }
 

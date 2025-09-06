@@ -41,8 +41,9 @@
       text-decoration: none;
       box-shadow: 5px 5px 8px var(--primary-color);
     }
-    &__button:hover,
-    &__button:focus {
+    &__button:focus,
+    &__button:hover {
+      background: rgba(215, 207, 120, 1) 50%;
       box-shadow: 5px 5px 8px rgb(48, 46, 46);
       color: rgb(48, 46, 46);
       fill: rgb(48, 46, 46);
