@@ -52,7 +52,7 @@
   height: 50px;
   font-weight: 500;
   display: block;
-
+  cursor: pointer;
   margin: 20px auto;
 }
 
@@ -67,7 +67,6 @@
   margin-top: 15px;
   &__head {
     margin: 0;
-
     line-height: 1.5;
     color: var(--primary-color);
     text-align: center;
@@ -78,7 +77,6 @@
   &__box {
     border: 2px solid var(--primary-color);
     border-radius: 4px;
-
     padding: 20px;
     max-width: 350px;
     margin: 20px auto 0px;
@@ -130,6 +128,7 @@ textarea {
   font-weight: 500;
   display: block;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 .bookingForm span {

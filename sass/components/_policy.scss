@@ -38,3 +38,7 @@
   color: var(--accent-color);
   transition: var(--transition-main);
 }
+
+.darkTheme .policy {
+  background-color: var(--darkMode-color);
+}

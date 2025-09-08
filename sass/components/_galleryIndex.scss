@@ -53,6 +53,13 @@
   color: var(--primary-color) !important;
 }
 
+//Media desktop
+@media (min-width: 1024px) {
+  .swiper {
+    width: 50%;
+  }
+}
+
 //Dark mode
 .darkTheme .galleryIndex {
   background-color: var(--darkMode-color);

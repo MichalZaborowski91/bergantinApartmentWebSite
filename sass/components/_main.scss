@@ -103,9 +103,24 @@
     border-bottom: none !important;
   }
 }
+//Media desktop
+@media (min-width: 1024px) {
+  .main__headBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__description {
+      max-width: 350px;
+      border-bottom: none !important;
+      line-height: 1.2;
+    }
+  }
+}
 
 //Dark mode
-
+//Media tablet style dark mode
 @media (max-width: 767px) {
   .darkTheme .main__headBox__description,
   .darkTheme .infoList__item p {

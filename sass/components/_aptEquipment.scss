@@ -60,6 +60,13 @@
   text-align: justify;
 }
 
+//Media desktop
+@media (min-width: 1024px) {
+  .aptEquipment__box {
+    max-width: 890px;
+  }
+}
+
 //Dark mode
 .darkTheme .aptEquipment {
   background-color: var(--darkMode-color);

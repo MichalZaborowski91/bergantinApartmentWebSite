@@ -43,6 +43,15 @@
   text-align: justify;
 }
 
+//Media desktop
+@media (min-width: 1024px) {
+  .about__image {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 //Dark mode
 .darkTheme .about {
   background-color: var(--darkMode-color);

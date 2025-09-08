@@ -83,6 +83,7 @@
   cursor: pointer;
 }
 
+//Media tablet
 @media (min-width: 768px) and (max-width: 1023px) {
   .locationIndex {
     &__map {
@@ -90,6 +91,15 @@
       max-width: 580px;
       justify-self: center;
     }
+  }
+}
+
+//Media desktop
+@media (min-width: 1024px) {
+  .locationIndex__map {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
   }
 }
 

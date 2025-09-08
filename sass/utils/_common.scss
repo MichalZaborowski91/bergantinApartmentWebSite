@@ -23,6 +23,14 @@ body.index {
   padding-right: 25px;
 }
 
+//Media desktop
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
 //Button that brings page to top
 .btnUp {
   background: none;

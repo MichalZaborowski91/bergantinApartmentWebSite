@@ -79,7 +79,12 @@
     box-shadow: 5px 5px 8px var(--primary-color);
     margin: 20px 0px 30px;
     text-decoration: none;
+    &:focus,
+    &:hover {
+      background: rgba(215, 207, 120, 1) 50%;
+    }
   }
+
   &__button > span {
     font-size: 18px;
     font-weight: 500;
@@ -131,6 +136,8 @@
       display: block;
       max-width: 580px;
       justify-self: center;
+      margin-top: 0;
+      padding-top: 25px;
     }
   }
 }
