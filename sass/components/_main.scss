@@ -105,16 +105,20 @@
 }
 //Media desktop
 @media (min-width: 1024px) {
-  .main__headBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  .main {
+    padding-bottom: 150px;
+    padding-top: 100px;
+    &__headBox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
 
-    &__description {
-      max-width: 350px;
-      border-bottom: none !important;
-      line-height: 1.2;
+      &__description {
+        max-width: 350px;
+        border-bottom: none !important;
+        line-height: 1.2;
+      }
     }
   }
 }

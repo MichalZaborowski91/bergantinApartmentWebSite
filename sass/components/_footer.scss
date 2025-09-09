@@ -153,4 +153,21 @@
   .footerContent > div {
     flex-basis: calc((50% - 10px) / 4);
   }
+
+  .footer {
+    padding-top: 20px;
+    &__logo {
+      width: 150px;
+    }
+    &__contact,
+    &__address {
+      margin-top: 0;
+    }
+  }
+  .availability {
+    margin-top: 0;
+    &__button {
+      margin-top: 5px;
+    }
+  }
 }
