@@ -77,13 +77,29 @@
         >
         <nav>
           <ul class="navigation">
-            <li>Start</li>
-            <li>Gallery</li>
-            <li>Location</li>
-            <li>Atractions</li>
-            <li>Contact</li>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li class="activeTab"><a href="bookings.html">Bookings</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+        <div class="langFbBox">
+          <a
+            class="headerFb"
+            href="https://www.facebook.com/profile.php?id=61555173212339"
+            target="_blank"
+          >
+            <svg class="headerFb__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <button type="button" class="langBtn">
+            <svg class="langBtn__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-sphere"></use>
+            </svg>
+          </button>
+        </div>
         <button type="button" class="header__mobileBtn">
           <svg class="header__mobileBtn__icon">
             <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
@@ -308,6 +324,67 @@
           <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
         </svg>
       </a>
+    </div>
+    <!--Language menu-->
+    <div class="langMenu">
+      <ul class="langMenu__list">
+        <li>
+          <button
+            class="languageSelect languageEnglish"
+            data-url="./index.html"
+            data-language="en"
+          >
+            <img
+              src="./images/languages/england.jpg"
+              alt="Flag of the england"
+              width="30"
+              height="20"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="languageSelect languagePolish"
+            data-url="./languages/pl/index_pl.html"
+            data-language="pl"
+          >
+            <img
+              src="./images/languages/poland.jpg"
+              alt="Flag of the poland"
+              width="30"
+              height="20"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="languageSelect languageGerman"
+            data-url="./languages/de/index_de.html"
+            data-language="de"
+          >
+            <img
+              src="./images/languages/germany.jpg"
+              alt="Flag of the germany"
+              width="30"
+              height="20"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="languageSelect languageSpanish"
+            data-url="./languages/es/index_es.html"
+            data-language="es"
+          >
+            <img
+              src="./images/languages/spain.jpg"
+              alt="Flag of the spain"
+              width="30"
+              height="20"
+            />
+          </button>
+        </li>
+      </ul>
     </div>
     <!--Mobile menu-->
     <div class="mobileMenu">

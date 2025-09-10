@@ -16,3 +16,25 @@ const closeMobileMenu = () => {
 
 mobileMenuBtn.addEventListener("click", toggleMobileMenu);
 closeBtn.addEventListener("click", closeMobileMenu);
+
+//Language menu window for desktop
+const langMenuBtn = document.querySelector(".langBtn");
+const langMenu = document.querySelector(".langMenu");
+
+const toggleLangMenu = () => {
+  langMenu.classList.toggle("activeLangMenu");
+};
+
+const closeLangMenu = () => {
+  langMenu.classList.remove("activeLangMenu");
+};
+
+langMenuBtn.addEventListener("click", toggleLangMenu);
+langMenuBtn.addEventListener("blur", closeLangMenu);
+langMenuBtn.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeLangMenu();
+    langMenuBtn.blur();
+  }
+});
+window.addEventListener("scroll", closeLangMenu);
