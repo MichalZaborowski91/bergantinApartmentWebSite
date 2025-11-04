@@ -1,0 +1,18 @@
+:root {
+  //Colors
+  --primary-color: #2f303a;
+  --secondary-color: #c9a845;
+  --accent-color: aliceblue;
+  --facebook-color: #316ff6;
+  --black-steady: black;
+  --white-steady: white;
+  --darkMode-color: #3a3a46;
+  --buttons-theme: linear-gradient(
+    90deg,
+    rgba(170, 131, 67, 1) 0%,
+    rgba(215, 207, 120, 1) 50%,
+    rgba(170, 131, 67, 1) 100%
+  );
+  //Transition
+  --transition-main: 250ms ease-in-out;
+}

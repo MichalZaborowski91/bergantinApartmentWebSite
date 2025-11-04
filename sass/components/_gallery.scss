@@ -1,0 +1,152 @@
+.imagesGallery {
+  min-width: 350px;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  &__header {
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    line-height: 1.5;
+    font-weight: 500;
+  }
+}
+.imagesGallery img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+//Lightbox css
+.lightboxEnabled {
+  width: 100%;
+  object-fit: cover;
+  transition: all 250ms ease-in-out;
+}
+
+.lightboxEnabled:focus,
+.lightboxEnabled:hover {
+  opacity: 0.8;
+  cursor: zoom-in;
+  transform: scale(1.01);
+}
+
+.lightboxContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  z-index: 999999999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 250ms ease-in-out;
+  &__iconCancel {
+    width: 20px;
+    height: 20px;
+    fill: var(--accent-color);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
+
+.lightboxContainer.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightboxImageWrapper {
+  display: grid;
+  place-items: center;
+  max-width: 100vw;
+  max-height: 80vh;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.4);
+}
+
+.lightboxBtn {
+  background-color: rgba(240, 248, 255, 0.8);
+  place-items: center;
+  padding: 0.8rem;
+  fill: var(--primary-color);
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+}
+
+.lightboxBtn svg {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.lightboxBtn:focus {
+  outline: none;
+}
+
+.lightboxBtn.inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.left {
+  left: 5px;
+}
+
+.left:focus,
+.left:hover {
+  left: 0px;
+  transition: all 250ms ease-in-out;
+}
+
+.right {
+  right: 5px;
+}
+
+.right:focus,
+.right:hover {
+  right: 0px;
+  transition: all 250ms ease-in-out;
+}
+
+.lightboxImage {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: fill;
+}
+
+@media (min-width: 768px) {
+  .imagesGallery img {
+    width: 24.5%;
+  }
+  .lightboxImageWrapper {
+    max-width: 70vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lightboxImageWrapper {
+    max-width: 60vw;
+  }
+}
+//Dark mode
+.darkTheme .imagesGallery {
+  background-color: var(--darkMode-color);
+}
+
+.darkTheme .imagesGallery__header {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}

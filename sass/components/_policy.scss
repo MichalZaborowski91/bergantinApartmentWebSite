@@ -1,0 +1,44 @@
+.policy {
+  min-width: 350px;
+  padding-bottom: 30px;
+
+  &__mainHead {
+    margin: 0;
+    padding-top: 30px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 24px;
+    border-bottom: solid 2px var(--primary-color);
+    font-weight: 500;
+    transition: var(--transition-main);
+  }
+
+  &__secondaryHead {
+    margin: 0;
+    padding-top: 20px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    transition: var(--transition-main);
+  }
+}
+
+//Dark mode
+.darkTheme .policy__mainHead {
+  color: var(--accent-color);
+  border-bottom: solid 2px var(--accent-color);
+  transition: var(--transition-main);
+}
+
+.darkTheme .policy__secondaryHead,
+.darkTheme p,
+.darkTheme li {
+  color: var(--accent-color);
+  transition: var(--transition-main);
+}
+
+.darkTheme .policy {
+  background-color: var(--darkMode-color);
+}

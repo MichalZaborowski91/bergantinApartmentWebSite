@@ -1,0 +1,9 @@
+{
+  "name": "bergantinapartmentwebsite",
+  "version": "1.0.0",
+  "description": "bergantin apartment torrevieja spain holiday suite",
+  "main": "index.html",
+  "author": "Michal Zaborowski",
+  "license": "ISC",
+  "dependencies": {}
+}

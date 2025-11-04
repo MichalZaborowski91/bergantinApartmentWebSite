@@ -1,0 +1,99 @@
+.aptEquipment {
+  background-color: var(--white-steady);
+  padding-bottom: 30px;
+  padding-top: 30px;
+  &__head {
+    margin: 0px;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+  &__box {
+    border-radius: 4px;
+    border: 3px solid var(--black-steady);
+    background-color: var(--accent-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 580px;
+    margin: 0 auto;
+
+    &__equipmentList {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+
+      &__item {
+        max-width: 100px;
+        text-align: center;
+        flex-basis: calc((100% - 60px) / 2);
+        &__container {
+          width: 80px;
+          height: 80px;
+          position: relative;
+          margin: 0 auto;
+          &__icon {
+            width: 65px;
+            height: 65px;
+            fill: var(--black-steady);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+    &__equipmentList > p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.aptEquipment > p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+//Media desktop
+@media (min-width: 1024px) {
+  .aptEquipment__box {
+    max-width: 890px;
+  }
+  .aptEquipment > p {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+
+//Dark mode
+.darkTheme .aptEquipment {
+  background-color: var(--darkMode-color);
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.darkTheme .aptEquipment__head {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.darkTheme .aptEquipment p,
+.darkTheme .aptEquipment__box__equipmentList__item p {
+  color: var(--accent-color);
+}
+
+.darkTheme .aptEquipment__box {
+  background-color: var(--darkMode-color);
+  border-color: var(--accent-color);
+}
+
+.darkTheme .aptEquipment__box__equipmentList__item__container__icon {
+  fill: var(--accent-color);
+}

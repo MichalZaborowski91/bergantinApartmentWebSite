@@ -1,0 +1,50 @@
+.aptDescription {
+  background-color: var(--accent-color);
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: var(--transition-main);
+
+  &__head {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0px;
+    border-bottom: 2px solid var(--primary-color);
+    line-height: 1.5;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: var(--transition-main);
+  }
+  &__description {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: justify;
+  }
+}
+
+//Media desktop
+@media (min-width: 1024px) {
+  .aptDescription {
+    &__description {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  }
+}
+
+//Dark mode
+.darkTheme .aptDescription {
+  background-color: var(--darkMode-color);
+  transition: var(--transition-main);
+}
+.darkTheme .aptDescription__head {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  transition: var(--transition-main);
+}
+.darkTheme .aptDescription__description {
+  color: var(--accent-color);
+  transition: var(--transition-main);
+}

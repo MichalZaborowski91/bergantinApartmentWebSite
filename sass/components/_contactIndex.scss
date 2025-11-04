@@ -1,0 +1,72 @@
+.contactIndex {
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__head {
+    margin: 0;
+    padding-top: 30px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+
+    &__button {
+      width: 150px;
+      height: 50px;
+      border-radius: 5px;
+      border-style: none;
+      background: var(--buttons-theme);
+      cursor: pointer;
+      color: var(--primary-color);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      fill: var(--primary-color);
+      text-decoration: none;
+      box-shadow: 5px 5px 8px var(--primary-color);
+    }
+    &__button:focus,
+    &__button:hover {
+      background: rgba(215, 207, 120, 1) 50%;
+      box-shadow: 5px 5px 8px rgb(48, 46, 46);
+      color: rgb(48, 46, 46);
+      fill: rgb(48, 46, 46);
+    }
+
+    &__button > span {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    &__button > svg {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+    }
+  }
+}
+
+//Dark mode
+.darkTheme .contactIndex {
+  background-color: var(--darkMode-color);
+}
+
+.darkTheme .contactIndex__head {
+  border-bottom: none;
+}

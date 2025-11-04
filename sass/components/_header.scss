@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  min-width: 350px;
+
+  &__bgColor {
+    background-color: var(--primary-color);
+    border-bottom: 1px solid rgba(170, 131, 67, 1);
+  }
+
+  &__logo {
+    width: 100px;
+    height: auto;
+  }
+
+  &__mobileBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &__icon {
+      width: 30px;
+      height: 30px;
+      fill: var(--secondary-color);
+      &:focus,
+      &:hover {
+        fill: rgba(215, 207, 120, 1);
+      }
+    }
+  }
+}
+
+.navigation {
+  display: none;
+  list-style: none;
+  padding-left: 0px;
+  gap: 30px;
+  transition: var(--transition-main);
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--accent-color);
+  &:focus,
+  &:hover {
+    text-shadow: 2px 2px 2px var(--secondary-color);
+  }
+}
+
+.langFbBox {
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+}
+
+.langBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+  &__icon {
+    width: 25px;
+    height: 25px;
+    fill: var(--secondary-color);
+    transition: var(--transition-main);
+    &:focus,
+    &:hover {
+      fill: rgba(215, 207, 120, 1);
+      transform: scale(1.2);
+    }
+  }
+}
+
+.headerFb {
+  text-decoration: none;
+  height: 25px;
+  margin-right: 20px;
+  &__icon {
+    width: 25px;
+    height: 25px;
+    fill: var(--facebook-color);
+    transition: var(--transition-main);
+    &:focus,
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .navigation {
+    display: flex;
+  }
+  .header__mobileBtn {
+    display: none;
+  }
+  .langFbBox {
+    visibility: visible;
+  }
+}
+
+.langMenu {
+  position: fixed;
+  top: 80px;
+  right: 140px;
+  background-color: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  z-index: 999999999;
+  padding: 10px;
+  padding-top: 11px;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border: 2px solid var(--secondary-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-main);
+
+  &__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-evenly;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.activeLangMenu {
+  opacity: 1;
+  visibility: visible;
+  transition: var(--transition-main);
+}

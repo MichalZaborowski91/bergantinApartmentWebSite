@@ -1,0 +1,70 @@
+.galleryIndex {
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 30px;
+  &__button {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-style: none;
+    background: var(--buttons-theme);
+    cursor: pointer;
+    color: var(--primary-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--primary-color);
+    box-shadow: 5px 5px 8px var(--primary-color);
+  }
+  &__button > span {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__button > svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  &__button:focus,
+  &__button:hover {
+    background: rgba(215, 207, 120, 1) 50%;
+  }
+}
+
+//Swiper style
+.swiper {
+  width: 90%;
+  height: fit-content;
+  margin: 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--primary-color) !important;
+}
+
+//Media desktop
+@media (min-width: 1024px) {
+  .swiper {
+    width: 40%;
+  }
+}
+
+//Dark mode
+.darkTheme .galleryIndex {
+  background-color: var(--darkMode-color);
+}
+
+.darkTheme .galleryIndex__button {
+  box-shadow: 5px 5px 8px var(--darkMode-color);
+}

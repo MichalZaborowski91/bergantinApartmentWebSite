@@ -1,0 +1,158 @@
+body {
+  font-family: "poppins", sans-serif;
+}
+
+body.index {
+  background-image: url("../images/torraviejaMobile/torraviejaMobile_1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -9999;
+  min-width: 350px;
+  width: 100%;
+  height: 1250px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/torraviejaMobile/torraviejaMobile_2x.jpg");
+  }
+  @media (min-resolution: 3dppx) {
+    background-image: url("../images/torraviejaMobile/torraviejaMobile_3x.jpg");
+  }
+}
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+//Media desktop
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+//Button that brings page to top
+.btnUp {
+  background: none;
+  border: none;
+  position: fixed;
+  right: 4px;
+  bottom: 4px;
+  cursor: pointer;
+  transition-duration: 250ms;
+  z-index: 9999999;
+  &:focus,
+  &:hover {
+    transition-duration: 250ms;
+    transform: scale(1.2);
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: rgba(170, 131, 67, 1);
+    &:focus,
+    &:hover {
+      fill: rgba(215, 207, 120, 1);
+    }
+  }
+}
+
+//Shortcut button with contacts
+.contactWidget {
+  background: none;
+  border: none;
+  position: fixed;
+  left: 4px;
+  bottom: 4px;
+  cursor: pointer;
+  transition-duration: 250ms;
+  &:focus,
+  &:hover {
+    transition-duration: 250ms;
+    transform: scale(1.2);
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: rgba(170, 131, 67, 1);
+    &:focus,
+    &:hover {
+      fill: rgba(215, 207, 120, 1);
+    }
+  }
+}
+
+.widgetEmail,
+.widgetWhatsapp,
+.widgetPhone {
+  visibility: hidden;
+  background: none;
+  border: none;
+  position: fixed;
+  left: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  cursor: pointer;
+  z-index: 9999999;
+  &:focus,
+  &:hover {
+    transform: scale(1.2);
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: rgba(170, 131, 67, 1);
+    &:focus,
+    &:hover {
+      fill: rgba(215, 207, 120, 1);
+    }
+  }
+}
+
+.widgetEmail {
+  bottom: 4px;
+}
+
+.activateWidgetEmail {
+  visibility: visible;
+  bottom: 40px;
+  transition: visibility 0s 250ms, bottom 250ms;
+}
+
+.deactivateWidgetEmail {
+  visibility: hidden;
+  bottom: 40px;
+  transition: visibility 0s 250ms, bottom 250ms;
+}
+
+.widgetWhatsapp {
+  bottom: 40px;
+}
+
+.activateWidgetWhatsapp {
+  visibility: visible;
+  bottom: 75px;
+  transition: visibility 0s 250ms, bottom 250ms;
+}
+
+.deactivateWidgetWhatsapp {
+  visibility: hidden;
+  bottom: 75px;
+  transition: visibility 0s 250ms, bottom 250ms;
+}
+
+.widgetPhone {
+  bottom: 75px;
+}
+
+.activateWidgetPhone {
+  visibility: visible;
+  bottom: 110px;
+  transition: visibility 0s 250ms, bottom 250ms;
+}
+
+.deactivateWidgetPhone {
+  visibility: hidden;
+  bottom: 110px;
+  transition: visibility 0s 250ms, bottom 250ms;
+}

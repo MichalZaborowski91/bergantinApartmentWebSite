@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Normalize-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bergantín Apartamento Torrevieja España</title>
+    <meta
+      name="description"
+      content="Apartamento Bergantin en Torrevieja, España. Apartamento de 2 habitaciones totalmente equipado disponible para alquiler a corto y largo plazo. ¡Reserva tu estancia hoy!"
+    />
+    <meta
+      name="keywords"
+      content="apartamento Torrevieja, alquiler vacacional, España, corto plazo, largo plazo, playa, WiFi"
+    />
+    <meta name="author" content="Michał Zaborowski" />
+    <meta name="robots" content="index, follow" />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../images/icons/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../images/icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../images/icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../images/icons/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../../images/icons/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--Style-->
+    <link rel="stylesheet" href="../../css/main.min.css" />
+    <!--Slider cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--SCRIPTS-->
+    <!--Swiper script-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="../../js/swiper.js" defer></script>
+    <!--Dynamic distanceTo script-->
+    <script src="../../js/distanceTo.js" defer></script>
+    <!--Weather fetch script-->
+    <script src="../../js/fetchWeather.js" defer></script>
+    <!--Main scripts-->
+    <script src="../../js/mainScripts.js" defer></script>
+  </head>
+  <body class="index">
+    <header>
+      <div class="header container">
+        <a href="../../languages/es/index_es.html">
+          <img
+            class="header__logo"
+            src="../../images/bergantinApartmentLogo/bergantinLogo_1x.png"
+            srcset="
+              ../../images/bergantinApartmentLogo/bergantinLogo_1x.png 1x,
+              ../../images/bergantinApartmentLogo/bergantinLogo_2x.png 2x,
+              ../../images/bergantinApartmentLogo/bergantinLogo_3x.png 3x
+            "
+            alt="Logotipo del apartamento bergantin"
+          />
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li class="activeTab">
+              <a href="../../languages/es/index_es.html">Comenzar</a>
+            </li>
+            <li><a href="../../languages/es/gallery_es.html">Galería</a></li>
+            <li><a href="../../languages/es/location_es.html">Ubicación</a></li>
+            <li>
+              <a href="../../languages/es/bookings_es.html">Reservaciones</a>
+            </li>
+            <li><a href="../../languages/es/contact_es.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="langFbBox">
+          <a
+            class="headerFb"
+            href="https://www.facebook.com/profile.php?id=61555173212339"
+            target="_blank"
+          >
+            <svg class="headerFb__icon">
+              <use
+                href="../../images/icons/symbol-defs.svg#icon-facebook"
+              ></use>
+            </svg>
+          </a>
+          <button type="button" class="langBtn">
+            <svg class="langBtn__icon">
+              <use href="../../images/icons/symbol-defs.svg#icon-sphere"></use>
+            </svg>
+          </button>
+          <!--Darkmode slider desktop -->
+          <div class="toggleSlider">
+            <!--Darkmode desktop info-->
+            <p class="darkModeInfo">Modo oscuro</p>
+            <input
+              type="checkbox"
+              id="darkModeSliderDesktop"
+              class="darkModeSlider"
+            />
+            <label for="darkModeSliderDesktop" class="slider"> </label>
+          </div>
+        </div>
+        <button type="button" class="header__mobileBtn">
+          <svg class="header__mobileBtn__icon">
+            <use href="../../images/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="main container">
+        <h1 class="main__header">Bergantín Apartamento Torrevieja España</h1>
+        <div class="main__headBox">
+          <p class="main__headBox__description">
+            ¡Relájate en España! Un país con más de 300 días de sol al año. ¡Un
+            apartamento de 2 dormitorios totalmente equipado en una ubicación
+            fantástica te está esperando! ¡Reservar ahora!
+          </p>
+          <ul class="infoList">
+            <li class="infoList__item">
+              <div class="infoList__item__background">
+                <svg class="infoList__item__background__icon">
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-people"
+                  ></use>
+                </svg>
+              </div>
+              <p>6 personas</p>
+            </li>
+            <li class="infoList__item">
+              <div class="infoList__item__background">
+                <svg class="infoList__item__background__icon">
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-surface"
+                  ></use>
+                </svg>
+              </div>
+              <p>50m<sup>2</sup></p>
+            </li>
+            <li class="infoList__item">
+              <div class="infoList__item__background">
+                <svg class="infoList__item__background__icon">
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-wifi"
+                  ></use>
+                </svg>
+              </div>
+              <p>WiFi gratis</p>
+            </li>
+            <li class="infoList__item">
+              <div class="infoList__item__background">
+                <svg class="infoList__item__background__icon">
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-beach"
+                  ></use>
+                </svg>
+              </div>
+              <p>5 minutos de la playa</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="aptDescription container">
+        <h2 class="aptDescription__head">Apartamento Bergantin</h2>
+        <p class="aptDescription__description">
+          Un acogedor apartamento de 2 dormitorios, salón, cocina, baño y un
+          gran balcón. El apartamento puede alojar hasta 6 personas. La cocina
+          está totalmente equipada y el baño tiene bañera y ducha.
+        </p>
+      </section>
+      <div class="galleryIndex">
+        <!--Slider structure-->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="../../images/apartmentGallery/livingRoom.jpg"
+                alt="Sala de estar"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../images/apartmentGallery/livingRoom4.jpg"
+                alt="Sala de estar"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../images/apartmentGallery/livingRoom7.jpg"
+                alt="Sala de estar"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../images/apartmentGallery/mainBedroom.jpg"
+                alt="Habitación principal"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../images/apartmentGallery/room.jpg"
+                alt="Dormitorio"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../images/apartmentGallery/bath.jpg"
+                alt="Baño"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../images/apartmentGallery/kitchen.jpg"
+                alt="Cocina"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../images/apartmentGallery/balcony.jpg"
+                alt="Balcón"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../images/apartmentGallery/torrevieja.jpg"
+                alt="Vista de palmeras"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <button
+          type="button"
+          class="galleryIndex__button"
+          onclick="location.href='../../languages/es/gallery_es.html';"
+        >
+          <span>Galería</span>
+          <svg>
+            <use href="../../images/icons/symbol-defs.svg#icon-images"></use>
+          </svg>
+        </button>
+      </div>
+      <section class="aptEquipment container">
+        <h2 class="aptEquipment__head">Equipamiento del apartamento</h2>
+        <p>
+          Esperando por usted incluye: WiFi gratis con
+          <b>Internet de alta velocidad</b> y <b>TV inteligente</b>. El
+          apartamento tiene aire acondicionado en pleno funcionamiento. Todo lo
+          que necesitas para tus <b>vacaciones de corta</b> y
+          <b>larga duración</b>.
+        </p>
+        <div class="aptEquipment__box">
+          <ul class="aptEquipment__box__equipmentList">
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-cooker"
+                  ></use>
+                </svg>
+              </div>
+              <p>Horno</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-microwave"
+                  ></use>
+                </svg>
+              </div>
+              <p>Microonda</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-fridge"
+                  ></use>
+                </svg>
+              </div>
+              <p>Refrigerador</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-kettle"
+                  ></use>
+                </svg>
+              </div>
+              <p>Pava</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-washingMachine"
+                  ></use>
+                </svg>
+              </div>
+              <p>Lavadora</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-towel"
+                  ></use>
+                </svg>
+              </div>
+              <p>Toallas</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-vacuum"
+                  ></use>
+                </svg>
+              </div>
+              <p>Aspiradora</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-iron"
+                  ></use>
+                </svg>
+              </div>
+              <p>Hierro</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-hairDryer"
+                  ></use>
+                </svg>
+              </div>
+              <p>Secador de pelo</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-freeWifi"
+                  ></use>
+                </svg>
+              </div>
+              <p>WiFi gratis</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-airCondition"
+                  ></use>
+                </svg>
+              </div>
+              <p>Aire acondicionado</p>
+            </li>
+            <li class="aptEquipment__box__equipmentList__item">
+              <div class="aptEquipment__box__equipmentList__item__container">
+                <svg
+                  class="aptEquipment__box__equipmentList__item__container__icon"
+                >
+                  <use href="../../images/icons/symbol-defs.svg#icon-tv"></use>
+                </svg>
+              </div>
+              <p>Televisor</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="about container">
+        <img
+          class="about__image"
+          src="../../images/apartmentGallery/apartment.jpg"
+          alt="Edificio de apartamentos"
+        />
+        <p>
+          El apartamento está situado en el tercer piso del edificio, tiene
+          ascensor y es
+          <b>accesible para sillas de ruedas</b>. Hay
+          <u>un aparcamiento subterráneo privado</u> disponible a 200 m del
+          apartamento. Hay un gran <b>parque infantil justo al lado</b>.
+        </p>
+        <div>
+          <ul class="about__list">
+            <li class="about__list__item">
+              <div class="about__list__item__container">
+                <svg class="about__list__item__container__icon">
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-parking"
+                  ></use>
+                </svg>
+              </div>
+              <p>Estacionamiento</p>
+            </li>
+            <li class="about__list__item">
+              <div class="about__list__item__container">
+                <svg class="about__list__item__container__icon">
+                  <use
+                    href="../../images/icons/symbol-defs.svg#icon-lift"
+                  ></use>
+                </svg>
+              </div>
+              <p>Ascensor</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="locationIndex container">
+        <h2 class="locationIndex__head">Ubicación</h2>
+        <p class="locationIndex__description">
+          Perfectamente ubicado justo en la calle principal y muy cerca del
+          centro de Torrevieja. Las playas y tiendas más populares se encuentran
+          a muy poca distancia a pie del apartamento.
+        </p>
+        <iframe
+          class="locationIndex__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.868875246692!2d-0.6670256999999998!3d37.98018929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63aa0891523265%3A0xb88011bc9077e914!2sResidencial%20Habaneras%2C%20C.%20Bergantin%2C%2024%2C%2003182%20Torrevieja%2C%20Alicante%2C%20Spain!5e0!3m2!1sen!2sie!4v1709422689097!5m2!1sen!2sie"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="locationIndex__container">
+          <form class="locationIndex__container__form">
+            <!-- Select list -->
+            <label for="option">Distancia a:</label>
+            <select id="option" onchange="distanceTo()">
+              <option value="1" selected>Playas</option>
+              <option value="2">Tiendas</option>
+              <option value="3">Restaurantes</option>
+              <option value="4">Centros de ciudades</option>
+              <option value="5">Puerto</option>
+            </select>
+          </form>
+          <div class="locationIndex__container__graphic">
+            <svg class="locationIndex__container__graphic__icon">
+              <use href="../../images/icons/symbol-defs.svg#icon-gps"></use>
+            </svg>
+          </div>
+        </div>
+        <!--Dynamic content-->
+        <div class="locationIndex__distance"></div>
+      </section>
+      <div class="travel container">
+        <div class="travel__box">
+          <img
+            src="../../images/graphic/airPlane/airPlane_1x.png"
+            srcset="
+              ../../images/graphic/airPlane/airPlane_1x.png 1x,
+              ../../images/graphic/airPlane/airPlane_2x.png 2x,
+              ../../images/graphic/airPlane/airPlane_3x.png 3x
+            "
+            alt="Gráfico de avión"
+            class="travel__box__graphic"
+          />
+          <ul>
+            <li>Aeropuerto de Alicante <b>43,3km</b></li>
+            <li>Aeropuerto internacional de Murcia <b>64,5km</b></li>
+          </ul>
+        </div>
+        <div class="travel__box">
+          <img
+            src="../../images/graphic/bus/bus_1x.png"
+            srcset="
+              ../../images/graphic/bus/bus_1x.png 1x,
+              ../../images/graphic/bus/bus_2x.png 2x,
+              ../../images/graphic/bus/bus_3x.png 3x
+            "
+            alt="Gráfico de autobús"
+            class="travel__box__graphic"
+          />
+          <ul>
+            <li>Estación de autobuses Torrevieja <b>850m</b></li>
+          </ul>
+        </div>
+      </div>
+      <section class="infoCity container">
+        <h2 class="infoCity__head">Sobre Torrevieja</h2>
+        <img
+          src="../../images/torreviejaView/torreviejaView_1x.jpg"
+          srcset="
+            ../../images/torreviejaView/torreviejaView_1x.jpg 1x,
+            ../../images/torreviejaView/torreviejaView_2x.jpg 2x,
+            ../../images/torreviejaView/torreviejaView_3x.jpg 3x
+          "
+          alt="Vista de Torrevieja"
+          class="infoCity__image"
+        />
+        <p>
+          Torrevieja es una ciudad y municipio costero mediterráneo de la
+          <b>Costa Blanca</b>, en la provincia de Alicante, Comunidad
+          Valenciana, en el sureste de España. Torrevieja fue en sus orígenes un
+          pueblo pesquero y de extracción de sal, ya que se encuentra entre el
+          <b>mar Mediterráneo</b> y dos grandes
+          <b>lagos salados de color rosa</b>
+          conocidos como Las Salinas de Torrevieja.
+        </p>
+      </section>
+      <section class="weather container">
+        <h2 class="weather__head">Torrevieja ahora</h2>
+        <div class="weather__container"></div>
+      </section>
+      <section class="contactIndex container">
+        <h2 class="contactIndex__head">Contáctenos</h2>
+        <div class="contactIndex__container">
+          <a href="tel:+353000000000" class="contactIndex__container__button">
+            <span>Llamar</span>
+            <svg>
+              <use href="../../images/icons/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </a>
+          <a
+            href="mailto:bergantin@gmail.com"
+            class="contactIndex__container__button"
+          >
+            <span>Email</span>
+            <svg>
+              <use href="../../images/icons/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </a>
+          <a
+            href="https://chatwith.io/s/bergantin-apartment"
+            class="contactIndex__container__button"
+          >
+            <span>WhatsApp</span>
+            <svg>
+              <use
+                href="../../images/icons/symbol-defs.svg#icon-whatsapp"
+              ></use>
+            </svg>
+          </a>
+          <a
+            href="https://chatwith.io/s/bergantin-apartment"
+            class="contactIndex__container__button"
+          >
+            <span>Messenger</span>
+            <svg>
+              <use
+                href="../../images/icons/symbol-defs.svg#icon-messenger"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer container">
+        <div class="footerContent">
+          <a href="../../languages/es/index_es.html">
+            <img
+              class="footer__logo"
+              src="../../images/bergantinApartmentLogo/bergantinLogo_1x.png"
+              srcset="
+                ../../images/bergantinApartmentLogo/bergantinLogo_1x.png 1x,
+                ../../images/bergantinApartmentLogo/bergantinLogo_2x.png 2x,
+                ../../images/bergantinApartmentLogo/bergantinLogo_3x.png 3x
+              "
+              alt="Logotipo del apartamento bergantin"
+            />
+          </a>
+          <div class="availability">
+            <p class="availability__head">Consultar disponibilidad</p>
+            <a
+              class="availability__button"
+              href="../../languages/es/bookings_es.html"
+            >
+              <span>Reservacion</span>
+              <svg>
+                <use
+                  href="../../images/icons/symbol-defs.svg#icon-calendar"
+                ></use>
+              </svg>
+            </a>
+          </div>
+          <address class="footer__address">
+            <p class="footer__address--head">Dirección:</p>
+            <p>C. Bergantin, 24,</p>
+            <p>03182 Torrevieja,</p>
+            <p>Alicante, España</p>
+          </address>
+          <div class="footer__contact">
+            <p>Contacto:</p>
+            <a href="mailto:bergantin@gmail.com">bergantin@gmail.com</a>
+            <a href="tel:+353000000000">+353000000000</a>
+          </div>
+        </div>
+        <a
+          href="https://www.facebook.com/profile.php?id=61555173212339"
+          target="_blank"
+          class="footer__facebook"
+        >
+          <svg class="footer__facebook--icon">
+            <use href="../../images/icons/symbol-defs.svg#icon-facebook"></use>
+          </svg>
+          <span>Facebook</span>
+        </a>
+        <p class="footer__terms">
+          &#xa9; 2024 Apartamento Bergantin Torrevieja España
+          <svg class="footer__terms--icon" id="heartIcon">
+            <use href="../../images/icons/symbol-defs.svg#icon-heart"></use>
+          </svg>
+        </p>
+      </div>
+    </footer>
+    <!--Button up-->
+    <button class="btnUp">
+      <svg class="btnUp__icon">
+        <use href="../../images/icons/symbol-defs.svg#icon-circleUp"></use>
+      </svg>
+    </button>
+    <!--Contact button widget-->
+    <div>
+      <button class="contactWidget">
+        <svg class="contactWidget__icon">
+          <use href="../../images/icons/symbol-defs.svg#icon-chat"></use>
+        </svg>
+      </button>
+      <a href="mailto:bergantin@gmail.com" class="widgetEmail">
+        <svg class="widgetEmail__icon">
+          <use href="../../images/icons/symbol-defs.svg#icon-email"></use>
+        </svg>
+      </a>
+      <a
+        href="https://chatwith.io/s/bergantin-apartment"
+        class="widgetWhatsapp"
+      >
+        <svg class="widgetWhatsapp__icon">
+          <use href="../../images/icons/symbol-defs.svg#icon-whatsapp"></use>
+        </svg>
+      </a>
+      <a href="tel:+353000000000" class="widgetPhone">
+        <svg class="widgetPhone__icon">
+          <use href="../../images/icons/symbol-defs.svg#icon-phone"></use>
+        </svg>
+      </a>
+    </div>
+    <!--Language menu-->
+    <div class="langMenu">
+      <ul class="langMenu__list">
+        <li>
+          <button
+            class="languageSelect languageEnglish"
+            data-url="../../index.html"
+            data-language="en"
+          >
+            <img
+              src="../../images/languages/england.jpg"
+              alt="Bandera inglesa"
+              width="30"
+              height="20"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="languageSelect languagePolish"
+            data-url="../../languages/pl/index_pl.html"
+            data-language="pl"
+          >
+            <img
+              src="../../images/languages/poland.jpg"
+              alt="Bandera polaca"
+              width="30"
+              height="20"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="languageSelect languageGerman"
+            data-url="../../languages/de/index_de.html"
+            data-language="de"
+          >
+            <img
+              src="../../images/languages/germany.jpg"
+              alt="Bandera alemana"
+              width="30"
+              height="20"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="languageSelect languageSpanish"
+            data-url="../../languages/es/index_es.html"
+            data-language="es"
+          >
+            <img
+              src="../../images/languages/spain.jpg"
+              alt="Bandera española"
+              width="30"
+              height="20"
+            />
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!--Mobile menu-->
+    <div class="mobileMenu">
+      <div class="toggleSlider">
+        <!-- Darkmode -->
+        <input type="checkbox" id="darkModeSlider" class="darkModeSlider" />
+        <label for="darkModeSlider" class="slider">
+          <svg class="toggleSlider__icon toggleSlider__icon--sun">
+            <use href="../../images/icons/symbol-defs.svg#icon-sun"></use>
+          </svg>
+          <svg class="toggleSlider__icon toggleSlider__icon--moon">
+            <use href="../../images/icons/symbol-defs.svg#icon-moon"></use>
+          </svg>
+        </label>
+      </div>
+      <svg class="mobileMenu__close">
+        <use href="../../images/icons/symbol-defs.svg#icon-cancel"></use>
+      </svg>
+      <nav>
+        <ul class="mobileMenu__navigation">
+          <li class="activeTab">
+            <a href="../../languages/es/index_es.html">Comenzar</a>
+          </li>
+          <li><a href="../../languages/es/gallery_es.html">Galería</a></li>
+          <li><a href="../../languages/es/location_es.html">Ubicación</a></li>
+          <li>
+            <a href="../../languages/es/bookings_es.html">Reservaciones</a>
+          </li>
+          <li><a href="../../languages/es/contact_es.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <ul class="mobileContact">
+        <li>
+          <a href="tel:+353000000000">
+            <div class="mobileContact__background">
+              <svg class="mobileContact__background--icon">
+                <use href="../../images/icons/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:bergantin@gmail.com">
+            <div class="mobileContact__background">
+              <svg class="mobileContact__background--icon">
+                <use href="../../images/icons/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://chatwith.io/s/bergantin-apartment">
+            <div class="mobileContact__background">
+              <svg class="mobileContact__background--icon">
+                <use
+                  href="../../images/icons/symbol-defs.svg#icon-whatsapp"
+                ></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a
+        href="https://www.facebook.com/profile.php?id=61555173212339"
+        target="_blank"
+        class="mobileMenu__facebook"
+      >
+        <svg class="mobileMenu__facebook--icon">
+          <use href="../../images/icons/symbol-defs.svg#icon-facebook"></use>
+        </svg>
+        <span>Facebook</span>
+      </a>
+      <div>
+        <ul class="languageList">
+          <li>
+            <button
+              class="languageSelect languageEnglish"
+              data-url="../../index.html"
+              data-language="en"
+            >
+              <img
+                src="../../images/languages/england.jpg"
+                alt="Bandera inglesa"
+                width="30"
+                height="20"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              class="languageSelect languagePolish"
+              data-url="../../languages/pl/index_pl.html"
+              data-language="pl"
+            >
+              <img
+                src="../../images/languages/poland.jpg"
+                alt="Bandera polaca"
+                width="30"
+                height="20"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              class="languageSelect languageGerman"
+              data-url="../../languages/de/index_de.html"
+              data-language="de"
+            >
+              <img
+                src="../../images/languages/germany.jpg"
+                alt="Bandera alemana"
+                width="30"
+                height="20"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              class="languageSelect languageSpanish"
+              data-url="../../languages/es/index_es.html"
+              data-language="es"
+            >
+              <img
+                src="../../images/languages/spain.jpg"
+                alt="Bandera española"
+                width="30"
+                height="20"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
