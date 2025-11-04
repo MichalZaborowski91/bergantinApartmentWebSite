@@ -97,5 +97,3 @@ You may modify and use the code freely, while keeping the author attribution.
 The project was created in **Visual Studio Code**,  
 using **Live Server** and **Live Sass Compiler** extensions.  
 The entire website is static and does not require a backend or NPM.
-
----
