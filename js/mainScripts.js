@@ -126,10 +126,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Map selected language to URL
   const languageUrlMap = {
-    en: "/bergantinApartmentWebSite/index.html",
-    pl: "/bergantinApartmentWebSite/languages/pl/index_pl.html",
-    de: "/bergantinApartmentWebSite/languages/de/index_de.html",
-    es: "/bergantinApartmentWebSite/languages/es/index_es.html",
+    en: "/index.html",
+    pl: "/languages/pl/index_pl.html",
+    de: "/languages/de/index_de.html",
+    es: "/languages/es/index_es.html",
   };
 
   //If selectedLanguage is set and session is not checked
