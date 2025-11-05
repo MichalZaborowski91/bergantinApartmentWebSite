@@ -4,8 +4,8 @@ This is the website for **Bergantin Apartment** in Spain Torrevieja.
 It is an **advertisement-style website** showcasing the apartment available for **short-term and long-term rental**.  
 The site includes detailed apartment information, a photo gallery, availability calendar, current weather display, location and a contact form powered by **EmailJS**.
 
-🌐 **Live Demo GitHub:** [bergantinApartmentWebSite](https://michalzaborowski91.github.io/bergantinApartmentWebSite/index.html)  
-🌐 **Live Demo Netlify:** [bergantinApartmentWebSite](https://aptbergantin.netlify.app/index.html)  
+🌐 **Live Demo GitHub:** [bergantinApartmentWebSite Github](https://michalzaborowski91.github.io/bergantinApartmentWebSite/index.html)  
+🌐 **Live Demo Netlify:** [bergantinApartmentWebSite Netlify](https://aptbergantin.netlify.app/index.html)  
 💻 **Repository:** [GitHub – MichalZaborowski91](https://github.com/MichalZaborowski91/bergantinApartmentWebSite)
 
 ---
@@ -98,3 +98,6 @@ You may modify and use the code freely, while keeping the author attribution.
 The project was created in **Visual Studio Code**,  
 using **Live Server** and **Live Sass Compiler** extensions.  
 The entire website is static and does not require a backend or NPM.
+
+Noticed problems:
+There might be a problem with loading icons in Chrome on Android (Mobile phones) as Chrome does't support <use> from external .svg files.
