@@ -66,6 +66,7 @@ body.index {
   bottom: 4px;
   cursor: pointer;
   transition-duration: 250ms;
+
   &:focus,
   &:hover {
     transition-duration: 250ms;
@@ -75,6 +76,7 @@ body.index {
     width: 30px;
     height: 30px;
     fill: rgba(170, 131, 67, 1);
+
     &:focus,
     &:hover {
       fill: rgba(215, 207, 120, 1);
