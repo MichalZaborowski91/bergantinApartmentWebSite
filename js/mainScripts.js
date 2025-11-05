@@ -124,6 +124,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const selectedLanguage = localStorage.getItem("selectedLanguage");
   const languageChecked = sessionStorage.getItem("languageChecked");
 
+  //Its for github repo website link => it checks if user is in github if yes then it adds path for website to work through github
+  //For egzample Netlify doesnt use this path.
   const basePath = window.location.hostname.includes("github.io")
     ? "/bergantinApartmentWebSite"
     : "";
