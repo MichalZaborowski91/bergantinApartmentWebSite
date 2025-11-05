@@ -124,12 +124,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const selectedLanguage = localStorage.getItem("selectedLanguage");
   const languageChecked = sessionStorage.getItem("languageChecked");
 
+  const basePath = window.location.hostname.includes("github.io")
+    ? "/bergantinApartmentWebSite"
+    : "";
+
   //Map selected language to URL
   const languageUrlMap = {
-    en: "/index.html",
-    pl: "/languages/pl/index_pl.html",
-    de: "/languages/de/index_de.html",
-    es: "/languages/es/index_es.html",
+    en: `${basePath}/index.html`,
+    pl: `${basePath}/languages/pl/index_pl.html`,
+    de: `${basePath}/languages/de/index_de.html`,
+    es: `${basePath}/languages/es/index_es.html`,
   };
 
   //If selectedLanguage is set and session is not checked
