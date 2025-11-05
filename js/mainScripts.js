@@ -3,7 +3,9 @@
 //Load icons.svg to DOM as Google Chrome on mobile phones have problems to load external svg
 const fetchIcons = async () => {
   try {
-    const response = await fetch("/images/icons/symbol-defs.svg");
+    const response = await fetch(
+      `/images/icons/symbol-defs.svg?cache-bust=${Date.now()}`
+    );
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
@@ -23,9 +25,7 @@ const fetchIcons = async () => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", async () => {
-  await fetchIcons();
-});
+document.addEventListener("DOMContentLoaded", fetchIcons);
 //------------------------------------------------------
 
 //Mobile menu
