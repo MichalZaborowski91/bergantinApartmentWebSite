@@ -4,10 +4,10 @@ function distanceTo() {
   const option = document.getElementById("option").value;
   const content = document.querySelector(".locationIndex__distance");
   const pathname = window.location.pathname;
-  const english = pathname.includes("index.html");
-  const polish = pathname.includes("index_pl.html");
-  const german = pathname.includes("index_de.html");
-  const spanish = pathname.includes("index_es.html");
+  const english = pathname.includes("index");
+  const polish = pathname.includes("index_pl");
+  const german = pathname.includes("index_de");
+  const spanish = pathname.includes("index_es");
 
   const markup = {
     english: {
