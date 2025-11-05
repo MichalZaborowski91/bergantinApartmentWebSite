@@ -4,7 +4,8 @@ This is the website for **Bergantin Apartment** in Spain Torrevieja.
 It is an **advertisement-style website** showcasing the apartment available for **short-term and long-term rental**.  
 The site includes detailed apartment information, a photo gallery, availability calendar, current weather display, location and a contact form powered by **EmailJS**.
 
-🌐 **Live Demo:** [bergantinApartmentWebSite](https://michalzaborowski91.github.io/bergantinApartmentWebSite/index.html)  
+🌐 **Live Demo GitHub:** [bergantinApartmentWebSite](https://michalzaborowski91.github.io/bergantinApartmentWebSite/index.html)  
+🌐 **Live Demo Netlify:** [bergantinApartmentWebSite](https://aptbergantin.netlify.app/index.html)  
 💻 **Repository:** [GitHub – MichalZaborowski91](https://github.com/MichalZaborowski91/bergantinApartmentWebSite)
 
 ---
@@ -81,7 +82,7 @@ bergantinApartmentWebSite/
 
 ### 🎨 Design
 
-The website logo was **designed by the author**.
+The website logo and website design was **designed by the author**.
 
 ---
 
