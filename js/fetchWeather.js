@@ -65,9 +65,13 @@ function weatherWidget(data) {
     imagePath = `./images/weather/${day}/${iconName}.png`;
   }
 
+  const basePath = window.location.hostname.includes("github.io")
+    ? "/bergantinApartmentWebSite"
+    : "";
   if (day === "day") {
-    weather.style.backgroundImage =
-      "url('../../../bergantinApartmentWebSite/images/weather/weatherDayBackground.jpg')";
+    weather.style.backgroundImage = `url("${basePath}/images/weather/weatherDayBackground.jpg")`;
+  } else {
+    weather.style.backgroundImage = `url("${basePath}/images/weather/weatherNightBackground.jpg")`;
   }
 
   const markup = `<div class="weather__container__data"><img class="weather__container__data__icon" src="${imagePath}"/><p class="weather__container__data__text">${textDescription}</p></div><div class="weather__container__temp"><span>${tempText}</span> <span class="weather__container__temp__current">${currentTemperature} <sup>o</sup>C</span></div>`;
