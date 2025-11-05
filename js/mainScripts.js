@@ -284,3 +284,29 @@ document.addEventListener("keydown", (e) => {
     contactWidget.blur();
   }
 });
+//------------------------------------------------
+
+//Load icons.svg to DOM as Google Chrome on mobile phones have problems to load external svg
+const fetchIcons = async () => {
+  try {
+    const response = await fetch("/images/icons/symbol-defs.svg");
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const svgContent = await response.text();
+    const svgDiv = document.createElement("div");
+    svgDiv.style.display = "none";
+    svgDiv.innerHTML = svgContent;
+
+    if (document.body) {
+      document.body.insertBefore(svgDiv, document.body.firstChild);
+    } else {
+      console.error("Document body not found when inserting SVG icons");
+    }
+  } catch (error) {
+    console.error("Error loading SVG icons:", error);
+  }
+};
+
+document.addEventListener("DOMContentLoaded", fetchIcons);
