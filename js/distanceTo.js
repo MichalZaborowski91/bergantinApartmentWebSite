@@ -125,4 +125,4 @@ function distanceTo() {
   }
 }
 
-window.onload = distanceTo;
+window.onload = distanceTo();
