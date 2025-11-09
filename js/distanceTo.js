@@ -4,7 +4,7 @@ function distanceTo() {
   const option = document.getElementById("option").value;
   const content = document.querySelector(".locationIndex__distance");
   const pathname = window.location.pathname;
-  const english = pathname === "/" || pathname.includes("index");
+  const english = pathname === "/" || pathname.includes("index.html");
   const polish = pathname.includes("index_pl");
   const german = pathname.includes("index_de");
   const spanish = pathname.includes("index_es");
