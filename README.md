@@ -99,5 +99,4 @@ The project was created in **Visual Studio Code**,
 using **Live Server** and **Live Sass Compiler** extensions.  
 The entire website is static and does not require a backend or NPM.
 
-Noticed problems:
-There might be a problem with loading icons in Chrome on Android (Mobile phones) as Chrome does't support <use> from external .svg files.
+As the apartment was rented for long term before website was lunched smoobu calendar doesn't work as smoobu service is off at the moment.
